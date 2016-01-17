@@ -6,7 +6,7 @@ respawn = BASE;
 respawndelay = 5;
 disabledAI = 1;
 disableChannels[]={0,1,2};
-enableDebugConsole = 1;
+enableDebugConsole = 2;
 respawnDialog = 0;
 
 class Header
@@ -31,13 +31,15 @@ SPY_Enable = 0;
 #include "dialog\MasterHandler.h"
 #include "Config_Master.hpp"
 
-class RscTitles {
-	#include "dialog\ui.hpp"
+class RscTitles
+{
+	#include "statusBar\statusBar.hpp"
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.h"
 };
 
-class CfgFunctions {
+class CfgFunctions
+{
 	#include "Functions.h"
 };
 

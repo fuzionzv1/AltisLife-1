@@ -16,7 +16,7 @@ class Socket_Reciever
 class Life_Client_Core
 {
 	tag = "life";
-	
+
 	class Master_Directory
 	{
 		file = "core";
@@ -25,10 +25,9 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
-		class welcomeNotification {};
 		class survival {};
 	};
-	
+
 	class Admin
 	{
 		file = "core\admin";
@@ -46,7 +45,7 @@ class Life_Client_Core
 		class adminFreeze {};
 		class adminMarkers {};
 	};
-	
+
 	class Medical_System
 	{
 		file = "core\medical";
@@ -64,7 +63,7 @@ class Life_Client_Core
 		class medicLights {};
 		class medicSiren {};
 	};
-	
+
 	class Actions
 	{
 		file = "core\actions";
@@ -100,7 +99,7 @@ class Life_Client_Core
 		class gather {};
 		class gutAnimal {};
 	};
-	
+
 	class Housing
 	{
 		file = "core\housing";
@@ -118,7 +117,7 @@ class Life_Client_Core
 		class lockHouse {};
 		class garageRefund {};
 	};
-	
+
 	class Config
 	{
 		file = "core\config";
@@ -152,15 +151,13 @@ class Life_Client_Core
 		class s_onChar {};
 		class s_onCheckedChange {};
 	};
-	
+
 	class Functions
 	{
 		file = "core\functions";
 		class calWeightDiff {};
 		class fetchCfgDetails {};
 		class handleInv {};
-		class hudSetup {};
-		class hudUpdate {};
 		class tazeSound {};
 		class animSync {};
 		class simDisable {};
@@ -198,7 +195,7 @@ class Life_Client_Core
 		class nearATM {};
 		class playerSkins {};
 	};
-	
+
 	class Network
 	{
 		file = "core\functions\network";
@@ -211,7 +208,7 @@ class Life_Client_Core
 		class setFuel {};
 		class say3D {};
 	};
-	
+
 	class Civilian
 	{
 		file = "core\civilian";
@@ -227,7 +224,7 @@ class Life_Client_Core
 		class civLoadout {};
 		class freezePlayer {};
 	};
-	
+
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -243,7 +240,7 @@ class Life_Client_Core
 		class deviceMine {};
 		class addVehicle2Chain {};
 	};
-	
+
 	class Cop
 	{
 		file = "core\cop";
@@ -271,7 +268,7 @@ class Life_Client_Core
 		class copLoadout {};
 		class ticketPaid {};
 	};
-	
+
 	class Gangs
 	{
 		file = "core\gangs";
@@ -288,7 +285,7 @@ class Life_Client_Core
 		class gangDisband {};
 		class gangDisbanded {};
 	};
-	
+
 	class Shops
 	{
 		file = "core\shops";
@@ -312,7 +309,7 @@ class Life_Client_Core
 		class chopShopSelection {};
 		class chopShopSell {};
 	};
-	
+
 	class Items
 	{
 		file = "core\items";
@@ -326,7 +323,7 @@ class Life_Client_Core
 		class defuseKit {};
 		class storageBox {};
 	};
-	
+
 	class Dialog_Controls
 	{
 		file = "dialog\function";
