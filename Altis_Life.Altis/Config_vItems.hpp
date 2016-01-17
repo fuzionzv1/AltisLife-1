@@ -48,8 +48,8 @@ class VirtualShops {
         items[] = { "coffee", "donuts" };
     };
 
-    class f_station_coffe {
-        name = "STR_MAR_Station_Coffe";
+    class f_station_coffee {
+        name = "STR_MAR_Station_Coffee";
         side = "";
         license = "";
         level[] = { "", "", -1, "" };
