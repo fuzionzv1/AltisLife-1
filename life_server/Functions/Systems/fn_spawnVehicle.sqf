@@ -2,7 +2,7 @@
 /*
 	File: fn_spawnVehicle.sqf
 	Author: Bryan "Tonic" Boardwine
-
+	
 	Description:
 	Sends the query request to the database, if an array is returned then it creates
 	the vehicle if it's not in use or dead.
@@ -24,7 +24,7 @@ if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 _servIndex = serv_sv_use find _vid;
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, inventory FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 
 _tickTime = diag_tickTime;
@@ -66,7 +66,6 @@ if(count _nearVehicles > 0) exitWith {
 
 _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
-_trunk = [_vInfo select 9] call DB_fnc_mresToArray;
 
 [_query,false] spawn DB_fnc_asyncCall;
 if(typeName _sp == "STRING") then {
@@ -89,11 +88,10 @@ _vehicle allowDamage true;
 [_vehicle] remoteExecCall ["life_fnc_addVehicle2Chain",_unit];
 [_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
 _vehicle lock 2;
-//Reskin the vehicle
+//Reskin the vehicle 
 [_vehicle,_vInfo select 8] remoteExec ["life_fnc_colorVehicle",RANY];
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7]];
-_vehicle setVariable["Trunk",_trunk,true];
 //_vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"]; //Obsolete function?
 [_vehicle] call life_fnc_clearVehicleAmmo;
 

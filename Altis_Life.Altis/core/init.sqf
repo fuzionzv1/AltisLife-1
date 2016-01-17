@@ -105,6 +105,7 @@ diag_log "----------------------------------------------------------------------
 life_sidechat = true;
 [player,life_sidechat,playerSide] remoteExecCall ["TON_fnc_managesc",RSERV];
 0 cutText ["","BLACK IN"];
+[] call life_fnc_hudSetup;
 
 /* Set up frame-by-frame handlers */
 LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;

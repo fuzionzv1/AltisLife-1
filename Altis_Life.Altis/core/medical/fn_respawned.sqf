@@ -2,7 +2,7 @@
 /*
 	File: fn_respawned.sqf
 	Author: Bryan "Tonic" Boardwine
-
+	
 	Description:
 	Sets the player up if he/she used the respawn option.
 */
@@ -73,3 +73,4 @@ if(life_removeWanted) then {
 
 [] call life_fnc_playerSkins;
 [] call SOCK_fnc_updateRequest;
+[] call life_fnc_hudUpdate; //Request update of hud.

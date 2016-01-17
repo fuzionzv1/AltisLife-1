@@ -2,7 +2,7 @@
 /*
 	File: fn_revived.sqf
 	Author: Bryan "Tonic" Boardwine
-
+	
 	Description:
 	THANK YOU JESUS I WAS SAVED!
 */
@@ -41,3 +41,4 @@ hideBody life_corpse;
 player SVAR ["Revive",nil,TRUE];
 player SVAR ["name",nil,TRUE];
 player SVAR ["Reviving",nil,TRUE];
+[] call life_fnc_hudUpdate; //Request update of hud.
