@@ -229,6 +229,7 @@ class Life_Client_Core
 	{
 		file = "core\vehicle";
 		class colorVehicle {};
+		class updateVehTrunk {};
 		class openInventory {};
 		class lockVehicle {};
 		class vehicleOwners {};
