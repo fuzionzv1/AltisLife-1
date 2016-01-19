@@ -16,11 +16,15 @@ if(life_blacklisted) exitWith
 	sleep 30;
 };
 
+if(EQUAL(LIFE_SETTINGS(getNumber,"allow_medic_weapons"),0)) then
 {
-	while {true} do
+	[] spawn
 	{
-		waitUntil {sleep 3; currentWeapon player != ""};
-		removeAllWeapons player;
+		while {true} do
+		{
+			waitUntil {sleep 3; currentWeapon player != ""};
+			removeAllWeapons player;
+		};
 	};
 };
 
