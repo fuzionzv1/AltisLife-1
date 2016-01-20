@@ -34,7 +34,6 @@ class Life_Client_Core
 		class adminCompensate {};
 		class adminDebugCon {};
 		class adminFreeze {};
-		class admingetID {};
 		class adminGodMode {};
 		class adminid {};
 		class admininfo {};
