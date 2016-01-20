@@ -120,8 +120,12 @@ switch (_code) do {
 				private "_list";
 				_list = ["landVehicle","Air","Ship","House_F"];
 				if(KINDOF_ARRAY(cursorTarget,_list) && {player distance cursorTarget < 7} && {vehicle player == player} && {alive cursorTarget} && {!life_action_inUse}) then {
-					if(cursorTarget in life_vehicles OR {!(cursorTarget GVAR ["locked",true])}) then {
+					if(cursorTarget in life_vehicles) then {
 						[cursorTarget] call life_fnc_openInventory;
+					} else {
+						if(!(cursorTarget GVAR ["locked",true])) then {
+							[cursorTarget] call life_fnc_openInventory;
+						};
 					};
 				};
 			};
@@ -148,7 +152,7 @@ switch (_code) do {
 
 	//Y Player Menu
 	case 21: {
-		if(!_alt && !_ctrlKey && !dialog && {!life_action_inUse}) then {
+		if(!_alt && !_ctrlKey && !dialog && !(player getVariable["restrained",false]) && {!life_action_inUse}) then {
 			[] call life_fnc_p_openMenu;
 		};
 	};

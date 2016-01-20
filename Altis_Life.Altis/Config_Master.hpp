@@ -8,11 +8,12 @@ class Life_Settings {
     /* Persistent Settings */
     save_civ_weapons = false; //Allow civilians to save weapons on them?
     save_virtualItems = true; //Save Virtual items (all sides)?
-    veh_save_virtualItems = false; //Save Virtual items for vehicles (all sides)?
-    veh_save_gear = false; //Save Gear for vehicles (all sides)?
 
     /* Clothing related settings */
     clothing_box = true; //true = preview inside a black box.  false = preview on map.
+
+    /* Medic related settings*/
+    allow_medic_weapons = false; // true allows medics to hold/use weapons - false disallows
 
     /* Revive system settings */
     revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
