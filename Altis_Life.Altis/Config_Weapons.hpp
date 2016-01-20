@@ -13,7 +13,7 @@
 class WeaponShops {
     //Armory Shops
     class gun {
-        name = "Billy Joe's Firearms";
+        name = "Altis Armory";
         side = "civ";
         license = "gun";
         level[] = { "", "", -1, "" };
@@ -32,7 +32,7 @@ class WeaponShops {
     };
 
     class rebel {
-        name = "Mohammed's Jihadi Shop";
+        name = "Han's Rebel Supplies";
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
@@ -54,7 +54,7 @@ class WeaponShops {
     };
 
     class gang {
-        name = "Hideout Armament";
+        name = "Arms Dealer";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
@@ -116,65 +116,181 @@ class WeaponShops {
     };
 
     //Cop Shops
-    class cop_basic {
-        name = "Altis Cop Shop";
+    class cop_cadet {
+        name = "Cadet Armory";
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_sdar_F", "Taser Rifle", 20000, 7500 },
+            { "arifle_TRG20_ACO_F", "Taser Rifle", 20000, 7500 },
             { "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },
-            { "hgun_P07_F", "", 7500, 1500 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
             { "ToolKit", "", 250, 75 },
-            { "muzzle_snds_L", "", 650, -1 },
             { "FirstAidKit", "", 150, 65 },
-            { "Medikit", "", 1000, 450 },
             { "NVGoggles", "", 2000, 980 },
-            { "16Rnd_9x21_Mag", "", 50, -1 },
-            { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 125, -1 }
+            { "16Rnd_9x21_Mag", "Stun Pistol Ammo", 50, -1 },
+            { "30Rnd_556x45_Stanag_Tracer_Green", "Taser Rifle Ammo", 125, -1 }
         };
     };
 
-    class cop_patrol {
-        name = "Altis Patrol Officer Shop";
+    class cop_constable {
+        name = "Constable Armory";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 2, "You must be a Patrol Officer Rank!" };
+        level[] = { "life_coplevel", "SCALAR", 2, "You must be a Constable!" };
         items[] = {
-            { "arifle_MX_F", "", 35000, 7500 },
+            { "arifle_TRG20_ACO_F", "Taser Rifle", 20000, 7500 },
+			{ "arifle_MX_Black_F", "", 35000, 7500 },
+			{ "arifle_MXC_Black_F", "", 35000, 7500 },
+			{ "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },
             { "SMG_02_ACO_F", "", 30000, -1 },
             { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "MineDetector", "", 1000, 500 },
             { "acc_flashlight", "", 750, 100 },
             { "optic_Holosight", "", 1200, 275 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 },
-            { "30Rnd_65x39_caseless_mag", "", 130, -1 },
-            { "30Rnd_9x21_Mag", "", 250, -1 }
+            { "optic_Arco", "", 350, -1 },
+			{ "optic_Hamr", "", 250, -1 },
+            { "30Rnd_65x39_caseless_mag_Tracer", "Tasing ammo for MX weapons", 250, -1 },
+			{ "30Rnd_65x39_caseless_mag", "Lethal ammo for MX weapons", 250, -1 },
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "Taser Rifle Ammo", 125, -1 }
         };
     };
 
-    class cop_sergeant {
-        name = "Altis Sergeant Officer Shop";
+    class cop_corporal {
+        name = "Corporal Armory";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Corporal!" };
         items[] = {
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "arifle_TRG20_ACO_F", "Taser Rifle", 20000, 7500 },
+			{ "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },
+			{ "arifle_MX_Black_F", "", 35000, 7500 },
+			{ "arifle_MXC_Black_F", "", 35000, 7500 },
+			{ "arifle_MXM_Black_F", "", 35000, 7500 },
+            { "SMG_02_ACO_F", "", 30000, -1 },
             { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 },
-            { "30Rnd_65x39_caseless_mag", "", 100, -1 },
-            { "30Rnd_9x21_Mag", "", 60, -1 },
-            { "9Rnd_45ACP_Mag", "", 200, -1 }
+            { "acc_flashlight", "", 750, 100 },
+            { "optic_Holosight", "", 1200, 275 },
+            { "optic_Arco", "", 350, -1 },
+			{ "optic_Hamr", "", 250, -1 },
+            { "30Rnd_65x39_caseless_mag_Tracer", "Tasing ammo for MX weapons", 250, -1 },
+			{ "30Rnd_65x39_caseless_mag", "Lethal ammo for MX weapons", 250, -1 },
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "Taser Rifle Ammo", 125, -1 },
+			{ "16Rnd_9x21_Mag", "Stun Pistol Ammo", 50, -1 }
         };
     };
 
+	 class cop_sergeant {
+        name = "Sergeant Armory";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 4, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "arifle_TRG20_ACO_F", "Taser Rifle", 20000, 7500 },
+			{ "arifle_MX_Black_F", "", 35000, 7500 },
+			{ "arifle_MX_GL_Black_F", "", 35000, 7500 },
+			{ "arifle_MXC_Black_F", "", 35000, 7500 },
+			{ "arifle_MXM_Black_F", "", 35000, 7500 },
+            { "SMG_02_ACO_F", "", 30000, -1 },
+			{ "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },
+            { "3Rnd_Smoke_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeRed_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeGreen_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeYellow_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokePurple_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeOrange_Grenade_shell", "", 1700, -1 },
+			{ "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "acc_flashlight", "", 750, 100 },
+            { "optic_Holosight", "", 1200, 275 },
+            { "optic_Arco", "", 350, -1 },
+			{ "optic_Hamr", "", 250, -1 },
+            { "30Rnd_65x39_caseless_mag_Tracer", "Tasing ammo for MX weapons", 250, -1 },
+			{ "30Rnd_65x39_caseless_mag", "Lethal ammo for MX weapons", 250, -1 },
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "Taser Rifle Ammo", 125, -1 },
+			{ "16Rnd_9x21_Mag", "Stun Pistol Ammo", 50, -1 },
+			{ "B_soldier_UAV_F", "", 20000, -1 }
+        };
+    };
+	
+	 class cop_lieutenant {
+        name = "Lieutenant Armory";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 5, "You must be a Lieutenant!" };
+        items[] = {
+            { "arifle_TRG20_ACO_F", "Taser Rifle", 20000, 7500 },
+			{ "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },
+			{ "hgun_Pistol_heavy_01_snds_F", "", 2000, 650 },
+			{ "arifle_MX_Black_F", "", 35000, 7500 },
+			{ "arifle_MX_SW_Black_F", "", 35000, 7500 },
+			{ "srifle_DMR_03_ACO_F", "", 35000, 7500 },
+			{ "arifle_MX_GL_Black_F", "", 35000, 7500 },
+			{ "arifle_MXC_Black_F", "", 35000, 7500 },
+			{ "arifle_MXM_Black_F", "", 35000, 7500 },
+            { "SMG_02_ACO_F", "", 30000, -1 },
+            { "3Rnd_Smoke_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeRed_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeGreen_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeYellow_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokePurple_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeOrange_Grenade_shell", "", 1700, -1 },
+			{ "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "acc_flashlight", "", 750, 100 },
+            { "optic_Holosight", "", 1200, 275 },
+            { "optic_Arco", "", 350, -1 },
+			{ "optic_Hamr", "", 250, -1 },
+            { "30Rnd_65x39_caseless_mag_Tracer", "Tasing ammo for MX weapons", 250, -1 },
+			{ "30Rnd_65x39_caseless_mag", "Lethal ammo for MX weapons", 250, -1 },
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "Taser Rifle Ammo", 125, -1 },
+			{ "20Rnd_762x51_Mag", "Lethal unless IR is equipped", 250, -1 },
+			{ "100Rnd_65x39_caseless_mag_Tracer", "Non-lethal MXSW only", 250, -1 },
+			{ "16Rnd_9x21_Mag", "Stun Pistol Ammo", 50, -1 },
+			{ "11Rnd_45ACP_Mag", "", 50, -1 },
+			{ "B_soldier_UAV_F", "", 20000, -1 }
+        };
+    };
+	
+	class cop_captain {
+        name = "Lieutenant Armory";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 6, "You must be a Captain!" };
+        items[] = {
+            { "arifle_TRG20_ACO_F", "Taser Rifle", 20000, 7500 },
+			{ "hgun_P07_snds_F", "Stun Pistol", 2000, 650 },
+			{ "hgun_Pistol_heavy_01_snds_F", "", 2000, 650 },
+			{ "arifle_MX_Black_F", "", 35000, 7500 },
+			{ "arifle_MX_SW_Black_F", "", 35000, 7500 },
+			{ "srifle_DMR_03_ACO_F", "", 35000, 7500 },
+			{ "arifle_MX_GL_Black_F", "", 35000, 7500 },
+			{ "arifle_MXC_Black_F", "", 35000, 7500 },
+			{ "arifle_MXM_Black_F", "", 35000, 7500 },
+            { "SMG_02_ACO_F", "", 30000, -1 },
+            { "3Rnd_Smoke_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeRed_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeGreen_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeYellow_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokePurple_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell", "", 1700, -1 },
+			{ "3Rnd_SmokeOrange_Grenade_shell", "", 1700, -1 },
+			{ "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "acc_flashlight", "", 750, 100 },
+            { "optic_Holosight", "", 1200, 275 },
+            { "optic_Arco", "", 350, -1 },
+			{ "optic_Hamr", "", 250, -1 },
+            { "30Rnd_65x39_caseless_mag_Tracer", "Tasing ammo for MX weapons", 250, -1 },
+			{ "30Rnd_65x39_caseless_mag", "Lethal ammo for MX weapons", 250, -1 },
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "Taser Rifle Ammo", 125, -1 },
+			{ "20Rnd_762x51_Mag", "Lethal unless IR is equipped", 250, -1 },
+			{ "100Rnd_65x39_caseless_mag_Tracer", "Non-lethal MXSW only", 250, -1 },
+			{ "16Rnd_9x21_Mag", "Stun Pistol Ammo", 50, -1 },
+			{ "11Rnd_45ACP_Mag", "", 50, -1 },
+			{ "B_soldier_UAV_F", "", 20000, -1 }
+        };
+    };
+	
     //Medic Shops
     class med_basic {
         name = "store";
