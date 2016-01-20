@@ -80,6 +80,7 @@ class Life_Client_Core
 		class postBail {};
 		class processAction {};
 		class arrestAction {};
+		class surrender {};
 		class escortAction {};
 		class impoundAction {};
 		class pulloutAction {};

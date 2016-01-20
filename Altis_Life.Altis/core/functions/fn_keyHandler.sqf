@@ -64,6 +64,18 @@ switch (_code) do {
 		};
 	};
 
+	//Tab Key - Surrender
+	case 15:
+	{
+		if(!_alt && !_ctrlKey) then
+		{
+			if(player getVariable ["playerSurrender",false]) then
+			{
+				player setVariable ["playerSurrender",false,true];
+			} else {[] spawn life_fnc_surrender;};
+		};
+	};
+
 	//Holster / recall weapon.
 	case 35: {
 		if(_shift && !_ctrlKey && !(EQUAL(currentWeapon player,""))) then {
