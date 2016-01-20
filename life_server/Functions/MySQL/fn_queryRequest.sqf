@@ -2,11 +2,11 @@
 /*
 	File: fn_queryRequest.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
-	Handles the incoming request and sends an asynchronous query 
+	Handles the incoming request and sends an asynchronous query
 	request to the database.
-	
+
 	Return:
 	ARRAY - If array has 0 elements it should be handled as an error in client-side files.
 	STRING - The request had invalid handles or an unknown error and is logged to the RPT.
@@ -23,27 +23,30 @@ _ownerID = owner _ownerID;
 	_returnCount is the count of entries we are expecting back from the async call.
 	The other part is well the SQL statement.
 */
-_query = switch(_side) do {
-	case west: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
-	case civilian: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear FROM players WHERE playerid='%1'",_uid];};
-	case independent: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear FROM players WHERE playerid='%1'",_uid];};
+_query = switch(_side) do
+{
+	case west: {_returnCount = 12; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist, cop_hunger, cop_thirst FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {_returnCount = 11; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_hunger, civ_thirst FROM players WHERE playerid='%1'",_uid];};
+	case independent: {_returnCount = 11; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, med_hunger, med_thirst FROM players WHERE playerid='%1'",_uid];};
 };
 
 
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
-diag_log "------------- Client Query Request -------------";
+diag_log "------------- Client Query Request Server Side -------------";
 diag_log format["QUERY: %1",_query];
 diag_log format["Time to complete: %1 (in seconds)",(diag_tickTime - _tickTime)];
 diag_log format["Result: %1",_queryResult];
 diag_log "------------------------------------------------";
 
-if(typeName _queryResult == "STRING") exitWith {
+if(typeName _queryResult == "STRING") exitWith
+{
 	[] remoteExecCall ["SOCK_fnc_insertPlayerInfo",_ownerID];
 };
 
-if(count _queryResult == 0) exitWith {
+if(count _queryResult == 0) exitWith
+{
 	[] remoteExecCall ["SOCK_fnc_insertPlayerInfo",_ownerID];
 };
 
@@ -72,13 +75,17 @@ _queryResult set[6,_old];
 _new = [(_queryResult select 8)] call DB_fnc_mresToArray;
 if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 _queryResult set[8,_new];
+
 //Parse data for specific side.
-switch (_side) do {
-	case west: {
+switch (_side) do
+{
+	case west:
+	{
 		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
 	};
-	
-	case civilian: {
+
+	case civilian:
+	{
 		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
@@ -90,6 +97,6 @@ switch (_side) do {
 };
 
 _keyArr = missionNamespace getVariable [format["%1_KEYS_%2",_uid,_side],[]];
-_queryResult set[12,_keyArr];
+_queryResult set[15,_keyArr];
 
 _queryResult remoteExec ["SOCK_fnc_requestReceived",_ownerID];

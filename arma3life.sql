@@ -19,22 +19,22 @@ DELIMITER $$
 -- Procedures
 -- Edit arma3 to match a user in MySQL
 --
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
+CREATE DEFINER=`arma3life`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
 	UPDATE `vehicles` SET `active`= 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteDeadVehicles`()
+CREATE DEFINER=`arma3life`@`localhost` PROCEDURE `deleteDeadVehicles`()
 BEGIN
 	DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldHouses`()
+CREATE DEFINER=`arma3life`@`localhost` PROCEDURE `deleteOldHouses`()
 BEGIN
   DELETE FROM `houses` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldGangs`()
+CREATE DEFINER=`arma3life`@`localhost` PROCEDURE `deleteOldGangs`()
 BEGIN
   DELETE FROM `gangs` WHERE `active` = 0;
 END$$
@@ -66,6 +66,15 @@ CREATE TABLE IF NOT EXISTS `players` (
   `adminlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `donatorlvl` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `blacklist` tinyint(1) NOT NULL DEFAULT '0',
+  `civ_hunger` int(3) NOT NULL DEFAULT '100',
+  `civ_thirst` int(3) NOT NULL DEFAULT '100',
+  `cop_hunger` int(3) NOT NULL DEFAULT '100',
+  `cop_thirst` int(3) NOT NULL DEFAULT '100',
+  `med_hunger` int(3) NOT NULL DEFAULT '100',
+  `med_thirst` int(3) NOT NULL DEFAULT '100',
+  `civ_damage` double NOT NULL DEFAULT '0',
+  `cop_damage` double NOT NULL DEFAULT '0',
+  `med_damage` double NOT NULL DEFAULT '0',
   PRIMARY KEY (`uid`),
   UNIQUE KEY `playerid` (`playerid`),
   KEY `name` (`name`),
