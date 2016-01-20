@@ -1,7 +1,7 @@
 /*
 	File: fn_copLoadout.sqf
 	Author: Bryan "Tonic" Boardwine
-	Edited: Itsyuka
+	Edited: Starlord
 	
 	Description:
 	Loads the cops out with the default gear.
@@ -10,17 +10,126 @@ private["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-//Load player with default cop gear.
-player addUniform "U_Rangemaster";
-player addVest "V_Rangemaster_belt";
+//Cadet Loadout
+if(FETCH_CONST(life_coplevel) == 1) then
+{
+	player addUniform "U_Marshal";
+	player addVest "V_TacVest_blk_POLICE";
+	player addHeadgear "H_Cap_police";
+	player addWeapon "hgun_P07_snds_F";
+	player addweapon "arifle_TRG20_ACO_F";
+	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_9x21_Mag";
+	player addPrimaryWeaponItem "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+};
 
-player addWeapon "hgun_P07_snds_F";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
+//Constable Loadout
+if (FETCH_CONST(life_coplevel) == 2) then
+{
+    player addUniform "U_Competitor";
+	player addVest "V_TacVest_blk_POLICE";
+	player addHeadgear "H_Cap_police";
+	player addWeapon "hgun_P07_snds_F";
+	player addweapon "arifle_TRG20_ACO_F";
+	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_9x21_Mag";
+	player addPrimaryWeaponItem "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+
+};
+
+//Corporal Loadout
+if (FETCH_CONST(life_coplevel) == 3) then
+{
+	player addUniform "U_Competitor";
+	player addVest "V_TacVest_blk_POLICE";
+	player addHeadgear "H_Cap_police";
+	player addWeapon "arifle_MXC_Black_F"
+	player addPrimaryWeaponItem "optic_Holosight";
+	player addPrimaryWeaponItem "30Rnd_65x39_caseless_mag_Tracer";
+	player addWeapon "hgun_P07_snds_F";
+	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	
+};
+
+//Sergeant Loadout
+if (FETCH_CONST(life_coplevel) == 4) then
+{
+	player addUniform "U_Competitor";
+	player addVest "V_TacVest_blk_POLICE";
+	player addHeadgear "H_Cap_police";
+	player addWeapon "arifle_MX_Black_F"
+	player addPrimaryWeaponItem "optic_Hamr";
+	player addPrimaryWeaponItem "30Rnd_65x39_caseless_mag_Tracer";
+	player addWeapon "hgun_P07_snds_F";
+	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	
+};
+
+//Lieutenant Loadout
+if (FETCH_CONST(life_coplevel) == 5) then
+{
+	player addUniform "U_Competitor";
+	player addVest "V_TacVest_blk_POLICE";
+	player addHeadgear "H_Cap_police";
+	player addWeapon "arifle_MXM_Black_F"
+	player addPrimaryWeaponItem "optic_Hamr";
+	player addPrimaryWeaponItem "30Rnd_65x39_caseless_mag_Tracer";
+	player addWeapon "hgun_Pistol_heavy_01_snds_F";
+	player addSecondaryWeaponItem "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	
+};
+
+//Captain Loadout
+if (FETCH_CONST(life_coplevel) == 6) then
+{
+	player addUniform "U_Competitor";
+	player addVest "V_TacVest_blk_POLICE";
+	player addHeadgear "H_Cap_police";
+	player addWeapon "srifle_DMR_03_ACO_F"
+	player addPrimaryWeaponItem "20Rnd_762x51_Mag";
+	player addPrimaryWeaponItem "acc_pointer_IR";
+	player addWeapon "hgun_Pistol_heavy_01_snds_F";
+	player addSecondaryWeaponItem "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	
+};
 
 /* ITEMS */
 player addItem "ItemMap";
