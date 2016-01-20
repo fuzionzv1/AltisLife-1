@@ -13,16 +13,20 @@ _packet = [steamid,playerSide,nil,_mode];
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
 
-switch(_mode) do {
-	case 0: {
+switch(_mode) do
+{
+	case 0:
+	{
 		_packet set[2,CASH];
 	};
 
-	case 1: {
+	case 1:
+	{
 		_packet set[2,BANK];
 	};
 
-	case 2: {
+	case 2:
+	{
 		{
 			_varName = LICENSE_VARNAME(configName _x,_flag);
 			_array pushBack [_varName,LICENSE_VALUE(configName _x,_flag)];
@@ -31,22 +35,37 @@ switch(_mode) do {
 		_packet set[2,_array];
 	};
 
-	case 3: {
+	case 3:
+	{
 		[] call life_fnc_saveGear;
 		_packet set[2,life_gear];
 	};
 
-	case 4: {
+	case 4:
+	{
 		//Not yet implemented
 	};
 
-	case 5: {
+	case 5:
+	{
 		_packet set[2,life_is_arrested];
 	};
 
-	case 6: {
+	case 6:
+	{
 		_packet set[2,CASH];
 		_packet set[4,BANK];
+	};
+
+	case 7:
+	{
+		// Tonic is using for keychain..?
+	};
+
+	case 8:
+	{
+		_packet set[2,life_hunger];
+		_packet set[4,life_thirst];
 	};
 };
 
