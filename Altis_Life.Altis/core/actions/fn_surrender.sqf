@@ -22,7 +22,7 @@ else
 while {player getVariable ["playerSurrender",false]} do
 {
 	player playMove "AmovPercMstpSnonWnonDnon_AmovPercMstpSsurWnonDnon";
-	if(!alive player || (player getVariable ["downed",false])) then
+	if(!alive player) then
 	{
 		player setVariable ["playerSurrender",false,true];
 	};
