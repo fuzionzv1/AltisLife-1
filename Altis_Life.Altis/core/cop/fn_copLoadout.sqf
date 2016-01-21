@@ -13,7 +13,7 @@ waitUntil {scriptDone _handle};
 //Cadet Loadout
 if(FETCH_CONST(life_coplevel) == 1) then
 {
-	player addUniform "U_Marshal";
+	player addUniform "U_Competitor";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
 	player addWeapon "hgun_P07_snds_F";
@@ -33,7 +33,7 @@ if(FETCH_CONST(life_coplevel) == 1) then
 //Constable Loadout
 if (FETCH_CONST(life_coplevel) == 2) then
 {
-    player addUniform "U_Competitor";
+    player addUniform "U_Rangemaster";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
 	player addWeapon "hgun_P07_snds_F";
@@ -54,30 +54,30 @@ if (FETCH_CONST(life_coplevel) == 2) then
 //Corporal Loadout
 if (FETCH_CONST(life_coplevel) == 3) then
 {
-	player addUniform "U_Competitor";
+	player addUniform "U_Rangemaster";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
-	player addWeapon "arifle_MXC_Black_F"
-	player addPrimaryWeaponItem "optic_Holosight";
-	player addPrimaryWeaponItem "30Rnd_65x39_caseless_mag_Tracer";
+	player addWeapon "arifle_TRG20_ACO_F"
+	player addPrimaryWeaponItem "30Rnd_556x45_Stanag_Tracer_Green";
 	player addWeapon "hgun_P07_snds_F";
 	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
-	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
-	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
-	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
 	
 };
 
 //Sergeant Loadout
 if (FETCH_CONST(life_coplevel) == 4) then
 {
-	player addUniform "U_Competitor";
+	player addUniform "U_Rangemaster";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
-	player addWeapon "arifle_MX_Black_F"
+	player addWeapon "arifle_MXC_Black_F"
 	player addPrimaryWeaponItem "optic_Hamr";
 	player addPrimaryWeaponItem "30Rnd_65x39_caseless_mag_Tracer";
 	player addWeapon "hgun_P07_snds_F";
@@ -94,10 +94,10 @@ if (FETCH_CONST(life_coplevel) == 4) then
 //Lieutenant Loadout
 if (FETCH_CONST(life_coplevel) == 5) then
 {
-	player addUniform "U_Competitor";
+	player addUniform "U_B_CombatUniform_mcam_worn";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
-	player addWeapon "arifle_MXM_Black_F"
+	player addWeapon "arifle_MX_Black_F"
 	player addPrimaryWeaponItem "optic_Hamr";
 	player addPrimaryWeaponItem "30Rnd_65x39_caseless_mag_Tracer";
 	player addWeapon "hgun_Pistol_heavy_01_snds_F";
@@ -114,7 +114,7 @@ if (FETCH_CONST(life_coplevel) == 5) then
 //Captain Loadout
 if (FETCH_CONST(life_coplevel) == 6) then
 {
-	player addUniform "U_Competitor";
+	player addUniform "U_B_CombatUniform_mcam_worn";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
 	player addWeapon "srifle_DMR_03_ACO_F"
