@@ -1,6 +1,6 @@
-author = "Tonic";
-onLoadName = "Altis Life RPG v4.3.1";
-onLoadMission = "An RPG game mode developed by Tonic";
+author = "tkcjesse and Starlord";
+onLoadName = "Nexus Life 0.1";
+onLoadMission = "An RPG game mode based on Altis Life by Tonic";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
@@ -175,3 +175,5 @@ class CfgNotifications
 		priority = 5;
 	};
 };
+
+#include "outlw_magRepack\MagRepack_config.hpp" //God I hope I did this right
