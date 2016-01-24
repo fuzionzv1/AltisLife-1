@@ -160,6 +160,7 @@ class Life_Client_Core
 		class animSync {};
 		class calWeightDiff {};
 		class clearVehicleAmmo {};
+		class combineMags {};
 		class dropItems {};
 		class escInterupt {};
 		class fetchCfgDetails {};
@@ -189,6 +190,7 @@ class Life_Client_Core
 		class pushObject {};
 		class receiveItem {};
 		class receiveMoney {};
+		class repackMags {};
 		class revealObjects {};
 		class saveGear {};
 		class simDisable {};

@@ -2924,6 +2924,14 @@
       <Portuguese>Você não é liberado para olhar a mochila dos outros!</Portuguese>
       <Polish>Nie możesz zaglądać do czyichś plecaków!</Polish>
     </Key>
+	<Key ID="STR_MISC_MagazinePacking">
+		<Original>You can pack your weapon magazines using...</Original>
+		<German>Sie können Ihre Waffe Zeitschriften packen mit</German>
+		<French>Vous pouvez emballer vos magazines d'armes en utilisant</French>
+		<Italian>Potete imballare le tue riviste di armi utilizzando</Italian>
+		<Portuguese>Você pode arrumar suas revistas de armas que utilizem</Portuguese>
+		<Polish>Można spakować magazyny broni wykorzystujących</Polish>
+	</Key>
     <Key ID="STR_MISC_VehInventory">
       <Original>You are not allowed to access this vehicle while its locked.</Original>
       <German>Du bist nicht berechtigt, auf dieses Fahrzeug zuzugreifen, während es abgeschlossen ist.</German>
