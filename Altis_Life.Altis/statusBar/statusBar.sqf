@@ -9,7 +9,6 @@ _rscLayer cutRsc["osefStatusBarAdmin","PLAIN"];
 [] spawn
 {
 	uiSleep 3;
-	_uid = getPlayerUID player;
 
 	//set the color values.
 	//Additional color codes can be found here:  http://html-color-codes.com/
@@ -140,11 +139,11 @@ while {true} do
 		"%",
 		count playableUnits,
 		_damage,
-		_money,
+		[_money] call life_fnc_numberText,
 		_hunger,
 		_thirst,
 		_serverFPS,
-		_bank,
+		[_bank] call life_fnc_numberText,
 		_colourDefault,
 		_colourDamage,
 		_colourHunger,
