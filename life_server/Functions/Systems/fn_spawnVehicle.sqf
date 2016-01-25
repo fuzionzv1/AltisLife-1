@@ -72,7 +72,6 @@ if(typeName _sp == "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
-	_vehicle setFuel (_vInfo select 9);
 	_hs = nearestObjects[getMarkerPos _sp,["Land_Hospital_side2_F"],50] select 0;
 	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
 	sleep 0.6;
@@ -80,21 +79,23 @@ if(typeName _sp == "STRING") then {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
-	_vehicle setFuel (_vInfo select 9);
 	_vehicle setPos _sp;
 	_vehicle setVectorUp (surfaceNormal _sp);
 	_vehicle setDir _dir;
 };
+
+_vehicle setFuel (_vInfo select 9);
 _vehicle allowDamage true;
+
 //Send keys over the network.
 [_vehicle] remoteExecCall ["life_fnc_addVehicle2Chain",_unit];
 [_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
 _vehicle lock 2;
+
 //Reskin the vehicle
 [_vehicle,_vInfo select 8] remoteExecCall ["life_fnc_colorVehicle",RANY];
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7]];
-//_vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"]; //Obsolete function?
 [_vehicle] call life_fnc_clearVehicleAmmo;
 
 //Sets of animations
