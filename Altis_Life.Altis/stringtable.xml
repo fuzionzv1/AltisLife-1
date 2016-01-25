@@ -528,6 +528,9 @@
       <Portuguese>Você pode trasferir no máximo R$999.999.</Portuguese>
       <Polish>Możesz jednorazowo przelać nie więcej niż $999,999 </Polish>
     </Key>
+	<Key ID="STR_ATM_DebitCard">
+	  <Original>Debit Card</Original>
+	</Key>
     <Key ID="STR_ATM_NotEnoughFunds">
       <Original>You don't have that much in your bank account!</Original>
       <German>Du hast nicht so viel Geld auf deinem Bankkonto!</German>
@@ -4856,13 +4859,16 @@
       <Polish>Wyłącz światło</Polish>
     </Key>
     <Key ID="STR_pInAct_DepositToGang">
-      <Original>Deposit To Gang</Original>
+      <Original>Gang Deposit</Original>
       <German>Auf Gang-Konto einzahlen</German>
       <French>Déposer pour le gang</French>
       <Italian>Deposita alla Gang</Italian>
       <Portuguese>Depositar: Gangue</Portuguese>
       <Polish>Wpłać na konto Gangu</Polish>
     </Key>
+	<Key ID="STR_pInAct_WithdrawalFromGang">
+	  <Original>Gang Withdrawal</Original>
+	</Key>
   </Package>
     <Package name="Vehicle_Interaction">
     <Key ID="STR_vInAct_Title">
