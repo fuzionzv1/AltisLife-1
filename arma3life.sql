@@ -19,22 +19,22 @@ DELIMITER $$
 -- Procedures
 -- Edit arma3 to match a user in MySQL
 --
-CREATE DEFINER=`arma3life`@`localhost` PROCEDURE `resetLifeVehicles`()
+CREATE DEFINER=`altislife`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
 	UPDATE `vehicles` SET `active`= 0;
 END$$
 
-CREATE DEFINER=`arma3life`@`localhost` PROCEDURE `deleteDeadVehicles`()
+CREATE DEFINER=`altislife`@`localhost` PROCEDURE `deleteDeadVehicles`()
 BEGIN
 	DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
-CREATE DEFINER=`arma3life`@`localhost` PROCEDURE `deleteOldHouses`()
+CREATE DEFINER=`altislife`@`localhost` PROCEDURE `deleteOldHouses`()
 BEGIN
   DELETE FROM `houses` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=`arma3life`@`localhost` PROCEDURE `deleteOldGangs`()
+CREATE DEFINER=`altislife`@`localhost` PROCEDURE `deleteOldGangs`()
 BEGIN
   DELETE FROM `gangs` WHERE `active` = 0;
 END$$
