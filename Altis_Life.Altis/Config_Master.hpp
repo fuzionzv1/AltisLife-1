@@ -20,6 +20,7 @@ class Life_Settings {
     revive_fee = 1500; //Revive fee that players have to pay and medics / EMS are rewarded
 
     /* House related settings */
+    enable_ATMS = false; // Allow usage at any ATM.
     house_limit = 5; //Maximum amount of houses a player can own.
 
     /* Gang related settings */
