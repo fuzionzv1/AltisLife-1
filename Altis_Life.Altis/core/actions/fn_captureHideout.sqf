@@ -1,7 +1,7 @@
 #include "..\..\script_macros.hpp"
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Blah blah.
 */
@@ -20,7 +20,7 @@ if(!isNull _group) then {
 		localize "STR_Global_Yes",
 		localize "STR_Global_No"
 	] call BIS_fnc_guiMessage;
-	
+
 	_cpRate = 0.0045;
 } else {
 	_cpRate = 0.0075;
@@ -32,7 +32,7 @@ life_action_inUse = true;
 //Setup the progress bar
 disableSerialization;
 _title = localize "STR_GNOTF_Capturing";
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS "life_progress";
 _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
@@ -48,7 +48,7 @@ while {true} do {
 	};
 	sleep 0.26;
 	if(isNull _ui) then {
-		5 cutRsc ["life_progress","PLAIN"];
+		3 cutRsc ["life_progress","PLAIN"];
 		_ui = GVAR_UINS "life_progress";
 		_progressBar = _ui displayCtrl 38201;
 		_titleText = _ui displayCtrl 38202;
@@ -63,7 +63,7 @@ while {true} do {
 };
 
 //Kill the UI display and check for various states
-5 cutText ["","PLAIN"];
+3 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;_hideout SVAR ["inCapture",false,true];};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;_hideout SVAR ["inCapture",false,true];};

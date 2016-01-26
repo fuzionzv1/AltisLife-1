@@ -2,7 +2,7 @@
 /*
 	File: fn_revivePlayer.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Starts the revive process on the player.
 */
@@ -23,7 +23,7 @@ life_action_inUse = true; //Lockout the controls.
 _target SVAR ["Reviving",player,TRUE];
 //Setup our progress bar
 disableSerialization;
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS ["life_progress",displayNull];
 _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
@@ -37,7 +37,7 @@ while {true} do {
 		[player,"AinvPknlMstpSnonWnonDnon_medic_1"] remoteExecCall ["life_fnc_animSync",RCLIENT];
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
-	
+
 	sleep .15;
 	_cP = _cP + .01;
 	_progressBar progressSetPosition _cP;
@@ -52,7 +52,7 @@ while {true} do {
 };
 
 //Kill the UI display and check for various states
-5 cutText ["","PLAIN"];
+3 cutText ["","PLAIN"];
 player playActionNow "stop";
 
 if(_target GVAR ["Reviving",ObjNull] != player) exitWith {hint localize "STR_Medic_AlreadyReviving"};

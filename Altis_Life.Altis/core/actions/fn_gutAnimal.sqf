@@ -28,7 +28,7 @@ if(EQUAL(_displayName,"")) exitWith {life_action_inUse = false;};
 _upp = format["Gutting %1",_displayName];
 //Setup our progress bar.
 disableSerialization;
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
@@ -54,7 +54,7 @@ while{true} do {
 };
 
 life_action_inUse = false;
-5 cutText ["","PLAIN"];
+3 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(isNull _animalCorpse) exitWith {life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};

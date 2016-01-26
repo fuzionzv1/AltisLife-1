@@ -2,7 +2,7 @@
 /*
 	File: fn_serviceChopper.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main functionality for the chopper service paid, to be replaced in later version.
 */
@@ -18,7 +18,7 @@ if(CASH < 1000) exitWith {hint localize "STR_Serive_Chopper_NotEnough"};
 SUB(CASH,1000);
 life_action_inUse = true;
 _title = localize "STR_Service_Chopper_Servicing";
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
@@ -43,6 +43,6 @@ if(!local SEL(_search,0)) then {
 
 SEL(_search,0) setDamage 0;
 
-5 cutText ["","PLAIN"];
+3 cutText ["","PLAIN"];
 titleText [localize "STR_Service_Chopper_Done","PLAIN"];
 life_action_inUse = false;

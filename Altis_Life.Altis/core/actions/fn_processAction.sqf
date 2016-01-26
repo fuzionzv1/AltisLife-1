@@ -2,7 +2,7 @@
 /*
 	File: fn_processAction.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master handling for processing an item.
 */
@@ -51,7 +51,7 @@ if(EQUAL(_oldVal,0)) exitWith {};
 
 //Setup our progress bar.
 disableSerialization;
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
@@ -70,16 +70,16 @@ if(_hasLicense) then {
 		if(_cP >= 1) exitWith {};
 		if(player distance _vendor > 10) exitWith {};
 	};
-	
-	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
-	5 cutText ["","PLAIN"];
+
+	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 3 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {3 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {3 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
+	3 cutText ["","PLAIN"];
 	titleText[format[localize "STR_Process_Processed",_oldVal,localize _itemName],"PLAIN"];
 	life_is_processing = false;
 } else {
-	if(CASH < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	
+	if(CASH < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 3 cutText ["","PLAIN"]; life_is_processing = false;};
+
 	while{true} do {
 		sleep  0.9;
 		_cP = _cP + 0.01;
@@ -88,13 +88,13 @@ if(_hasLicense) then {
 		if(_cP >= 1) exitWith {};
 		if(player distance _vendor > 10) exitWith {};
 	};
-	
-	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(CASH < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
-	5 cutText ["","PLAIN"];
+
+	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 3 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(CASH < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 3 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {3 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {3 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
+	3 cutText ["","PLAIN"];
 	titleText[format[localize "STR_Process_Processed2",_oldVal,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 	SUB(CASH,_cost);
 	life_is_processing = false;
-};	
+};

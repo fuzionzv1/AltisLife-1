@@ -2,7 +2,7 @@
 /*
 	File: fn_jerryRefuel.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Refuels the vehicle if the player has a fuel can.
 */
@@ -23,7 +23,7 @@ _upp = format[localize "STR_ISTR_Jerry_Process",_displayName];
 
 //Setup our progress bar.
 disableSerialization;
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
@@ -39,7 +39,7 @@ while{true} do {
 	};
 	sleep 0.2;
 	if(isNull _ui) then {
-		5 cutRsc ["life_progress","PLAIN"];
+		3 cutRsc ["life_progress","PLAIN"];
 		_ui = GVAR_UINS "life_progress";
 		_progressBar = _ui displayCtrl 38201;
 		_titleText = _ui displayCtrl 38202;
@@ -52,7 +52,7 @@ while{true} do {
 	if(life_interrupted) exitWith {};
 };
 life_action_inUse = false;
-5 cutText ["","PLAIN"];
+3 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player) exitWith {};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"];};
@@ -66,7 +66,7 @@ switch (true) do {
 			_vehicle setFuel ((Fuel _vehicle) + 0.5);
 		};
 	};
-	
+
 	case (_vehicle isKindOf "Air"): {
 		if(!local _vehicle) then {
 			[_vehicle,(Fuel _vehicle) + 0.2] remoteExecCall ["life_fnc_setFuel",_vehicle];
@@ -74,7 +74,7 @@ switch (true) do {
 			_vehicle setFuel ((Fuel _vehicle) + 0.2);
 		};
 	};
-	
+
 	case (_vehicle isKindOf "Ship"): {
 		if(!local _vehicle) then {
 			[_vehicle,(Fuel _vehicle) + 0.35] remoteExecCall ["life_fnc_setFuel",_vehicle];

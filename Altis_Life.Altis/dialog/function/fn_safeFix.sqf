@@ -2,7 +2,7 @@
 /*
 	File: fn_safeFix.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Piece of functionality for the cops to close the safe (lock it)
 */
@@ -15,7 +15,7 @@ life_action_inUse = true;
 //Setup the progress bar
 disableSerialization;
 _title = localize "STR_Cop_RepairVault";
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS "life_progress";
 _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
@@ -29,11 +29,11 @@ while {true} do {
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
-	
+
 	sleep 0.26;
-	
+
 	if(isNull _ui) then {
-		5 cutRsc ["life_progress","PLAIN"];
+		3 cutRsc ["life_progress","PLAIN"];
 		_ui = GVAR_UINS "life_progress";
 		_progressBar = _ui displayCtrl 38201;
 		_titleText = _ui displayCtrl 38202;
@@ -46,7 +46,7 @@ while {true} do {
 };
 
 //Kill the UI display and check for various states
-5 cutText ["","PLAIN"];
+3 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player) exitWith {life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};

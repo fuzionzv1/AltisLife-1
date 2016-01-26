@@ -1,7 +1,7 @@
 #include "..\..\script_macros.hpp"
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Raids the players house?
 */
@@ -22,7 +22,7 @@ life_action_inUse = true;
 //Setup the progress bar
 disableSerialization;
 _title = localize "STR_House_Raid_Searching";
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS "life_progress";
 _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
@@ -35,7 +35,7 @@ while {true} do
 {
 	sleep 0.26;
 	if(isNull _ui) then {
-		5 cutRsc ["life_progress","PLAIN"];
+		3 cutRsc ["life_progress","PLAIN"];
 		_ui = GVAR_UINS "life_progress";
 	};
 	_cP = _cP + _cpRate;
@@ -46,7 +46,7 @@ while {true} do
 };
 
 //Kill the UI display and check for various states
-5 cutText ["","PLAIN"];
+3 cutText ["","PLAIN"];
 if(player distance _house > 13) exitWith {life_action_inUse = false; titleText[localize "STR_House_Raid_TooFar","PLAIN"]};
 if(!alive player) exitWith {life_action_inUse = false;};
 life_action_inUse = false;
@@ -57,7 +57,7 @@ _value = 0;
 {
 	_var = SEL(_x,0);
 	_val = SEL(_x,1);
-	
+
 	if(EQUAL(ITEM_ILLEGAL(_var),1)) then {
 		if(!(EQUAL(ITEM_SELLPRICE(_var),-1))) then {
 			_houseInvData set[_forEachIndex,-1];
@@ -71,7 +71,7 @@ _value = 0;
 if(_value > 0) then {
 	[0,"STR_House_Raid_Successful",true,[[_value] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 	ADD(BANK,round(_value / 2));
-	
+
 	_house SVAR ["Trunk",[_houseInvData,_houseInvVal],true];
 	[_house] remoteExecCall ["TON_fnc_updateHouseTrunk",RSERV];
 } else {

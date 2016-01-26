@@ -18,7 +18,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 
 		//Setup our progress bar.
 		disableSerialization;
-		5 cutRsc ["life_progress","PLAIN"];
+		3 cutRsc ["life_progress","PLAIN"];
 		_ui = GVAR_UINS "life_progress";
 		_progress = _ui displayCtrl 38201;
 		_pgText = _ui displayCtrl 38202;
@@ -44,7 +44,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		};
 
 		life_action_inUse = false;
-		5 cutText ["","PLAIN"];
+		3 cutText ["","PLAIN"];
 		player playActionNow "stop";
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_ActionInVehicle","PLAIN"];};

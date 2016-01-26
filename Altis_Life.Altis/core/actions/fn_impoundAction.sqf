@@ -2,7 +2,7 @@
 /*
 	File: fn_impoundAction.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Impounds the vehicle
 */
@@ -21,14 +21,14 @@ life_action_inUse = true;
 _upp = localize "STR_NOTF_Impounding";
 //Setup our progress bar.
 disableSerialization;
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
-	
+
 while{true} do {
 	sleep 0.09;
 	_cP = _cP + 0.01;
@@ -39,8 +39,8 @@ while{true} do {
 	if(!alive player) exitWith {};
 };
 
-5 cutText ["","PLAIN"];
-	
+3 cutText ["","PLAIN"];
+
 if(player distance _vehicle > 10) exitWith {hint localize "STR_NOTF_ImpoundingCancelled"; life_action_inUse = false;};
 if(!alive player) exitWith {life_action_inUse = false;};
 
@@ -52,7 +52,7 @@ if(EQUAL(count crew _vehicle,0)) then {
 		case (_vehicle isKindOf "Ship"): {_price = LIFE_SETTINGS(getNumber,"impound_boat");};
 		case (_vehicle isKindOf "Air"): {_price = LIFE_SETTINGS(getNumber,"impound_air");};
 	};
-	
+
 	life_impound_inuse = true;
 	[_vehicle,true,player] remoteExecCall ["TON_fnc_vehicleStore",RSERV];
 	waitUntil {!life_impound_inuse};
