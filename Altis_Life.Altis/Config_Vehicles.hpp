@@ -81,8 +81,8 @@ class CarShops {
             { "C_Offroad_01_F", 5000, { "" }, { "", "", -1 } },
             { "C_SUV_01_F", 20000, { "" }, { "", "", -1 } },
             { "B_MRAP_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 4 } },
-			{ "I_MRAP_03_F", 30000, { "" }, { "life_coplevel", "SCALAR", 5 } },
-			{ "B_G_Offroad_01_armed_F", 30000, { "" }, { "life_coplevel", "SCALAR", 6 } }
+            { "I_MRAP_03_F", 30000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "B_G_Offroad_01_armed_F", 30000, { "" }, { "life_coplevel", "SCALAR", 6 } }
         };
     };
 
@@ -97,17 +97,20 @@ class CarShops {
     class cop_air {
         side = "cop";
         vehicles[] = {
-            { "B_Heli_Light_01_F", 75000, { "cAir" }, { "", "", -1 } },
-            { "B_Heli_Transport_01_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 3 } }
+            { "B_Heli_Light_01_F", 75000, { "cAir" }, { "life_coplevel", "SCALAR", 2 } },
+            { "I_Heli_light_03_unarmed_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 3 } },
+            { "O_Heli_Light_02_unarmed_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 4 } },
+            { "B_Heli_Transport_03_unarmed_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 5 } },
+            { "B_Heli_Transport_01_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 6 } },
         };
     };
+
 
     class cop_ship {
         side = "cop";
         vehicles[] = {
             { "B_Boat_Transport_01_F", 3000, { "cg" }, { "", "", -1 } },
             { "C_Boat_Civil_01_police_F", 20000, { "cg" }, { "", "", -1 } },
-            { "B_Boat_Armed_01_minigun_F", 75000, { "cg" }, { "", "", -1 } },
             { "B_SDV_01_F", 100000, { "cg" }, { "", "", -1 } }
         };
     };
@@ -141,7 +144,7 @@ class LifeCfgVehicles {
     *    Textures config follows { Texture Name, side, {texture(s)path}}
     *    Texture(s)path follows this format:
     *    INDEX 0: Texture Layer 0
-    *    	INDEX 1: Texture Layer 1
+    *       INDEX 1: Texture Layer 1
     *    INDEX 2: Texture Layer 2
     *    etc etc etc
     */
