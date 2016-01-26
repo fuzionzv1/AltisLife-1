@@ -2,14 +2,14 @@
 /*
 	File: fn_atmMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Opens and manages the bank menu.
 */
 private["_units","_type"];
 
 if(!life_use_atm) exitWith {
-	hint localize "STR_Shop_ATMRobbed";
+	hint format [localize "STR_Shop_ATMRobbed",(LIFE_SETTINGS(getNumber,"noatm_timer"))];
 };
 
 if(!dialog) then {
