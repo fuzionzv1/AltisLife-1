@@ -101,7 +101,7 @@ class CarShops {
             { "I_Heli_light_03_unarmed_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 3 } },
             { "O_Heli_Light_02_unarmed_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 4 } },
             { "B_Heli_Transport_03_unarmed_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 5 } },
-            { "B_Heli_Transport_01_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 6 } },
+            { "B_Heli_Transport_01_F", 200000, { "cAir" }, { "life_coplevel", "SCALAR", 6 } }
         };
     };
 
