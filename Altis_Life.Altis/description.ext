@@ -54,6 +54,13 @@ class CfgSounds
 		titles[] = {};
 	};
 
+	class medicSiren
+	{
+		name = "medicSiren";
+		sound[] = {"\sounds\siren_medic.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
 	class tazersound
 	{
 		name = "Tazersound";
