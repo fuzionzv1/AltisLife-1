@@ -98,7 +98,6 @@ CREATE TABLE IF NOT EXISTS `vehicles` (
   `plate` int(20) NOT NULL,
   `color` int(20) NOT NULL,
   `inventory` varchar(500) NOT NULL,
-  `gear` text NOT NULL,
   `fuel` double NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `side` (`side`),
