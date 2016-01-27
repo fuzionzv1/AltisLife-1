@@ -135,7 +135,9 @@ if (FETCH_CONST(life_coplevel) == 6) then
 	player addWeapon "srifle_DMR_03_ACO_F";
 	player addPrimaryWeaponItem "20Rnd_762x51_Mag";
 	player addPrimaryWeaponItem "acc_pointer_IR";
-	player addWeapon "hgun_Pistol_heavy_01_snds_F";
+	player addWeapon "hgun_Pistol_heavy_01_F";
+	player addHandgunItem "optic_MRD";
+	player addHandgunItem "muzzle_snds_acp";
 	player addSecondaryWeaponItem "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
