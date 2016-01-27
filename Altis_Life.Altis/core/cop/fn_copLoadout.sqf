@@ -3,7 +3,7 @@
 	File: fn_copLoadout.sqf
 	Author: Bryan "Tonic" Boardwine
 	Edited: Starlord
-	
+
 	Description:
 	Loads the cops out with the default gear.
 */
@@ -35,12 +35,13 @@ if(FETCH_CONST(life_coplevel) == 1) then
 	player addUniform "U_Competitor";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
-	player addWeapon "hgun_P07_snds_F";
-	player addweapon "arifle_TRG20_ACO_F";
+	player addWeapon "hgun_P07_F";
 	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
+	player addHandgunItem "muzzle_snds_L";
+	player addweapon "arifle_TRG20_ACO_F";
 	player addPrimaryWeaponItem "30Rnd_556x45_Stanag_Tracer_Green";
+	player addMagazine "30Rnd_9x21_Mag";
+	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
@@ -55,12 +56,13 @@ if (FETCH_CONST(life_coplevel) == 2) then
     player addUniform "U_Rangemaster";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
-	player addWeapon "hgun_P07_snds_F";
+	player addWeapon "hgun_P07_F";
+	player addHandgunItem "muzzle_snds_L";
 	player addweapon "arifle_TRG20_ACO_F";
+	player addPrimaryWeaponItem "30Rnd_556x45_Stanag_Tracer_Green";
 	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
-	player addPrimaryWeaponItem "30Rnd_556x45_Stanag_Tracer_Green";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Green";
@@ -77,7 +79,8 @@ if (FETCH_CONST(life_coplevel) == 3) then
 	player addHeadgear "H_Cap_police";
 	player addWeapon "arifle_TRG20_ACO_F";
 	player addPrimaryWeaponItem "30Rnd_556x45_Stanag_Tracer_Green";
-	player addWeapon "hgun_P07_snds_F";
+	player addWeapon "hgun_P07_F";
+	player addHandgunItem "muzzle_snds_L";
 	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
@@ -97,7 +100,8 @@ if (FETCH_CONST(life_coplevel) == 4) then
 	player addWeapon "arifle_MXC_Black_F";
 	player addPrimaryWeaponItem "optic_Hamr";
 	player addPrimaryWeaponItem "30Rnd_65x39_caseless_mag_Tracer";
-	player addWeapon "hgun_P07_snds_F";
+	player addWeapon "hgun_P07_F";
+	player addHandgunItem "muzzle_snds_L";
 	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
@@ -116,7 +120,9 @@ if (FETCH_CONST(life_coplevel) == 5) then
 	player addWeapon "arifle_MX_Black_F";
 	player addPrimaryWeaponItem "optic_Hamr";
 	player addPrimaryWeaponItem "30Rnd_65x39_caseless_mag_Tracer";
-	player addWeapon "hgun_Pistol_heavy_01_snds_F";
+	player addWeapon "hgun_Pistol_heavy_01_F";
+	player addHandgunItem "muzzle_snds_acp";
+	player addHandgunItem "optic_MRD";
 	player addSecondaryWeaponItem "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
