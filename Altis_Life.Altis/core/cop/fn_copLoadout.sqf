@@ -130,7 +130,7 @@ if (FETCH_CONST(life_coplevel) == 5) then
 if (FETCH_CONST(life_coplevel) == 6) then
 {
 	player addUniform "U_B_CombatUniform_mcam_worn";
-	player addVest "V_TacVest_blk_POLICE";
+	player addVest "V_PlateCarrier1_blk";
 	player addHeadgear "H_Cap_police";
 	player addWeapon "srifle_DMR_03_ACO_F";
 	player addPrimaryWeaponItem "20Rnd_762x51_Mag";
