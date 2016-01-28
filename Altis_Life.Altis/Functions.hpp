@@ -221,6 +221,8 @@ class Life_Client_Core
 		class jailMe {};
 		class knockedOut {};
 		class knockoutAction {};
+		class punchBalls {};
+		class punchBallsAction {};
 		class removeLicenses {};
 		class robPerson {};
 		class robReceive {};

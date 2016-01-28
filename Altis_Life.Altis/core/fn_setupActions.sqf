@@ -1,6 +1,6 @@
 /*
 	File: fn_setupActions.sqf
-	
+
 	Description:
 	Master addAction file handler for all client-based actions.
 */
@@ -14,3 +14,5 @@ switch (playerSide) do {
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable["robbed",FALSE]) ']];
 	};
 };
+
+life_actions = life_actions + [player addAction["Punch Balls",life_fnc_punchBallsAction,"",0,false,false,"",'!isNull cursorTarget && player distance cursorTarget < 5 && isPlayer cursorTarget && animationState cursorTarget in ["Incapacitated","amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"]']];
