@@ -71,7 +71,7 @@ class CarShops {
             { "B_G_Offroad_01_F", 15000, { "" }, { "", "", -1 } },
             { "O_MRAP_02_F", 150000, { "" }, { "", "", -1 } },
             { "B_Heli_Light_01_F", 325000, { "" }, { "", "", -1 } },
-            { "B_G_Offroad_01_armed_F", 750000, { "rebel" }, { "", "", -1 } }
+            { "O_G_Offroad_01_armed_F", 750000, { "rebel" }, { "", "", -1 } }
         };
     };
 
@@ -312,6 +312,15 @@ class LifeCfgVehicles {
     };
 
     class B_G_Offroad_01_armed_F {
+        vItemSpace = 65;
+        storageFee[] = { 1500, 0, 0, 0 };
+        garageSell[] = { 4000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+
+    class O_G_Offroad_01_armed_F {
         vItemSpace = 65;
         storageFee[] = { 1500, 0, 0, 0 };
         garageSell[] = { 4000, 0, 0, 0 };
