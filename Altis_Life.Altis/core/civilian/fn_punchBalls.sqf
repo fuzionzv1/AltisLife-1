@@ -23,3 +23,7 @@ player playMoveNow "AcinPercMstpSnonWnonDnon_agony";
 detach player;
 deleteVehicle _obj;
 player setVariable["robbed",FALSE,TRUE];
+if(player getVariable ["playerSurrender",false]) then
+{
+	player setVariable ["playerSurrender",false,true];
+} else {[] spawn life_fnc_surrender;};
