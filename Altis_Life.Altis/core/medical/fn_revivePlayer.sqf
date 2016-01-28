@@ -32,8 +32,10 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
 //Lets reuse the same thing!
-while {true} do {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+while {true} do
+{
+	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then
+	{
 		[player,"AinvPknlMstpSnonWnonDnon_medic_1"] remoteExecCall ["life_fnc_animSync",RCLIENT];
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};

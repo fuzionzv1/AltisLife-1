@@ -37,7 +37,7 @@ player setPosASL (visiblePositionASL life_corpse);
 life_corpse SVAR ["Revive",nil,TRUE];
 life_corpse SVAR ["name",nil,TRUE];
 [life_corpse] remoteExecCall ["life_fnc_corpse",RANY];
-hideBody life_corpse;
+deleteVehicle life_corpse;
 
 player SVAR ["Revive",nil,TRUE];
 player SVAR ["name",nil,TRUE];
