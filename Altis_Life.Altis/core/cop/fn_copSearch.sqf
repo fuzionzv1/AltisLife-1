@@ -60,7 +60,7 @@ if (_magazines == "") then { _magazines = "No magazines or grenades"; };
 
 if(!alive _civ || player distance _civ > 5) exitWith {hint format[localize "STR_Cop_CouldntSearch",_civ GVAR ["realname",name _civ]];};
 
-hint parseText format["<t color='#FF0000'><t size='2'>%1</t></t><br/><t color='#FFD700'><t size='1.5'><br/>" +(localize "STR_Cop_IllegalItems")+ "</t></t><br/><t color='#FF0000'><t size='1'>%2</t></t><br/><t color='#FFD700'><t size='1.5'><br/>" +(localize "STR_Cop_FirearmSearch")+ "<br/><t color='#FF0000'><t size='1'>%3</t></t><br/><t color='#FFD700'><t size='1.5'><br/>" +(localize "STR_Cop_MagazineSearch")+ "<br/><t color='#FF0000'><t size='1'>%4</t></t><br/><br/><t color='#FF0000'>%5</t>",(_civ GVAR ["realname",name _civ]),_inv,_weapons,_magazines,if(_robber) then {"Robbed the bank"} else {""};];
+hint parseText format["<t color='#FF0000'><t size='2'>%1</t></t><br/><t color='#FFD700'><t size='1.5'><br/>" +(localize "STR_Cop_IllegalItems")+ "</t></t><br/><t color='#FF0000'><t size='1'>%2</t></t><br/><t color='#FFD700'><t size='1.5'><br/>" +(localize "STR_Cop_FirearmSearch")+ "<br/><t color='#FF0000'><t size='1'>%3</t></t><br/><t color='#FFD700'><t size='1.5'><br/>" +(localize "STR_Cop_MagazineSearch")+ "<br/><t color='#FF0000'><t size='1'>%4</t></t><br/><br/><t color='#FF0000'>%5</t>",(_civ GVAR ["realname",name _civ]),_inv,_weapons,_magazines,if(_robber) then {"Robbed the bank"} else {""}];
 
 if(_robber) then
 {

@@ -11,7 +11,6 @@ _clear = _clear + nearestObjects [player,["WeaponHolderSimulated"],3];
 _del = 0;
 
 for "_i" from 0 to count _clear - 1
-
 do
 {
 	_del = _del + 1;

@@ -2322,6 +2322,9 @@
       <Portuguese>Essa pessoa não pode ser revistada.</Portuguese>
       <Polish>Nie możesz przeszukać tej osoby</Polish>
     </Key>
+	<Key ID="STR_NOTF_CannotSeizePerson">
+	  <Original>You couldn't effectively take those items off. Try Again.</Original>
+	</Key>
     <Key ID="STR_NOTF_Repairing">
       <Original>Repairing %1</Original>
       <German>Wird repariert %1</German>
