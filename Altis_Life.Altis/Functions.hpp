@@ -217,6 +217,7 @@ class Life_Client_Core
 	{
 		file = "core\civilian";
 		class civLoadout {};
+		class civMarkers{};
 		class demoChargeTimer {};
 		class freezePlayer {};
 		class jail {};
