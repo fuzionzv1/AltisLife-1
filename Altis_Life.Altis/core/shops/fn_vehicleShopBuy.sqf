@@ -24,7 +24,8 @@ _colorIndex = lbValue[2304,(lbCurSel 2304)];
 //Series of checks (YAY!)
 _licensesName = "";
 {
-	if(!(EQUAL(_x,"")) && {!(LICENSE_VALUE(_x,_shopSide))}) then {
+	if(!(EQUAL(_x,"")) && {!(LICENSE_VALUE(_x,_shopSide))}) then
+	{
 		ADD(_licensesName,localize M_CONFIG(getText,"Licenses",_x,"displayName") + "<br/>");
 		_exit = true;
 	};
@@ -37,14 +38,20 @@ if(CASH < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough",[_
 _spawnPoints = SEL(life_veh_shop,1);
 _spawnPoint = "";
 
-if((SEL(life_veh_shop,0) == "med_air_hs")) then {
+if((SEL(life_veh_shop,0) == "med_air_hs")) then
+{
 	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {_spawnPoint = _spawnPoints};
-} else {
+}
+else
+{
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
-	if(EQUAL(typeName _spawnPoints,typeName [])) then {
+	if(EQUAL(typeName _spawnPoints,typeName [])) then
+	{
 		//Find an available spawn point.
 		{if(count(nearestObjects[(getMarkerPos _x),["Car","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
-	} else {
+	}
+	else
+	{
 		if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
 	};
 };
@@ -55,7 +62,8 @@ SUB(CASH,_basePrice);
 hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 //Spawn the vehicle and prep it.
-if((life_veh_shop select 0) == "med_air_hs") then {
+if((life_veh_shop select 0) == "med_air_hs") then
+{
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false;
@@ -67,7 +75,9 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	[_vehicle,"trunk_in_use",false,true] remoteExecCall ["TON_fnc_setObjVar",RSERV];
 	[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true] remoteExecCall ["TON_fnc_setObjVar",RSERV];
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
-} else {
+}
+else
+{
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false; //Temp disable damage handling..
@@ -83,18 +93,23 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 };
 
 //Side Specific actions.
-switch(playerSide) do {
-	case west: {
+switch(playerSide) do
+{
+	case west:
+	{
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 
-	case civilian: {
-		if(EQUAL(SEL(life_veh_shop,2),"civ") && {_className == "B_Heli_Light_01_F"}) then {
+	case civilian:
+	{
+		if(EQUAL(SEL(life_veh_shop,2),"civ") && {_className == "B_Heli_Light_01_F"}) then
+		{
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
 
-	case independent: {
+	case independent:
+	{
 		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 };
@@ -105,10 +120,9 @@ _vehicle allowDamage true;
 life_vehicles pushBack _vehicle;
 [getPlayerUID player,playerSide,_vehicle,1] remoteExecCall ["TON_fnc_keyManagement",RSERV];
 
-if(_mode) then {
-	if(!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {
-		[(getPlayerUID player),playerSide,_vehicle,_colorIndex] remoteExecCall ["TON_fnc_vehicleCreate",RSERV];
-	};
+if(_mode) then
+{
+	[(getPlayerUID player),playerSide,_vehicle,_colorIndex] remoteExecCall ["TON_fnc_vehicleCreate",RSERV];
 };
 
 [0] call SOCK_fnc_updatePartial;

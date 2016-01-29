@@ -4885,6 +4885,9 @@
       <Portuguese>Depositar: Gangue</Portuguese>
       <Polish>Wpłać na konto Gangu</Polish>
     </Key>
+	<Key ID="STR_pInAct_Seize">
+	  <Original>Seize Weapons</Original>
+	</Key>
 	<Key ID="STR_pInAct_WithdrawalFromGang">
 	  <Original>Gang Withdrawal</Original>
 	</Key>

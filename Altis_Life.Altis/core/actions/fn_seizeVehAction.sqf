@@ -27,7 +27,7 @@ life_action_inUse = true;
 _upp = localize "STR_NOTF_Seizing";
 //Setup our progress bar.
 disableSerialization;
-5 cutRsc ["life_progress","PLAIN"];
+3 cutRsc ["life_progress","PLAIN"];
 _ui = GVAR_UINS "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
@@ -46,7 +46,7 @@ while{true} do
 	if(!alive player) exitWith {};
 };
 
-5 cutText ["","PLAIN"];
+3 cutText ["","PLAIN"];
 
 if(player distance _vehicle > 10) exitWith {hint localize "STR_NOTF_SeizureCancel"; life_action_inUse = false;};
 if(!alive player) exitWith {life_action_inUse = false;};
