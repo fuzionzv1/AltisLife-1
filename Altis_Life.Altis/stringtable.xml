@@ -4890,6 +4890,9 @@
 	</Key>
   </Package>
     <Package name="Vehicle_Interaction">
+	<Key ID="STR_vInAct_SeizeVeh">
+	  <Original>Seize Vehicle</Original>
+	</Key>
     <Key ID="STR_vInAct_Title">
       <Original>Vehicle Interaction Menu</Original>
       <German>Fahrzeuginteraktionsmenü</German>
