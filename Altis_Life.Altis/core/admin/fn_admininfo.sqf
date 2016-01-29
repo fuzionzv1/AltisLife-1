@@ -2,12 +2,11 @@
 /*
 	File: fn_admininfo.sqf
 	Author: Bryan "Tonic" Boardwine
-	Modified: Jesse "tkcjesse" Schultz
 
 	Description:
 	Output information received to admin menu.
 */
-private["_ret","_unit","_prim","_sec","_vest","_uni","_bp","_attach"];
+private["_ret","_unit","_prim","_sec","_vest","_uni","_bp","_attach","_steamName"];
 _ret = _this;
 disableSerialization;
 
@@ -29,5 +28,12 @@ if(!(EQUAL(primaryWeapon _unit,""))) then
 	} foreach (primaryWeaponItems _unit);
 };
 
+_steamName = SEL(_ret,4);
+if(!(SEL(_ret,4) isEqualType "")) then
+{
+	_steamName = "Not a Steam User!";
+};
+
 if(EQUAL(count _attach,0)) then {_attach = "None"};
-CONTROL(2900,2903) ctrlSetStructuredText parseText format["<t size='.7'>Name: %1<br/>Steam Name: %10<br/>Player UID: %15<br/>Player Side: %16<br/>Admin Level: %12<br/>Cop Level: %11<br/>Medic Level: %14<br/>Donator level: %13<br/>Bank: %2<br/>Money: %3<br/>Uniform: %4<br/>Vest: %5<br/>Backpack: %6<br/>Primary: %7<br/>Handgun: %8<br/><t align='center'>Primary Attachments</t><br/>%9</t>",_unit GVAR ["realname",name _unit],[SEL(_ret,0)] call life_fnc_numberText,[SEL(_ret,1)] call life_fnc_numberText,_uni,_vest,_bp,_prim,_sec,_attach,SEL(_ret,4),SEL(_ret,5),SEL(_ret,6),SEL(_ret,7),SEL(_ret,8),SEL(_ret,9),SEL(_ret,10)];
+CONTROL(2900,2903) ctrlSetStructuredText parseText format["<t size='.8'>Name: %1<br/>Steam Name: %10<br/>Player UID: %11<br/>Player Side: %12<br/>Bank: %2<br/>Money: %3<br/>Uniform: %4<br/>Vest: %5<br/>Backpack: %6<br/>Primary: %7<br/>Handgun: %8<br/><t align='center'>Primary Attachments</t><br/>%9</t>",
+_unit GVAR ["realname",name _unit],[SEL(_ret,0)] call life_fnc_numberText,[SEL(_ret,1)] call life_fnc_numberText, _uni,_vest,_bp,_prim,_sec,_attach,_steamName,SEL(_ret,5),SEL(_ret,6)];
