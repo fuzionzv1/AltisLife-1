@@ -32,8 +32,8 @@ class Licenses {
         side = "civ";
     };
 
-    class trucking {
-        variable = "trucking";
+    class truck {
+        variable = "truck";
         displayName = "STR_License_Truck";
         price = 20000;
         illegal = false;

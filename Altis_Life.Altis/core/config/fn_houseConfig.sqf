@@ -1,6 +1,6 @@
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master config file for buyable houses?
 */
@@ -13,6 +13,7 @@ if(_house == "") exitWith {[]};
 	[price,# of containers allowed]
 */
 switch (true) do {
+	case (_house in ["Land_i_Shed_Ind_F"]): {[50000,3]};
 	case (_house in ["Land_i_House_Big_02_V1_F","Land_i_House_Big_02_V2_F","Land_i_House_Big_02_V3_F"]): {[1550000,3]};
 	case (_house in ["Land_i_House_Big_01_V1_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_01_V3_F"]): {[2200000,4]};
 	case (_house in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F"]): {[500000,0]};

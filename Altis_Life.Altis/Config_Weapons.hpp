@@ -73,6 +73,32 @@ class WeaponShops {
             { "30Rnd_45ACP_Mag_SMG_01", "", 275, -1 },
             { "6Rnd_45ACP_Cylinder", "", 275, -1 },
             { "9Rnd_45ACP_Mag", "", 275, -1 },
+            { "SmokeShellRed", "", 275, -1 },
+            { "SmokeShellGreen", "", 275, -1 },
+            { "SmokeShellYellow", "", 275, -1 },
+            { "SmokeShellPurple", "", 275, -1 },
+            { "SmokeShellBlue", "", 275, -1 },
+            { "SmokeShellOrange", "", 275, -1 },
+            { "SmokeShell", "", 275, -1 },
+        };
+    };
+
+
+    class rebelSupplies {
+        name = "Rebel Supplies";
+        side = "civ";
+        license = "rebel";
+        level[] = { "", "", -1, "" };
+        items[] = {
+            { "ItemWatch", "", 15, 500 },
+            { "ItemCompass", "", 25, -1 },
+            { "ItemGPS", "", 45, -1 },
+            { "ItemMap", "", 95, -1 },
+            { "Binocular", "", 95, 250 },
+            { "NVGoggles", "", 19, -1 },
+            { "NVGoggles_INDEP", "", 25, -1 },
+            { "FirstAidKit", "", 45, -1 },
+            { "ToolKit", "", 50, -1 },
         };
     };
 
@@ -138,22 +164,37 @@ class WeaponShops {
         };
     };
 
+    //copgen
+    class copstore {
+        name = "store";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 1, "You are not a cop!" };
+        items[] = {
+            { "ItemWatch", "", 10, 45 },
+            { "Binocular", "", 15, -1 },
+            { "ToolKit", "", 25, 75 },
+            { "FirstAidKit", "", 15, 65 },
+            { "ItemCompass", "", 50, 450 },
+            { "ItemGPS", "", 12, 980 },
+            { "ItemMap", "", 30, -1 },
+            { "NVGoggles_OPFOR", "", 30, -1 },
+        };
+    };
+
     //Cop Shops
     class cop_cadet {
         name = "Cadet Armory";
         side = "cop";
         license = "";
-        level[] = { "", "", -1, "" };
+        level[] = { "life_coplevel", "SCALAR", 1, "You are not a Cadet!" };
         items[] = {
             { "arifle_TRG20_F", "", 20000, 7500 },
             { "hgun_P07_F", "", 2000, 650 },
-            { "Binocular", "", 150, -1 },
-            { "ItemGPS", "", 100, 45 },
-            { "ToolKit", "", 250, 75 },
-            { "FirstAidKit", "", 150, 65 },
-            { "NVGoggles", "", 2000, 980 },
             { "16Rnd_9x21_Mag", "", 50, -1 },
             { "30Rnd_556x45_Stanag_Tracer_Green", "", 125, -1 },
+            { "optic_Aco", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 },
         };
     };
 
@@ -165,6 +206,8 @@ class WeaponShops {
         items[] = {
             { "hgun_P07_F", "", 2000, 650 },
             { "30Rnd_9x21_Mag", "Downing mags", 125, -1 },
+            { "arifle_SDAR_F", "", 20000, 7500 },
+            { "20Rnd_556x45_UW_mag", "", 125, -1 },
             { "arifle_TRG21_F", "", 20000, 7500 },
             { "30Rnd_556x45_Stanag_Tracer_Red", "Downing mags", 125, -1 },
             { "30Rnd_556x45_Stanag", "Lethal mags", 125, -1 },
@@ -173,10 +216,14 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "Lethal mags", 250, -1 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Downing mags", 250, -1 },
             { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "SmokeShell", "Smoke White", 17, -1 },
             { "acc_flashlight", "", 750, 100 },
+            { "optic_MRCO", "", 750, 100 },
             { "optic_Holosight", "", 1200, 275 },
             { "optic_Arco", "", 350, -1 },
 			{ "optic_Hamr", "", 250, -1 },
+            { "optic_Aco", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 },
         };
     };
 
@@ -188,6 +235,8 @@ class WeaponShops {
         items[] = {
             { "hgun_P07_F", "", 2000, 650 },
             { "30Rnd_9x21_Mag", "Downing mags", 125, -1 },
+            { "arifle_SDAR_F", "", 20000, 7500 },
+            { "20Rnd_556x45_UW_mag", "", 125, -1 },
             { "arifle_TRG21_F", "", 20000, 7500 },
             { "30Rnd_556x45_Stanag_Tracer_Red", "Downing mags", 125, -1 },
             { "30Rnd_556x45_Stanag", "Lethal mags", 125, -1 },
@@ -197,10 +246,14 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "Lethal mags", 250, -1 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Downing mags", 250, -1 },
             { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "SmokeShell", "Smoke White", 17, -1 },
             { "acc_flashlight", "", 750, 100 },
             { "optic_Holosight", "", 1200, 275 },
+            { "optic_MRCO", "", 750, 100 },
             { "optic_Arco", "", 350, -1 },
             { "optic_Hamr", "", 250, -1 },
+            { "optic_Aco", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 },
         };
     };
 
@@ -212,6 +265,8 @@ class WeaponShops {
         items[] = {
             { "hgun_P07_F", "", 2000, 650 },
             { "30Rnd_9x21_Mag", "Downing mags", 125, -1 },
+            { "arifle_SDAR_F", "", 20000, 7500 },
+            { "20Rnd_556x45_UW_mag", "", 125, -1 },
             { "arifle_TRG21_F", "", 20000, 7500 },
             { "30Rnd_556x45_Stanag_Tracer_Red", "Downing mags", 125, -1 },
             { "30Rnd_556x45_Stanag", "Lethal mags", 125, -1 },
@@ -221,10 +276,24 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "Lethal mags", 250, -1 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Downing mags", 250, -1 },
             { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "SmokeShell", "Smoke White", 17, -1 },
+            { "SmokeShellRed", "Smoke Red", 17, -1 },
+            { "SmokeShellGreen", "Smoke Green", 17, -1 },
+            { "SmokeShellYellow", "Smoke Yellow", 17, -1 },
+            { "SmokeShellPurple", "Somke Purple", 17, -1 },
+            { "SmokeShellBlue", "Smoke Blue", 17, -1 },
+            { "SmokeShellOrange", "Smoke Orange", 17, -1 },
+            { "Chemlight_green", "", 17, -1 },
+            { "Chemlight_red", "", 17, -1 },
+            { "Chemlight_yellow", "", 17, -1 },
+            { "Chemlight_blue", "", 17, -1 },
             { "acc_flashlight", "", 750, 100 },
             { "optic_Holosight", "", 1200, 275 },
             { "optic_Arco", "", 350, -1 },
             { "optic_Hamr", "", 250, -1 },
+            { "optic_MRCO", "", 750, 100 },
+            { "optic_Aco", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 },
 			{ "arifle_MX_GL_Black_F", "", 35000, 7500 },
             { "3Rnd_Smoke_Grenade_shell", "", 1700, -1 },
 			{ "3Rnd_SmokeRed_Grenade_shell", "", 1700, -1 },
@@ -248,6 +317,8 @@ class WeaponShops {
             { "30Rnd_9x21_Mag", "Downing mags", 125, -1 },
             { "hgun_Pistol_heavy_01_F", "", 2000, 650 },
             { "11Rnd_45ACP_Mag", "", 50, -1 },
+            { "arifle_SDAR_F", "", 20000, 7500 },
+            { "20Rnd_556x45_UW_mag", "", 125, -1 },
             { "arifle_TRG21_F", "", 20000, 7500 },
             { "30Rnd_556x45_Stanag_Tracer_Red", "Downing mags", 125, -1 },
             { "30Rnd_556x45_Stanag", "Lethal mags", 125, -1 },
@@ -263,10 +334,18 @@ class WeaponShops {
             { "srifle_DMR_03_F", "", 35000, 7500 },
             { "20Rnd_762x51_Mag", "Lethal unless IR is equipped", 250, -1 },
             { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "SmokeShell", "Smoke White", 17, -1 },
+            { "SmokeShellRed", "Smoke Red", 17, -1 },
+            { "SmokeShellGreen", "Smoke Green", 17, -1 },
+            { "SmokeShellYellow", "Smoke Yellow", 17, -1 },
+            { "SmokeShellPurple", "Somke Purple", 17, -1 },
+            { "SmokeShellBlue", "Smoke Blue", 17, -1 },
+            { "SmokeShellOrange", "Smoke Orange", 17, -1 },
+            { "Chemlight_green", "", 17, -1 },
+            { "Chemlight_red", "", 17, -1 },
+            { "Chemlight_yellow", "", 17, -1 },
+            { "Chemlight_blue", "", 17, -1 },
             { "acc_flashlight", "", 750, 100 },
-            { "optic_Holosight", "", 1200, 275 },
-            { "optic_Arco", "", 350, -1 },
-            { "optic_Hamr", "", 250, -1 },
             { "3Rnd_Smoke_Grenade_shell", "", 1700, -1 },
             { "3Rnd_SmokeRed_Grenade_shell", "", 1700, -1 },
             { "3Rnd_SmokeGreen_Grenade_shell", "", 1700, -1 },
@@ -277,9 +356,12 @@ class WeaponShops {
             { "B_UAV_01_backpack_F", "", 5000, -1 },
             { "B_UavTerminal", "", 5000, -1 },
             { "acc_pointer_IR", "", 750, 100 },
+            { "optic_MRCO", "", 750, 100 },
             { "optic_Holosight", "", 1200, 275 },
             { "optic_Arco", "", 350, -1 },
 			{ "optic_Hamr", "", 250, -1 },
+            { "optic_Aco", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 },
         };
     };
 
