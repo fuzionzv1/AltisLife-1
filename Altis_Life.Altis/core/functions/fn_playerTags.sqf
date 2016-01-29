@@ -2,13 +2,14 @@
 /*
 	File: fn_playerTags.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Adds the tags above other players heads when close and have visible range.
 */
 private["_ui","_units"];
 #define iconID 78000
 #define scale 0.8
+if(!(!isDedicated && hasInterface)) exitWith {};
 
 if(visibleMap OR {!alive player} OR {dialog}) exitWith {
 	500 cutText["","PLAIN"];
@@ -39,7 +40,7 @@ SUB(_units,[player]);
 			_text = switch (true) do {
 				case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x GVAR ["realname",name _x])];};
 				case (!isNil {(_x GVAR "rank")}): {format["<img image='%1' size='1'></img> %2",switch ((_x GVAR "rank")) do {
-					case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"}; 
+					case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
 					case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
 					case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
 					case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
@@ -57,7 +58,7 @@ SUB(_units,[player]);
 					};
 				};
 			};
-			
+
 			_idc ctrlSetStructuredText parseText _text;
 			_idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
 			_idc ctrlSetScale scale;
