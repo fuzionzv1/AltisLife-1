@@ -2046,6 +2046,22 @@
       <Portuguese>Revistando...</Portuguese>
       <Polish>Szukam...</Polish>
     </Key>
+	<Key ID="STR_NOTF_SeizeIllegals">
+	  <Original>Your illegal items have been put into evidence.</Original>
+	  <German>Ihre illegale Gegenstände wurden als Beweismittel gesetzt.</German>
+      <French>Vos articles illégaux ont été mis en preuve.</French>
+      <Italian>I tuoi articoli illegali sono stati messi in evidenza.</Italian>
+      <Portuguese>Seus itens ilegais têm sido postas em evidência.</Portuguese>
+      <Polish>Twoje nielegalne pozycje zostały wprowadzone do dowodów.</Polish>
+	</Key>
+	<Key ID="STR_NOTF_SeizeXobjects">
+	  <Original>Seized %1 objects.</Original>
+	  <German>Ergriff% 1 Objekte.</German>
+      <French>Saisi% 1 objets.</French>
+      <Italian>% Sequestrati 1 oggetti.</Italian>
+      <Portuguese>% Apreendeu 1 objetos.</Portuguese>
+      <Polish>Przejęty% 1 obiektów.</Polish>
+	</Key>
     <Key ID="STR_NOTF_SearchVehFail">
       <Original>Couldn't search the vehicle</Original>
       <German>Das Fahrzeug konnte nicht durchsucht werden</German>

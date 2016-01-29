@@ -264,6 +264,8 @@ class Life_Client_Core
 		class repairDoor {};
 		class restrain {};
 		class searchClient {};
+		class seizeClient {};
+		class seizeObj {};
 		class sirenLights {};
 		class spikeStripEffect {};
 		class ticketGive {};
