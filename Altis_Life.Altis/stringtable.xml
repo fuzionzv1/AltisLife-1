@@ -5519,6 +5519,14 @@
       <Portuguese>Jogar Rede de Pesca</Portuguese>
       <Polish>Zarzuć sieć</Polish>
     </Key>
+	<Key ID="STR_pAct_SeizeObj">
+	  <Original>Seize Ground Objects</Original>
+	  <German>Seize Bodenobjekte</German>
+      <French>Seize sol objets</French>
+      <Italian>Cogliere terra Oggetti</Italian>
+      <Portuguese>Apreender objetos terrestres</Portuguese>
+      <Polish>Chwytaj Naziemne obiektów</Polish>
+	</Key>
     <Key ID="STR_pAct_RobPerson">
       <Original>Rob Person</Original>
       <German>Person ausrauben</German>
