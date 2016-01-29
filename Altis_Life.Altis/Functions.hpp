@@ -92,6 +92,7 @@ class Life_Client_Core
 		class robAction {};
 		class searchAction {};
 		class searchVehAction {};
+		class seizeVehAction {};
 		class serviceChopper {};
 		class stopEscorting {};
 		class storeVehicle {};
