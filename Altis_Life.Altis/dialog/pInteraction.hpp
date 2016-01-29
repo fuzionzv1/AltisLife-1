@@ -7,10 +7,10 @@ class pInteraction_Menu
 	idd = 37400;
 	movingEnable = 0;
 	enableSimulation = 1;
-	
+
 	class controlsBackground
 	{
-		class RscTitleBackground:life_RscText 
+		class RscTitleBackground:life_RscText
 		{
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
@@ -19,7 +19,7 @@ class pInteraction_Menu
 			w = BGW;
 			h = (1 / 25);
 		};
-		
+
 		class MainBackground : life_RscText
 		{
 			idc = -1;
@@ -29,7 +29,7 @@ class pInteraction_Menu
 			w = BGW;
 			h = 0.6 - (22 / 250);
 		};
-		
+
 		class Title : life_RscTitle
 		{
 			colorBackground[] = {0,0,0,0};
@@ -41,10 +41,10 @@ class pInteraction_Menu
 			h = (1 / 25);
 		};
 	};
-	
+
 	class controls
 	{
-		class ButtonClose : life_RscButtonMenu 
+		class ButtonClose : life_RscButtonMenu
 		{
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
@@ -55,7 +55,7 @@ class pInteraction_Menu
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-		
+
 		class ButtonOne : life_RscButtonMenu
 		{
 			idc = 37450;
@@ -67,7 +67,7 @@ class pInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonTwo : life_RscButtonMenu
 		{
 			idc = 37451;
@@ -79,7 +79,7 @@ class pInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonThree : life_RscButtonMenu
 		{
 			idc = 37452;
@@ -91,7 +91,7 @@ class pInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonFour : life_RscButtonMenu
 		{
 			idc = 37453;
@@ -103,7 +103,7 @@ class pInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonFive : life_RscButtonMenu
 		{
 			idc = 37454;
@@ -115,7 +115,7 @@ class pInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonSix : life_RscButtonMenu
 		{
 			idc = 37455;
@@ -127,7 +127,7 @@ class pInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonSeven : life_RscButtonMenu
 		{
 			idc = 37456;
@@ -139,6 +139,18 @@ class pInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
+
+		class ButtonNine : life_RscButtonMenu
+		{
+			idc = 37458;
+			colorBackground[] = { 0.15,0.68,0.89,1 };
+			text = "";
+			sizeEx = 0.025;
+			x = BGX + 0.03;
+			y = BGY + 0.42;
+			w = 0.24;
+			h = 0.038;
+		};
 	};
 };
 
@@ -147,10 +159,10 @@ class vInteraction_Menu
 	idd = 37400;
 	movingEnable = 0;
 	enableSimulation = 1;
-	
+
 	class controlsBackground
 	{
-		class RscTitleBackground:life_RscText 
+		class RscTitleBackground:life_RscText
 		{
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
@@ -159,7 +171,7 @@ class vInteraction_Menu
 			w = BGW;
 			h = (1 / 25);
 		};
-		
+
 		class MainBackground : life_RscText
 		{
 			idc = -1;
@@ -169,7 +181,7 @@ class vInteraction_Menu
 			w = BGW;
 			h = 0.45 - (22 / 250);
 		};
-		
+
 		class Title : life_RscTitle
 		{
 			colorBackground[] = {0,0,0,0};
@@ -181,10 +193,10 @@ class vInteraction_Menu
 			h = (1 / 25);
 		};
 	};
-	
+
 	class controls
 	{
-		class ButtonClose : life_RscButtonMenu 
+		class ButtonClose : life_RscButtonMenu
 		{
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
@@ -195,7 +207,7 @@ class vInteraction_Menu
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-		
+
 		class ButtonOne : life_RscButtonMenu
 		{
 			idc = 37450;
@@ -207,7 +219,7 @@ class vInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonTwo : life_RscButtonMenu
 		{
 			idc = 37451;
@@ -219,7 +231,7 @@ class vInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonThree : life_RscButtonMenu
 		{
 			idc = 37452;
@@ -231,7 +243,7 @@ class vInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonFour : life_RscButtonMenu
 		{
 			idc = 37453;
@@ -243,7 +255,7 @@ class vInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonFive : life_RscButtonMenu
 		{
 			idc = 37454;
@@ -255,7 +267,7 @@ class vInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
-		
+
 		class ButtonSix : life_RscButtonMenu
 		{
 			idc = 37455;
@@ -264,6 +276,18 @@ class vInteraction_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.32;
+			w = 0.24;
+			h = 0.038;
+		};
+
+		class ButtonSeven : life_RscButtonMenu
+		{
+			idc = 37449;
+			colorBackground[] = { 0.15,0.68,0.89,1 };
+			text = "";
+			sizeEx = 0.025;
+			x = BGX + 0.03;
+			y = BGY + 0.37;
 			w = 0.24;
 			h = 0.038;
 		};

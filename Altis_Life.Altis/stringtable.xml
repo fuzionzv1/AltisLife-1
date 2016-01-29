@@ -2046,6 +2046,22 @@
       <Portuguese>Revistando...</Portuguese>
       <Polish>Szukam...</Polish>
     </Key>
+	<Key ID="STR_NOTF_SeizeIllegals">
+	  <Original>Your illegal items have been put into evidence.</Original>
+	  <German>Ihre illegale Gegenstände wurden als Beweismittel gesetzt.</German>
+      <French>Vos articles illégaux ont été mis en preuve.</French>
+      <Italian>I tuoi articoli illegali sono stati messi in evidenza.</Italian>
+      <Portuguese>Seus itens ilegais têm sido postas em evidência.</Portuguese>
+      <Polish>Twoje nielegalne pozycje zostały wprowadzone do dowodów.</Polish>
+	</Key>
+	<Key ID="STR_NOTF_SeizeXobjects">
+	  <Original>Seized %1 objects.</Original>
+	  <German>Ergriff% 1 Objekte.</German>
+      <French>Saisi% 1 objets.</French>
+      <Italian>% Sequestrati 1 oggetti.</Italian>
+      <Portuguese>% Apreendeu 1 objetos.</Portuguese>
+      <Polish>Przejęty% 1 obiektów.</Polish>
+	</Key>
     <Key ID="STR_NOTF_SearchVehFail">
       <Original>Couldn't search the vehicle</Original>
       <German>Das Fahrzeug konnte nicht durchsucht werden</German>
@@ -2306,6 +2322,9 @@
       <Portuguese>Essa pessoa não pode ser revistada.</Portuguese>
       <Polish>Nie możesz przeszukać tej osoby</Polish>
     </Key>
+	<Key ID="STR_NOTF_CannotSeizePerson">
+	  <Original>You couldn't effectively take those items off. Try Again.</Original>
+	</Key>
     <Key ID="STR_NOTF_Repairing">
       <Original>Repairing %1</Original>
       <German>Wird repariert %1</German>
@@ -4866,11 +4885,32 @@
       <Portuguese>Depositar: Gangue</Portuguese>
       <Polish>Wpłać na konto Gangu</Polish>
     </Key>
+	<Key ID="STR_pInAct_Seize">
+	  <Original>Seize Weapons</Original>
+	  <German>Seize Waffen</German>
+      <French>saisir les armes</French>
+      <Italian>cogliere Armi</Italian>
+      <Portuguese>apreensão de armas</Portuguese>
+      <Polish>Chwytaj broń</Polish>
+	</Key>
 	<Key ID="STR_pInAct_WithdrawalFromGang">
 	  <Original>Gang Withdrawal</Original>
+	  <German>Gang Rücktritt</German>
+      <French>Gang Retrait</French>
+      <Italian>Gang Ritiro</Italian>
+      <Portuguese>Gang Retirada</Portuguese>
+      <Polish>Seks Wycofanie</Polish>
 	</Key>
   </Package>
     <Package name="Vehicle_Interaction">
+	<Key ID="STR_vInAct_SeizeVeh">
+	  <Original>Seize Vehicle</Original>
+	  <German>Seize Fahrzeug</German>
+      <French>Seize véhicules</French>
+      <Italian>cogliere veicolo</Italian>
+      <Portuguese>apreender veículos</Portuguese>
+      <Polish>Chwytaj pojazdu</Polish>
+	</Key>
     <Key ID="STR_vInAct_Title">
       <Original>Vehicle Interaction Menu</Original>
       <German>Fahrzeuginteraktionsmenü</German>
@@ -5503,6 +5543,14 @@
       <Portuguese>Jogar Rede de Pesca</Portuguese>
       <Polish>Zarzuć sieć</Polish>
     </Key>
+	<Key ID="STR_pAct_SeizeObj">
+	  <Original>Seize Ground Objects</Original>
+	  <German>Seize Bodenobjekte</German>
+      <French>Seize sol objets</French>
+      <Italian>Cogliere terra Oggetti</Italian>
+      <Portuguese>Apreender objetos terrestres</Portuguese>
+      <Polish>Chwytaj Naziemne obiektów</Polish>
+	</Key>
     <Key ID="STR_pAct_RobPerson">
       <Original>Rob Person</Original>
       <German>Person ausrauben</German>
