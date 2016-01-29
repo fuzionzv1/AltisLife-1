@@ -8,7 +8,6 @@
 	Seizes vehicles
 */
 private["_vehicle","_type","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","filters"];
-// _vehicle = cursorTarget;
 _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _filters = ["Car","Air","Ship"];
 if(FETCH_CONST(life_coplevel) < 2) exitWith {hint localize "STR_NOTF_LowRank";};
@@ -51,7 +50,8 @@ while{true} do
 if(player distance _vehicle > 10) exitWith {hint localize "STR_NOTF_SeizureCancel"; life_action_inUse = false;};
 if(!alive player) exitWith {life_action_inUse = false;};
 
-if(EQUAL(count crew _vehicle,0)) then {
+if(EQUAL(count crew _vehicle,0)) then
+{
 	if(!(KINDOF_ARRAY(_vehicle,_filters))) exitWith {life_action_inUse = false;};
 	_type = FETCH_CONFIG2(getText,CONFIG_VEHICLES,(typeOf _vehicle),"displayName");
 	switch (true) do
@@ -67,9 +67,7 @@ if(EQUAL(count crew _vehicle,0)) then {
 	*/
 	[_vehicle] spawn
 		{
-			if(!isNull _this && !isNil "_this") then {
-				deleteVehicle _this;
-			};
+			if(!isNull _this && !isNil "_this") then { deleteVehicle _this;	};
 		};
 	life_seize_inuse = false;
 	hint format[localize "STR_NOTF_SeizurePayout",_type,_price];
