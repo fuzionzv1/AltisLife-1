@@ -23,6 +23,7 @@ player playMoveNow "AcinPercMstpSnonWnonDnon_agony";
 detach player;
 deleteVehicle _obj;
 player setVariable["robbed",FALSE,TRUE];
+sleep 7;
 if(player getVariable ["playerSurrender",false]) then
 {
 	player setVariable ["playerSurrender",false,true];
