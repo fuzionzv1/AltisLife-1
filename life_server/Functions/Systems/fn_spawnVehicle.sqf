@@ -42,23 +42,29 @@ _vInfo = _queryResult;
 if(isNil "_vInfo") exitWith {serv_sv_use deleteAt _servIndex;};
 if(EQUAL(count _vInfo,0)) exitWith {serv_sv_use deleteAt _servIndex;};
 
-if(EQUAL(SEL(_vInfo,5),0)) exitWith {
+if(EQUAL(SEL(_vInfo,5),0)) exitWith
+{
 	serv_sv_use deleteAt _servIndex;
 	[1,format[(localize "STR_Garage_SQLError_Destroyed"),_vInfo select 2]] remoteExecCall ["life_fnc_broadcast",_unit];
 };
 
-if(EQUAL(SEL(_vInfo,6),1)) exitWith {
+if(EQUAL(SEL(_vInfo,6),1)) exitWith
+{
 	serv_sv_use deleteAt _servIndex;
 	[1,format[(localize "STR_Garage_SQLError_Active"),_vInfo select 2]] remoteExecCall ["life_fnc_broadcast",_unit];
 };
 
-if!(EQUAL(typeName _sp,typeName "")) then {
+if!(EQUAL(typeName _sp,typeName "")) then
+{
 	_nearVehicles = nearestObjects[_sp,["Car","Air","Ship"],10];
-} else {
+}
+else
+{
 	_nearVehicles = [];
 };
 
-if(count _nearVehicles > 0) exitWith {
+if(count _nearVehicles > 0) exitWith
+{
 	serv_sv_use deleteAt _servIndex;
 	[_price,_unit_return] remoteExecCall ["life_fnc_garageRefund",_unit];
 	[1,(localize "STR_Garage_SpawnPointError")] remoteExecCall ["life_fnc_broadcast",_unit];
@@ -68,14 +74,17 @@ _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid
 
 
 [_query,false] spawn DB_fnc_asyncCall;
-if(typeName _sp == "STRING") then {
+if(typeName _sp == "STRING") then
+{
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
 	_hs = nearestObjects[getMarkerPos _sp,["Land_Hospital_side2_F"],50] select 0;
 	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
 	sleep 0.6;
-} else {
+}
+else
+{
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
@@ -93,22 +102,25 @@ _vehicle allowDamage true;
 _vehicle lock 2;
 
 //Reskin the vehicle
-[_vehicle,_vInfo select 8] remoteExecCall ["life_fnc_colorVehicle",RANY];
+[_vehicle,_vInfo select 8] remoteExecCall ["life_fnc_colorVehicle",_unit];
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7]];
 [_vehicle] call life_fnc_clearVehicleAmmo;
 
 //Sets of animations
 
-if(EQUAL(SEL(_vInfo,1),"civ") && EQUAL(SEL(_vInfo,2),"B_Heli_Light_01_F") && !(EQUAL(SEL(_vInfo,8),13))) then {
+if(EQUAL(SEL(_vInfo,1),"civ") && EQUAL(SEL(_vInfo,2),"B_Heli_Light_01_F") && !(EQUAL(SEL(_vInfo,8),13))) then
+{
 	[_vehicle,"civ_littlebird",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-if(EQUAL(SEL(_vInfo,1),"cop") && (SEL(_vInfo,2)) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"]) then {
+if(EQUAL(SEL(_vInfo,1),"cop") && (SEL(_vInfo,2)) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"]) then
+{
 	[_vehicle,"cop_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-if(EQUAL(SEL(_vInfo,1),"med") && EQUAL(SEL(_vInfo,2),"C_Offroad_01_F")) then {
+if(EQUAL(SEL(_vInfo,1),"med") && EQUAL(SEL(_vInfo,2),"C_Offroad_01_F")) then
+{
 	[_vehicle,"med_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 [1,"Your vehicle is ready!"] remoteExecCall ["life_fnc_broadcast",_unit];

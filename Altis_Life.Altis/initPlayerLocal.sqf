@@ -12,8 +12,3 @@ CONST(BIS_fnc_endMission,BIS_fnc_endMission);
 [] execVM "core\init.sqf";
 [] execVM "welcome_messages.sqf";
 [] execVM "statusBar\statusBar.sqf";
-
-//Execute JIP code.
-if((_this select 1)) then {
-	[] execVM "core\jip.sqf";
-};
