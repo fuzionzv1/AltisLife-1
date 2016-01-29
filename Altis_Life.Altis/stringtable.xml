@@ -4887,14 +4887,29 @@
     </Key>
 	<Key ID="STR_pInAct_Seize">
 	  <Original>Seize Weapons</Original>
+	  <German>Seize Waffen</German>
+      <French>saisir les armes</French>
+      <Italian>cogliere Armi</Italian>
+      <Portuguese>apreensão de armas</Portuguese>
+      <Polish>Chwytaj broń</Polish>
 	</Key>
 	<Key ID="STR_pInAct_WithdrawalFromGang">
 	  <Original>Gang Withdrawal</Original>
+	  <German>Gang Rücktritt</German>
+      <French>Gang Retrait</French>
+      <Italian>Gang Ritiro</Italian>
+      <Portuguese>Gang Retirada</Portuguese>
+      <Polish>Seks Wycofanie</Polish>
 	</Key>
   </Package>
     <Package name="Vehicle_Interaction">
 	<Key ID="STR_vInAct_SeizeVeh">
 	  <Original>Seize Vehicle</Original>
+	  <German>Seize Fahrzeug</German>
+      <French>Seize véhicules</French>
+      <Italian>cogliere veicolo</Italian>
+      <Portuguese>apreender veículos</Portuguese>
+      <Polish>Chwytaj pojazdu</Polish>
 	</Key>
     <Key ID="STR_vInAct_Title">
       <Original>Vehicle Interaction Menu</Original>
