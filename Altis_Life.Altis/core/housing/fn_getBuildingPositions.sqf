@@ -1,6 +1,6 @@
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Retrieves all 3D-world positions in a building and also restricts
 	certain positions due to window positioning.
@@ -10,6 +10,7 @@ _building = _this select 0;
 _arr = [];
 
 _restricted = switch(typeOf _building) do {
+case "Land_i_Shed_Ind_F": {[1,2,4,5]};
 case "Land_i_House_Big_02_V1_F": {[0,1,2,3,4]};
 case "Land_i_House_Big_02_V2_F": {[0,1,2,3,4]};
 case "Land_i_House_Big_02_V3_F": {[0,1,2,3,4]};
