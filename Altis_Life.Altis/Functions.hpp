@@ -79,6 +79,7 @@ class Life_Client_Core
 		class gutAnimal {};
 		class healHospital {};
 		class impoundAction {};
+		class mkDowning {};
 		class packupSpikes {};
 		class pickupItem {};
 		class pickupMoney {};
