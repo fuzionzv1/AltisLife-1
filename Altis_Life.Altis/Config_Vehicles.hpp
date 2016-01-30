@@ -94,7 +94,7 @@ class CarShops {
         vehicles[] = {
             { "O_Heli_Light_02_unarmed_F", 5000, { "rebel" }, { "", "", -1 } },
             { "I_Heli_light_03_unarmed_F", 200000, { "rebel" }, { "", "", -1 } },
-            { "B_Heli_Light_01_F", 200000, { "rebel" }, { "", "", -1 } },
+            { "B_Heli_Light_01_F", 200000, { "rebel" }, { "", "", -1 } }
         };
     };
 
@@ -109,11 +109,11 @@ class CarShops {
         side = "cop";
         vehicles[] = {
             { "B_Heli_Light_01_F", 75000, { "" }, { "life_coplevel", "SCALAR", 2 } },
-            { "I_Heli_light_03_unarmed_F", 200000, { "Hellcat" }, { "life_coplevel", "SCALAR", 3 } },
-            { "O_Heli_Light_02_unarmed_F", 200000, { "Orca" }, { "life_coplevel", "SCALAR", 4 } },
-            { "I_Heli_Transport_02_F", 200000, { "Mohawk" }, { "life_coplevel", "SCALAR", 5 } },
-            { "B_Heli_Transport_03_unarmed_F", 200000, { "Huron" }, { "life_coplevel", "SCALAR", 5 } },
-            { "B_Heli_Transport_01_F", 200000, { "Ghost Hawk" }, { "life_coplevel", "SCALAR", 6 } },
+            { "I_Heli_light_03_unarmed_F", 200000, { "" }, { "life_coplevel", "SCALAR", 3 } },
+            { "O_Heli_Light_02_unarmed_F", 200000, { "" }, { "life_coplevel", "SCALAR", 4 } },
+            { "I_Heli_Transport_02_F", 200000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "B_Heli_Transport_03_unarmed_F", 200000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "B_Heli_Transport_01_F", 200000, { "" }, { "life_coplevel", "SCALAR", 6 } }
         };
     };
 
@@ -204,6 +204,33 @@ class LifeCfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
+    };
+
+    class B_Heli_Transport_03_unarmed_F {
+        vItemSpace = 200;
+        storageFee[] = { 0, 50000, 0, 0 };
+        garageSell[] = { 0, 85000, 0, 0 };
+        insurance = 16000;
+        chopShop = 45000;
+        textures[] = {};
+    };
+
+    class B_Heli_Light_01_F {
+        vItemSpace = 200;
+        storageFee[] = { 0, 50000, 0, 0 };
+        garageSell[] = { 0, 85000, 0, 0 };
+        insurance = 16000;
+        chopShop = 45000;
+        textures[] = {};
+    };
+
+    class I_Heli_light_03_unarmed_F {
+        vItemSpace = 200;
+        storageFee[] = { 0, 50000, 0, 0 };
+        garageSell[] = { 0, 85000, 0, 0 };
+        insurance = 16000;
+        chopShop = 45000;
+        textures[] = {};
     };
 
     class B_Heli_Transport_01_F {
