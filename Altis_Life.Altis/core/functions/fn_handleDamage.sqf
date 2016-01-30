@@ -27,7 +27,7 @@ if (isPlayer _source && _source isKindOf "Man") then
 systemChat format["_source = %1, _projectile = %2, _curMag = %3, _curWep = %4", _source, _projectile, _curMag, _curWep];
 
 // Rubber bullets
-if (((_curMag in ["30Rnd_65x39_caseless_mag"])) OR (_curWep in ["hgun_P07_F","srifle_DMR_03_F"])) then
+if (((_curMag in ["30Rnd_556x45_Stanag_Tracer_Red","30Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer"])) OR (_curWep in ["hgun_P07_F"]) OR (side _source == west && "acc_pointer_IR" in (primaryWeaponItems _source) && (_curWep in ["srifle_DMR_O3_F"]))) then
 {
 	if(!(_part in ["","head","body"])) exitWith {_damage = 0;};
 	systemChat format["getDammage _unit = %1, _part = '%2', getHit _part = %3, _damage = %4", getDammage _unit, _part, _unit getHit _part, _damage];
@@ -38,5 +38,8 @@ if (((_curMag in ["30Rnd_65x39_caseless_mag"])) OR (_curWep in ["hgun_P07_F","sr
 		[_unit,_source] spawn life_fnc_tazed;
 	};
 };
+
+// No killing in cop restraints
+if(player getVariable "restrained") then { _damage = 0; };
 
 _damage;

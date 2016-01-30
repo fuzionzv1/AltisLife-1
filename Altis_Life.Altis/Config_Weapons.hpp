@@ -136,10 +136,6 @@ class WeaponShops {
             { "ToolKit", "", 250, 75 },
             { "FirstAidKit", "", 150, 65 },
             { "NVGoggles", "", 2000, 980 },
-            { "Chemlight_red", "", 300, -1 },
-            { "Chemlight_yellow", "", 300, 50 },
-            { "Chemlight_green", "", 300, 50 },
-            { "Chemlight_blue", "", 300, 50 }
         };
     };
 
@@ -157,10 +153,6 @@ class WeaponShops {
             { "ToolKit", "", 1250, 75 },
             { "FirstAidKit", "", 750, 65 },
             { "NVGoggles", "", 10000, 980 },
-            { "Chemlight_red", "", 1500, -1 },
-            { "Chemlight_yellow", "", 1500, 50 },
-            { "Chemlight_green", "", 1500, 50 },
-            { "Chemlight_blue", "", 1500, 50 }
         };
     };
 
