@@ -38,9 +38,7 @@ switch (_code) do
 					life_hornLogic = "Land_ClutterCutter_small_F" createVehicle ([0,0,0]);
 					life_hornLogic attachTo [_vehicle, [0,1,0]];
 					life_hornLogic setVariable ["startTime", time, false];
-
-					/* JESSE NOTE - WE NEED TO CHANGE THIS TO REMOTEEXEC, CAN TRY IF YOU WANT (We did it once before, they're bitches at first)...*/
-					[[_vehicle, life_hornLogic], "life_fnc_airhorn", true, false, false] call BIS_fnc_MP;
+					[_vehicle,life_hornLogic] remoteExecCall ["life_fnc_airhorn",RCLIENT];
 					_handled = true;
 				};
 			};

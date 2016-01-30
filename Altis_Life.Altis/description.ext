@@ -57,7 +57,7 @@ class CfgSounds
 	class HornLT
 	{
 		name = "HornLT";
-		sound[] = {"\sounds\Horn_LT.ogg", 1.0, 1};
+		sound[] = {"\sounds\Horn_LT.ogg", 1.6, 1};
 		titles[] = {};
 	};
 

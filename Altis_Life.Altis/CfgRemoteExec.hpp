@@ -12,6 +12,7 @@ class CfgRemoteExec {
         jip = 0;
 
         /* Client only functions */
+        F(life_fnc_airhorn,CLIENT)
         F(life_fnc_jail,CLIENT)
         F(life_fnc_moveIn,CLIENT)
         F(life_fnc_restrain,CLIENT)
