@@ -18,9 +18,8 @@ if(!alive _vehicle) exitWith {};
 _vehicleData = _vehicle GVAR ["vehicle_info_owners",[]];
 if(count _vehicleData == 0) exitWith {deleteVehicle _vehicle}; //Bad vehicle.
 _vehicleName = FETCH_CONFIG2(getText,CONFIG_VEHICLES,(typeOf _vehicle),"displayName");
-/* NEEDS TO BE FIXED !!!
-[[0,"STR_NOTF_Seizure",true,[SEL(SEL(_vehicleData,0),1),_vehicleName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
-*/
+
+[0,"STR_NOTF_Seizure",true,[SEL(SEL(_vehicleData,0),1),_vehicleName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 life_action_inUse = true;
 
 _upp = localize "STR_NOTF_Seizing";
@@ -62,18 +61,14 @@ if(EQUAL(count crew _vehicle,0)) then
 	};
 
 	life_seize_inuse = true;
-	/* NEEDS TO BE FIXED !!!
-	[[_vehicle,true,player],"TON_fnc_vehicleDead",false,false] call life_fnc_MP;
-	*/
+	[_vehicle,true,player] remoteExecCall ["TON_fnc_vehicleDead",RSERV];
 	[_vehicle] spawn
 		{
 			if(!isNull _this && !isNil "_this") then { deleteVehicle _this;	};
 		};
 	life_seize_inuse = false;
 	hint format[localize "STR_NOTF_SeizurePayout",_type,_price];
-	/* NEEDS TO BE FIXED !!!
-	[[0,"STR_NOTF_SeizedBy",true,[profileName,SEL(SEL(_vehicleData,0),1),_vehicleName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
-	*/
+	[0,"STR_NOTF_SeizedBy",true,[profileName,SEL(SEL(_vehicleData,0),1),_vehicleName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 	ADD(BANK,_price);
 } else {
 	hint localize "STR_NOTF_SeizureCancel";

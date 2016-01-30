@@ -1865,6 +1865,54 @@
       <Portuguese>Sua saúde está perfeita</Portuguese>
       <Polish>Zostałeś wyleczony</Polish>
     </Key>
+	<Key ID="STR_NOTF_LowRank">
+	  <Original>You are too low of a rank to use this option!</Original>
+      <German>Sie sind zu niedrig eines Rang diese Option nutzen zu können!</German>
+      <French>Vous êtes trop faible d'un rang d'utiliser cette option!</French>
+      <Italian>Tu sei troppo basso di un rango di utilizzare questa opzione!</Italian>
+      <Portuguese>Você está muito baixo de um posto para usar esta opção!</Portuguese>
+      <Polish>Jesteś zbyt niska rangi korzystać z tej opcji!</Polish>
+	</Key>
+	<Key ID="STR_NOTF_Seizure">
+	  <Original>%1 your %2 is being seized by the police!</Original>
+	  <German>%1 %2 Ihr wird von der Polizei beschlagnahmt werden!</German>
+      <French>%1 %2 votre est saisi par la police!</French>
+      <Italian>%1 %2 il vostro è stato sequestrato dalla polizia!</Italian>
+      <Portuguese>%1 %2 o seu está a ser apreendidos pela polícia!</Portuguese>
+      <Polish>%1 %2 Twój jest zajętych przez policję!</Polish>
+	</Key>
+	<Key ID="STR_NOTF_SeizureCancel">
+	  <Original>Seizure has been canceled.</Original>
+	  <German>Die Beschlagnahme wurde abgebrochen.</German>
+      <French>Saisie a été annulée.</French>
+      <Italian>Il sequestro è stato annullato.</Italian>
+      <Portuguese>Apreensão foi cancelada.</Portuguese>
+      <Polish>Zajęcie został odwołany.</Polish>
+	</Key>
+	<Key ID="STR_NOTF_SeizurePayout">
+	  <Original>You have received %2 for seizing this %1.</Original>
+	  <German>Sie haben erhielt %2 für diesen %1 ergreifen.</German>
+      <French>Vous avez reçu %2 pour saisir cette %1.</French>
+      <Italian>Hai ricevuto %2 per cogliere questo %1.</Italian>
+      <Portuguese>Você recebeu %2 para aproveitar este %1.</Portuguese>
+      <Polish>Odebrano %2 dla zatarcia tej %1.</Polish>
+	</Key>
+	<Key ID="STR_NOTF_SeizedBy">
+	  <Original>%2 your %3 has been seized by %1.</Original>
+	  <German>%2 Ihre %3 wurde von %1 ergriffen.</German>
+      <French>%2 %3 votre a été saisi par %1.</French>
+      <Italian>%2 il vostro %3 è stato preso da %1.</Italian>
+      <Portuguese>%2 %3 sua foi apreendido por %1.</Portuguese>
+      <Polish>%2 %3 Twój zostało zajęte przez %1.</Polish>
+	</Key>
+	<Key ID="STR_NOTF_Seizing">
+	  <Original>Seizing Vehicle...</Original>
+	  <German>Beschlagnahme Fahrzeug...</German>
+      <French>Saisissant véhicule...</French>
+      <Italian>Cogliere veicolo...</Italian>
+      <Portuguese>Aproveitando veículo...</Portuguese>
+      <Polish>Korzystając pojazd...</Polish>
+	</Key>
     <Key ID="STR_NOTF_BeingImpounded">
       <Original>%1 your %2 is being impounded by the police.</Original>
       <German>%1 dein %2 wird von der Polizei beschlagnahmt.</German>
