@@ -61,6 +61,7 @@ switch (_code) do {
 		switch (playerSide) do {
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+			case civilian: {if(!visibleMap) then {[] spawn life_fnc_civMarkers;}};
 		};
 	};
 
@@ -255,6 +256,18 @@ switch (_code) do {
 			};
 		};
 	};
+};
+
+if (life_barrier_active) then
+{
+    switch (_code) do
+    {
+        case 57: //space key
+        {
+            [] spawn life_fnc_placeablesPlaceComplete;
+        };
+    };
+    true;
 };
 
 _handled;

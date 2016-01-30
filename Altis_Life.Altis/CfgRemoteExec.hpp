@@ -12,6 +12,7 @@ class CfgRemoteExec {
         jip = 0;
 
         /* Client only functions */
+        F(life_fnc_airhorn,CLIENT)
         F(life_fnc_jail,CLIENT)
         F(life_fnc_moveIn,CLIENT)
         F(life_fnc_restrain,CLIENT)
@@ -89,6 +90,7 @@ class CfgRemoteExec {
         F(TON_fnc_setObjVar,SERVER)
         F(TON_fnc_keyManagement,SERVER)
         F(TON_fnc_vehicleDelete,SERVER)
+        F(TON_fnc_vehicleDead,SERVER)
         F(TON_fnc_spawnVehicle,SERVER)
         F(TON_fnc_getVehicles,SERVER)
         F(TON_fnc_vehicleStore,SERVER)

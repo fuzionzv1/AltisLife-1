@@ -79,6 +79,7 @@ class Life_Client_Core
 		class gutAnimal {};
 		class healHospital {};
 		class impoundAction {};
+		class mkDowning {};
 		class packupSpikes {};
 		class pickupItem {};
 		class pickupMoney {};
@@ -179,6 +180,8 @@ class Life_Client_Core
 		class keyHandler {};
 		class loadDeadGear {};
 		class loadGear {};
+		class mouseDownHandler {};
+		class mouseUpHandler {};
 		class nearATM {};
 		class nearestDoor {};
 		class nearUnits {};
@@ -217,7 +220,7 @@ class Life_Client_Core
 	{
 		file = "core\civilian";
 		class civLoadout {};
-		class civMarkers{};
+		class civMarkers {};
 		class demoChargeTimer {};
 		class freezePlayer {};
 		class jail {};
@@ -248,9 +251,22 @@ class Life_Client_Core
 		class vInteractionMenu {};
 	};
 
+	class CopPlaceables
+    {
+	    file = "core\cop\placeables";
+	    class placeablesInit {};
+	    class placeablesMenu {};
+	    class placeablesRemove {};
+	    class placeablesRemoveAll {};
+	    class placeablePlace {};
+	    class placeableCancel {};
+	    class placeablesPlaceComplete {};
+    };
+
 	class Cop
 	{
 		file = "core\cop";
+		class airhorn {};
 		class bountyReceive {};
 		class copInteractionMenu {};
 		class copLights {};

@@ -13,22 +13,27 @@ diag_log "--------------------------------- Starting Altis Life Client Init ----
 diag_log "------------------------------------------------------------------------------------------------------";
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
 [] call compile PreprocessFileLineNumbers "core\clientValidator.sqf";
+enableSentences false;
 
 //Setup initial client core functions
 diag_log "::Life Client:: Initialization Variables";
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
 
 //Set bank amount for new players
-switch (playerSide) do {
-	case west: {
+switch (playerSide) do
+{
+	case west:
+	{
 		BANK = LIFE_SETTINGS(getNumber,"bank_cop");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_cop");
 	};
-	case civilian: {
+	case civilian:
+	{
 		BANK = LIFE_SETTINGS(getNumber,"bank_civ");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
 	};
-	case independent: {
+	case independent:
+	{
 		BANK = LIFE_SETTINGS(getNumber,"bank_med");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
 	};
@@ -54,7 +59,8 @@ diag_log "::Life Client:: Waiting for the server to be ready..";
 waitUntil{!isNil "life_server_isReady"};
 waitUntil{(life_server_isReady OR !isNil "life_server_extDB_notLoaded")};
 
-if(!isNil "life_server_extDB_notLoaded" && {life_server_extDB_notLoaded != ""}) exitWith {
+if(!isNil "life_server_extDB_notLoaded" && {life_server_extDB_notLoaded != ""}) exitWith
+{
 	diag_log life_server_extDB_notLoaded;
 	999999 cutText [life_server_extDB_notLoaded,"BLACK FADED"];
 	999999 cutFadeOut 99999999;
@@ -68,17 +74,21 @@ waitUntil {life_session_completed};
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;
 
-switch (playerSide) do {
-	case west: {
+switch (playerSide) do
+{
+	case west:
+	{
 		_handle = [] spawn life_fnc_initCop;
 		waitUntil {scriptDone _handle};
 	};
-	case civilian: {
+	case civilian:
+	{
 		//Initialize Civilian Settings
 		_handle = [] spawn life_fnc_initCiv;
 		waitUntil {scriptDone _handle};
 	};
-	case independent: {
+	case independent:
+	{
 		//Initialize Medics and blah
 		_handle = [] spawn life_fnc_initMedic;
 		waitUntil {scriptDone _handle};
@@ -91,12 +101,14 @@ player SVAR ["transporting",false,true];
 
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";
-
 diag_log "Executing client.fsm";
-waitUntil {!(isNull (findDisplay 46))};
 
+waitUntil {!(isNull (findDisplay 46))};
 diag_log "Display 46 Found";
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call life_fnc_keyHandler"];
+(findDisplay 46) displayAddEventHandler ["MouseButtonDown", "_this call life_fnc_mouseDownHandler"];
+(findDisplay 46) displayAddEventHandler ["MouseButtonUp", "_this call life_fnc_mouseUpHandler"];
+
 player addRating 99999999;
 diag_log "------------------------------------------------------------------------------------------------------";
 diag_log format["                End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
