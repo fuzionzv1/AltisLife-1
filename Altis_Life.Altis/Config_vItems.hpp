@@ -13,7 +13,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "fuelFull", "peach", "storagesmall", "storagebig" };
     };
 
     class rebel {
@@ -135,6 +135,14 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "fuelFull", "defusekit" };
     };
+
+    class medical {
+        name = "STR_Shops_medical";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "defibrillator","bloodbag" };
+    };
 };
 
 /*
@@ -161,6 +169,61 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_pickaxe.paa";
+    };
+
+    class defibrillator {
+        variable = "defibrillator";
+        displayName = "STR_Item_Defibrillator";
+        weight = 4;
+        buyPrice = 3000;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_defibrillator.paa";
+    };
+
+    class bloodbag {
+        variable = "bloodbag";
+        displayName = "STR_Item_Bloodbag";
+        weight = 2;
+        buyPrice = 300;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_bloodBag.paa";
+    };
+
+    class corn {
+        variable = "corn";
+        displayName = "STR_Item_Corn";
+        weight = 1;
+        buyPrice = 250;
+        sellPrice = 250;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_corn.paa";
+    };
+
+    class grape {
+        variable = "grape";
+        displayName = "STR_Item_Grape";
+        weight = 1;
+        buyPrice = 50;
+        sellPrice = 50;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_grape.paa";
+    };
+
+    class sugar {
+        variable = "sugar";
+        displayName = "STR_Item_Sugar";
+        weight = 1;
+        buyPrice = 50;
+        sellPrice = 50;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_sugar.paa";
     };
 
     class fuelEmpty {
@@ -414,7 +477,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = false;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_rockUnprocessed.paa";
     };
 
     class cement {

@@ -34,6 +34,7 @@ if(FETCH_CONST(life_coplevel) == 1) then
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addPrimaryWeaponItem "30Rnd_556x45_Stanag_Tracer_Red";
+	player addWeapon "NVGoggles_OPFOR";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
@@ -55,6 +56,7 @@ if (FETCH_CONST(life_coplevel) == 2) then
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addPrimaryWeaponItem "30Rnd_556x45_Stanag_Tracer_Red";
+	player addWeapon "NVGoggles_OPFOR";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
@@ -74,6 +76,7 @@ if (FETCH_CONST(life_coplevel) == 3) then
 	player addWeapon "hgun_P07_F";
 	player addHandgunItem "muzzle_snds_L";
 	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
+	player addWeapon "NVGoggles_OPFOR";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
@@ -95,6 +98,7 @@ if (FETCH_CONST(life_coplevel) == 4) then
 	player addWeapon "hgun_P07_F";
 	player addHandgunItem "muzzle_snds_L";
 	player addSecondaryWeaponItem "30Rnd_9x21_Mag";
+	player addWeapon "NVGoggles_OPFOR";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_9x21_Mag";
 	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
@@ -117,6 +121,7 @@ if (FETCH_CONST(life_coplevel) == 5) then
 	player addWeapon "hgun_Pistol_heavy_01_F";
 	player addHandgunItem "muzzle_snds_acp";
 	player addHandgunItem "optic_MRD";
+	player addWeapon "NVGoggles_OPFOR";
 	player addSecondaryWeaponItem "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
@@ -138,7 +143,8 @@ if (FETCH_CONST(life_coplevel) == 6) then
 	player addPrimaryWeaponItem "optic_Hamr";
 	player addPrimaryWeaponItem "20Rnd_762x51_Mag";
 	player addPrimaryWeaponItem "acc_pointer_IR";
-    player addWeapon "hgun_Pistol_heavy_01_F";
+	player addWeapon "hgun_Pistol_heavy_01_F";
+	player addWeapon "NVGoggles_OPFOR";
 	player addHandgunItem "optic_MRD";
 	player addHandgunItem "muzzle_snds_acp";
 	player addSecondaryWeaponItem "11Rnd_45ACP_Mag";
