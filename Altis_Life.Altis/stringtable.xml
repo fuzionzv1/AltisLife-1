@@ -114,6 +114,27 @@
       <Portuguese>Equipamentos da Polícia</Portuguese>
       <Polish>Zbrojownia Policji</Polish>
     </Key>
+	<Key ID="STR_Shops_MoonshineQual">
+	  <Original>Quality Moonshine Distributor</Original>
+	</Key>
+	<Key ID="STR_Shops_Moonshine">
+	  <Original>Moonshine Distributor</Original>
+	</Key>
+	<Key ID="STR_Shops_medical">
+	  <Original>Medical Supplies</Original>
+	</Key>
+	<Key ID="STR_Shops_hunting">
+	  <Original>Hunting Shop</Original>
+	</Key>
+	<Key ID="STR_Shops_brewsupplies">
+	  <Original>Brewing Supplies</Original>
+	</Key>
+	<Key ID="STR_Shops_downtown">
+	  <Original>Liquor Store</Original>
+	</Key>
+	<Key ID="STR_Shops_gasmarket">
+	  <Original>Stop N' Go Mart</Original>
+	</Key>
     <Key ID="STR_Shops_Cement">
       <Original>Juan's Cement Laying</Original>
       <German>Juan's Zementleger</German>
