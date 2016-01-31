@@ -3941,6 +3941,38 @@
       <Portuguese>Cocaína Refinada</Portuguese>
       <Polish>Oczyszczona kokaina</Polish>
     </Key>
+	<Key ID="STR_Item_Corn">
+	  <Original>Corn</Original>
+	  <German>Mais</German>
+      <French>Blé</French>
+      <Italian>Mais</Italian>
+      <Portuguese>Milho</Portuguese>
+      <Polish>Kukurydza</Polish>
+	</Key>
+	<Key ID="STR_Item_Grape">
+	  <Original>Grapes</Original>
+	  <German>Trauben</German>
+      <French>les raisins</French>
+      <Italian>Uva</Italian>
+      <Portuguese>Uvas</Portuguese>
+      <Polish>Winogrona</Polish>
+	</Key>
+	<Key ID="STR_Item_Wine">
+	  <Original>Aged Wine</Original>
+	  <German>Im Alter von Wein</German>
+      <French>vin vieilli</French>
+      <Italian>vino invecchiato</Italian>
+      <Portuguese>Vinho envelhecido</Portuguese>
+      <Polish>W wieku wina</Polish>
+	</Key>
+	<Key ID="STR_Item_Sugar">
+	  <Original>Sugar</Original>
+	  <German>Zucker</German>
+      <French>Du sucre</French>
+      <Italian>Lo zucchero</Italian>
+      <Portuguese>Açúcar</Portuguese>
+      <Polish>Cukier</Polish>
+	</Key>
     <Key ID="STR_Item_SpikeStrip">
       <Original>Spike Strip</Original>
       <German>Nagelband</German>
@@ -4411,6 +4443,46 @@
     </Key>
   </Package>
     <Package name="Process_Action">
+	<Key ID="STR_Process_FermWine">
+	  <Original>Fermenting Wine</Original>
+      <German>gärenden Wein</German>
+      <French>vin fermentation</French>
+      <Italian>fermentazione Vino</Italian>
+      <Portuguese>fermentação do vinho</Portuguese>
+      <Polish>fermentującego wina</Polish>
+	</Key>
+	<Key ID="STR_Process_Wine">
+	  <Original>Aging Wine</Original>
+	  <German>Aging Wine</German>
+      <French>vin de vieillissement</French>
+      <Italian>invecchiamento del vino</Italian>
+      <Portuguese>envelhecimento do vinho</Portuguese>
+      <Polish>starzenie się wina</Polish>
+	</Key>
+	<Key ID="STR_Process_Mash">
+	  <Original>Mixing Moonshine Mash</Original>
+	  <German>Mischen Moonshine Mash</German>
+      <French>Mélange Moonshine Mash</French>
+      <Italian>Miscelazione Moonshine Mash</Italian>
+      <Portuguese>Misturando Moonshine Mash</Portuguese>
+      <Polish>Mieszanie Moonshine Mash</Polish>
+	</Key>
+	<Key ID="STR_Process_Moonshine">
+	  <Original>Producing Moonshine</Original>
+	  <German>Herstellung Moonshine</German>
+      <French>produire Moonshine</French>
+      <Italian>Produrre Moonshine</Italian>
+      <Portuguese>produzir Moonshine</Portuguese>
+      <Polish>Wyprodukowanie Moonshine</Polish>
+	</Key>
+	<Key ID="STR_Process_MoonshineQual">
+	  <Original>Producing Premimum Moonshine</Original>
+	  <German>Die Produktion von Premium Moonshine</German>
+      <French>La production haut de gamme Moonshine</French>
+      <Italian>Produrre Premium Moonshine</Italian>
+      <Portuguese>Produzir premium Moonshine</Portuguese>
+      <Polish>Wyprodukowanie Premium Moonshine</Polish>
+	</Key>
     <Key ID="STR_Process_Oil">
       <Original>Processing Oil</Original>
       <German>Öl wird verarbeite</German>
