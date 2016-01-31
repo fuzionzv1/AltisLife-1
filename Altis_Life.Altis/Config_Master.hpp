@@ -10,12 +10,6 @@ class Life_Settings
     save_civ_weapons = true; //Allow civilians to save weapons on them?
     save_virtualItems = true; //Save Virtual items (all sides)?
 
-    /* Clothing related settings */
-    clothing_box = true; //true = preview inside a black box.  false = preview on map.
-
-    /* Medic related settings*/
-    allow_medic_weapons = false; // true allows medics to hold/use weapons - false disallows
-
     /* Revive system settings */
     revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
     revive_fee = 1500; //Revive fee that players have to pay and medics / EMS are rewarded
@@ -40,14 +34,22 @@ class Life_Settings
     impound_air = 850; //Price for impounding helicopters / planes
 
     /* Initial Bank Amount */
-    bank_cop = 7000; //Amount of cash on bank for new cops
+    bank_cop = 3000; //Amount of cash on bank for new cops
     bank_civ = 3000; //Amount of cash on bank for new civillians
-    bank_med = 6500; //Amount of cash on bank for new medics
+    bank_med = 3000; //Amount of cash on bank for new medics
 
     /* Paycheck Amount */
-    paycheck_cop = 10000; //Payment for cops
+    paycheck_cop = 10000; //Base payment for cops
     paycheck_civ = 350; //Payment for civillians
     paycheck_med = 450; //Payment for medics
+
+    /* Paycheck Rank Addition */
+    cadet_add = 0;
+    const_add = 0;
+    corp_add = 0;
+    sgt_add = 0;
+    lt_add = 0;
+    captain_add = 0;
 
     /* Federal Reserve settings */
     noatm_timer = 10; //Time in minutes that players won't be able to deposit his money after selling stolen gold
@@ -56,7 +58,7 @@ class Life_Settings
     spyglass_init = false; //Enable or disable spyglass
 
     /* Skins settings */
-    civ_skins = false; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder. (It must be named as: civilian_uniform_1.jpg, civilian_uniform_2.jpg...civilian_uniform_6.jpg, civilian_uniform_7.jpg)
+    civ_skins = false; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder.
 
     /* Job-related stuff */
     delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
