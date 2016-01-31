@@ -15,12 +15,12 @@ class CarShops
         side = "civ";
         vehicles[] =
         {
-            { "B_Quadbike_01_F", 2500, { "" }, { "", "", -1 } },
-            { "C_Hatchback_01_F", 9500, { "driver" }, { "", "", -1 } },
-            { "C_Offroad_01_F", 12500, { "driver" }, { "", "", -1 } },
-            { "C_SUV_01_F", 30000, { "driver" }, { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", 40000, { "driver" }, { "", "", -1 } },
-            { "C_Van_01_transport_F", 45000, { "driver" }, { "", "", -1 } }
+            { "B_Quadbike_01_F", 750, { "" }, { "", "", -1 } },
+            { "C_Hatchback_01_F", 1500, { "driver" }, { "", "", -1 } },
+            { "C_Offroad_01_F", 3500, { "driver" }, { "", "", -1 } },
+            { "C_SUV_01_F", 4000, { "driver" }, { "", "", -1 } },
+            { "C_Hatchback_01_sport_F", 5750, { "driver" }, { "", "", -1 } },
+            { "C_Van_01_transport_F", 9500, { "driver" }, { "", "", -1 } }
 
         };
     };
@@ -30,8 +30,8 @@ class CarShops
         side = "civ";
         vehicles[] =
         {
-            { "I_Quadbike_01_F", 1500, { "hunting" }, { "", "", -1 } },
-            { "C_Offroad_stripped_F", 4000, { "hunting" }, { "", "", -1 } }
+            { "I_Quadbike_01_F", 750, { "hunting" }, { "", "", -1 } },
+            { "C_Offroad_stripped_F", 2750, { "hunting" }, { "", "", -1 } }
         };
     };
 
@@ -40,10 +40,10 @@ class CarShops
         side = "civ";
         vehicles[] =
         {
-            { "C_Kart_01_Blu_F", 15000 , { "driver" }, { "", "", -1 } },
-            { "C_Kart_01_Fuel_F", 15000, { "driver" }, { "", "", -1 } },
-            { "C_Kart_01_Red_F", 15000, { "driver" }, { "", "", -1 } },
-            { "C_Kart_01_Vrana_F", 15000, { "driver" }, { "", "", -1 } }
+            { "C_Kart_01_Blu_F", 1200 , { "driver" }, { "", "", -1 } },
+            { "C_Kart_01_Fuel_F", 1200, { "driver" }, { "", "", -1 } },
+            { "C_Kart_01_Red_F", 1200, { "driver" }, { "", "", -1 } },
+            { "C_Kart_01_Vrana_F", 1200, { "driver" }, { "", "", -1 } }
         };
     };
 
@@ -52,10 +52,10 @@ class CarShops
         side = "med";
         vehicles[] =
         {
-            { "C_Offroad_01_F", 10000, { "" }, { "", "", -1 } },
+            { "C_Offroad_01_F", 1000, { "" }, { "", "", -1 } },
             { "I_Truck_02_medical_F", 25000, { "" }, { "", "", -1 } },
-            { "O_Truck_03_medical_F", 45000, { "" }, { "", "", -1 } },
-            { "B_Truck_01_medical_F", 60000, { "" }, { "", "", -1 } }
+            { "O_Truck_03_medical_F", 30000, { "" }, { "", "", -1 } },
+            { "B_Truck_01_medical_F", 90000, { "" }, { "", "", -1 } }
         };
     };
 
@@ -64,8 +64,8 @@ class CarShops
         side = "med";
         vehicles[] =
         {
-            { "B_Heli_Light_01_F", 50000, { "mAir" }, { "", "", -1 } },
-            { "O_Heli_Light_02_unarmed_F", 75000, { "mAir" }, { "", "", -1 } }
+            { "B_Heli_Light_01_F", 25000, { "mAir" }, { "", "", -1 } },
+            { "O_Heli_Light_02_unarmed_F", 45000, { "mAir" }, { "", "", -1 } }
         };
     };
 
@@ -74,11 +74,11 @@ class CarShops
         side = "civ";
         vehicles[] =
         {
-            { "C_Van_01_box_F", 60000, { "trucking" }, { "", "", -1 } },
-            { "B_Truck_01_transport_F", 75000, { "trucking" }, { "", "", -1 } },
-            { "B_Truck_01_box_F", 75000, { "trucking" }, { "", "", -1 } },
-            { "O_Truck_02_covered_F", 75000, { "trucking" }, { "", "", -1 } },
-            { "O_Truck_02_transport_F", 75000, { "trucking" }, { "", "", -1 } }
+            { "C_Van_01_box_F", 12500, { "trucking" }, { "", "", -1 } },
+            { "B_Truck_01_transport_F", 20000, { "trucking" }, { "", "", -1 } },
+            { "B_Truck_01_box_F", 22500, { "trucking" }, { "", "", -1 } },
+            { "O_Truck_02_covered_F", 27500, { "trucking" }, { "", "", -1 } },
+            { "O_Truck_02_transport_F", 32500, { "trucking" }, { "", "", -1 } }
         };
     };
 
@@ -87,13 +87,13 @@ class CarShops
         side = "civ";
         vehicles[] =
         {
-            { "B_Quadbike_01_F", 2500, { "" }, { "", "", -1 } },
-            { "B_G_Offroad_01_F", 15000, { "rebel" }, { "", "", -1 } },
-            { "O_MRAP_02_F", 150000, { "" }, { "rebel", "", -1 } },
-            { "O_G_Offroad_01_armed_F", 750000, { "rebel" }, { "", "", -1 } },
-            { "C_Hatchback_01_F", 325000, { "rebel" }, { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", 325000, { "rebel" }, { "", "", -1 } },
-            { "C_SUV_01_F", 325000, { "rebel" }, { "", "", -1 } }
+            { "B_Quadbike_01_F", 600, { "" }, { "", "", -1 } },
+            { "B_G_Offroad_01_F", 3400, { "rebel" }, { "", "", -1 } },
+            { "O_MRAP_02_F", 75000, { "" }, { "rebel", "", -1 } },
+            { "O_G_Offroad_01_armed_F", 120000, { "rebel" }, { "", "", -1 } },
+            { "C_Hatchback_01_F", 6500, { "rebel" }, { "", "", -1 } },
+            { "C_Hatchback_01_sport_F", 6500, { "rebel" }, { "", "", -1 } },
+            { "C_SUV_01_F", 4000, { "rebel" }, { "", "", -1 } }
         };
     };
 
@@ -102,14 +102,14 @@ class CarShops
         side = "cop";
         vehicles[] =
         {
-            { "C_Quadbike_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 1 } },
-            { "C_Offroad_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 2 } },
-            { "C_Hatchback_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 2 } },
-            { "C_Hatchback_01_sport_F", 30000, { "" }, { "life_coplevel", "SCALAR", 2 } },
-            { "C_SUV_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 2 } },
-            { "B_MRAP_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 4 } },
-            { "I_MRAP_03_F", 30000, { "" }, { "life_coplevel", "SCALAR", 5 } },
-            { "B_G_Offroad_01_armed_F", 30000, { "" }, { "life_coplevel", "SCALAR", 5 } }
+            { "C_Quadbike_01_F", 100, { "" }, { "life_coplevel", "SCALAR", 1 } },
+            { "C_Offroad_01_F", 900, { "" }, { "life_coplevel", "SCALAR", 2 } },
+            { "C_Hatchback_01_F", 1200, { "" }, { "life_coplevel", "SCALAR", 2 } },
+            { "C_Hatchback_01_sport_F", 4500, { "" }, { "life_coplevel", "SCALAR", 2 } },
+            { "C_SUV_01_F", 3000, { "" }, { "life_coplevel", "SCALAR", 2 } },
+            { "B_MRAP_01_F", 12000, { "" }, { "life_coplevel", "SCALAR", 4 } },
+            { "I_MRAP_03_F", 15000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "B_G_Offroad_01_armed_F", 17000, { "" }, { "life_coplevel", "SCALAR", 5 } }
         };
     };
 
@@ -118,9 +118,9 @@ class CarShops
         side = "civ";
         vehicles[] =
         {
-            { "O_Heli_Light_02_unarmed_F", 5000, { "rebel" }, { "", "", -1 } },
-            { "I_Heli_light_03_unarmed_F", 200000, { "rebel" }, { "", "", -1 } },
-            { "B_Heli_Light_01_F", 200000, { "rebel" }, { "", "", -1 } }
+            { "O_Heli_Light_02_unarmed_F", 100000, { "rebel" }, { "", "", -1 } },
+            { "I_Heli_light_03_unarmed_F", 85000, { "rebel" }, { "", "", -1 } },
+            { "B_Heli_Light_01_F", 55000, { "rebel" }, { "", "", -1 } }
         };
     };
 
@@ -129,7 +129,7 @@ class CarShops
         side = "civ";
         vehicles[] =
         {
-            { "C_Heli_Light_01_civil_F", 253, { "pilot" }, { "", "", -1 } },
+            { "C_Heli_Light_01_civil_F", 52500, { "pilot" }, { "", "", -1 } },
         };
     };
 
@@ -138,12 +138,12 @@ class CarShops
         side = "cop";
         vehicles[] =
         {
-            { "B_Heli_Light_01_F", 75000, { "" }, { "life_coplevel", "SCALAR", 2 } },
-            { "I_Heli_light_03_unarmed_F", 200000, { "" }, { "life_coplevel", "SCALAR", 3 } },
-            { "O_Heli_Light_02_unarmed_F", 200000, { "" }, { "life_coplevel", "SCALAR", 4 } },
-            { "I_Heli_Transport_02_F", 200000, { "" }, { "life_coplevel", "SCALAR", 5 } },
-            { "B_Heli_Transport_03_unarmed_F", 200000, { "" }, { "life_coplevel", "SCALAR", 5 } },
-            { "B_Heli_Transport_01_F", 200000, { "" }, { "life_coplevel", "SCALAR", 6 } }
+            { "B_Heli_Light_01_F", 25000, { "" }, { "life_coplevel", "SCALAR", 2 } },
+            { "I_Heli_light_03_unarmed_F", 40000, { "" }, { "life_coplevel", "SCALAR", 3 } },
+            { "O_Heli_Light_02_unarmed_F", 75000, { "" }, { "life_coplevel", "SCALAR", 4 } },
+            { "I_Heli_Transport_02_F", 85000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "B_Heli_Transport_03_unarmed_F", 85000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "B_Heli_Transport_01_F", 90000, { "" }, { "life_coplevel", "SCALAR", 6 } }
         };
     };
 
@@ -154,8 +154,8 @@ class CarShops
         vehicles[] =
         {
             { "B_Boat_Transport_01_F", 3000, { "" }, { "", "", 2 } },
-            { "C_Boat_Civil_01_police_F", 20000, { "" }, { "", "", 2 } },
-            { "B_SDV_01_F", 100000, { "" }, { "", "", 2 } }
+            { "C_Boat_Civil_01_police_F", 7000, { "" }, { "", "", 2 } },
+            { "B_SDV_01_F", 7000, { "" }, { "", "", 2 } }
         };
     };
 
@@ -164,9 +164,9 @@ class CarShops
         side = "civ";
         vehicles[] =
         {
-            { "C_Rubberboat", 5000, { "boat" }, { "", "", -1 } },
-            { "C_Boat_Civil_01_F", 22000, { "boat" }, { "", "", -1 } },
-            { "B_SDV_01_F", 150000, { "boat" }, { "", "", -1 } }
+            { "C_Rubberboat", 1250, { "boat" }, { "", "", -1 } },
+            { "C_Boat_Civil_01_F", 3000, { "boat" }, { "", "", -1 } },
+            { "B_SDV_01_F", 8000, { "boat" }, { "", "", -1 } }
         };
     };
 };
@@ -207,7 +207,7 @@ class LifeCfgVehicles
 
     class I_Truck_02_medical_F
     {
-        vItemSpace = 150;
+        vItemSpace = 20;
         storageFee[] = { 0, 0, 1500, 0 };
         garageSell[] = { 0, 0, 5000, 0 };
         insurance = 2500;
@@ -217,7 +217,7 @@ class LifeCfgVehicles
 
     class O_Truck_03_medical_F
     {
-        vItemSpace = 200;
+        vItemSpace = 20;
         storageFee[] = { 0, 0, 3000, 0 };
         garageSell[] = { 0, 0, 10000, 0 };
         insurance = 2500;
@@ -227,7 +227,7 @@ class LifeCfgVehicles
 
     class B_Truck_01_medical_F
     {
-        vItemSpace = 250;
+        vItemSpace = 20;
         storageFee[] = { 0, 0, 6500, 0 };
         garageSell[] = { 0, 0, 25000, 0 };
         insurance = 2500;
@@ -237,7 +237,7 @@ class LifeCfgVehicles
 
     class C_Rubberboat
     {
-        vItemSpace = 45;
+        vItemSpace = 100;
         storageFee[] = { 400, 300, 0, 0 };
         garageSell[] = { 950, 350, 0, 0 };
         insurance = 2500;
@@ -247,7 +247,7 @@ class LifeCfgVehicles
 
     class B_Heli_Transport_03_unarmed_F
     {
-        vItemSpace = 200;
+        vItemSpace = 700;
         storageFee[] = { 0, 50000, 0, 0 };
         garageSell[] = { 0, 85000, 0, 0 };
         insurance = 16000;
@@ -257,7 +257,7 @@ class LifeCfgVehicles
 
     class B_Heli_Light_01_F
     {
-        vItemSpace = 200;
+        vItemSpace = 75;
         storageFee[] = { 0, 50000, 0, 0 };
         garageSell[] = { 0, 85000, 0, 0 };
         insurance = 16000;
@@ -267,7 +267,7 @@ class LifeCfgVehicles
 
     class I_Heli_light_03_unarmed_F
     {
-        vItemSpace = 200;
+        vItemSpace = 120;
         storageFee[] = { 0, 50000, 0, 0 };
         garageSell[] = { 0, 85000, 0, 0 };
         insurance = 16000;
@@ -277,11 +277,11 @@ class LifeCfgVehicles
 
     class B_Heli_Transport_01_F
     {
-        vItemSpace = 200;
+        vItemSpace = 20;
         storageFee[] = { 0, 50000, 0, 0 };
         garageSell[] = { 0, 85000, 0, 0 };
         insurance = 16000;
-        chopShop = 45000;
+        chopShop = 90000;
         textures[] = {};
     };
 
@@ -291,7 +291,7 @@ class LifeCfgVehicles
         storageFee[] = { 0, 450, 0, 0 };
         garageSell[] = { 0, 850, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 1500;
         textures[] = { };
     };
 
@@ -327,31 +327,31 @@ class LifeCfgVehicles
 
     class B_G_Offroad_01_F
     {
-        vItemSpace = 65;
+        vItemSpace = 175;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 3500, 0, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 2000;
         textures[] = { };
     };
 
     class B_G_Offroad_01_armed_F
     {
-        vItemSpace = 65;
+        vItemSpace = 25;
         storageFee[] = { 750, 500, 650, 850 };
         garageSell[] = { 6500, 2500, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 75000;
         textures[] = { };
     };
 
     class O_G_Offroad_01_armed_F
     {
-        vItemSpace = 65;
+        vItemSpace = 25;
         storageFee[] = { 750, 500, 650, 850 };
         garageSell[] = { 6500, 2500, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 75000;
         textures[] = { };
     };
 
@@ -377,7 +377,7 @@ class LifeCfgVehicles
 
     class B_Truck_01_box_F
     {
-        vItemSpace = 450;
+        vItemSpace = 1150;
         storageFee[] = { 35000, 0, 0, 0 };
         garageSell[] = { 150000, 0, 0, 0 };
         insurance = 2500;
@@ -387,7 +387,7 @@ class LifeCfgVehicles
 
     class B_Truck_01_transport_F
     {
-        vItemSpace = 325;
+        vItemSpace = 850;
         storageFee[] = { 25650, 0, 0, 0 };
         garageSell[] = { 135000, 0, 0, 0 };
         insurance = 2500;
@@ -417,7 +417,7 @@ class LifeCfgVehicles
 
     class C_Offroad_01_F
     {
-        vItemSpace = 65;
+        vItemSpace = 175;
         storageFee[] = { 1000, 500, 650, 1000 };
         garageSell[] = { 6500, 2500, 0, 0 };
         insurance = 2500;
@@ -499,7 +499,7 @@ class LifeCfgVehicles
 
     class C_Hatchback_01_sport_F
     {
-        vItemSpace = 45;
+        vItemSpace = 60;
         storageFee[] = { 2500, 1000, 0, 0 };
         garageSell[] = { 15000, 7500, 0, 0 };
         insurance = 5500;
@@ -532,7 +532,7 @@ class LifeCfgVehicles
 
     class C_Offroad_stripped_F
     {
-        vItemSpace = 150;
+        vItemSpace = 175;
         storageFee[] = { 312, 0, 0, 0 };
         garageSell[] = { 2400, 0, 0, 0 };
         insurance = 2500;
@@ -601,7 +601,7 @@ class LifeCfgVehicles
 
     class C_Hatchback_01_F
     {
-        vItemSpace = 40;
+        vItemSpace = 90;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 4500, 3500, 0, 0 };
         insurance = 2500;
@@ -637,7 +637,7 @@ class LifeCfgVehicles
 
     class C_SUV_01_F
     {
-        vItemSpace = 50;
+        vItemSpace = 140;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 15000, 7500, 0, 0 };
         insurance = 2500;
@@ -664,7 +664,7 @@ class LifeCfgVehicles
 
     class C_Van_01_transport_F
     {
-        vItemSpace = 100;
+        vItemSpace = 220;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 25000, 0, 0, 0 };
         insurance = 2500;
@@ -682,7 +682,7 @@ class LifeCfgVehicles
 
     class C_Van_01_box_F
     {
-        vItemSpace = 150;
+        vItemSpace = 350;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 35000, 0, 0, 0 };
         insurance = 2500;
@@ -700,7 +700,7 @@ class LifeCfgVehicles
 
     class B_MRAP_01_F
     {
-        vItemSpace = 65;
+        vItemSpace = 20;
         storageFee[] = { 0, 7500, 0, 0 };
         garageSell[] = { 0, 10000, 0, 0 };
         insurance = 2500;
@@ -715,7 +715,7 @@ class LifeCfgVehicles
 
     class C_Heli_Light_01_civil_F
     {
-        vItemSpace = 90;
+        vItemSpace = 40;
         storageFee[] = { 45000, 19500, 0, 0 };
         garageSell[] = { 57000, 35000, 0, 0 };
         insurance = 2500;
@@ -766,7 +766,7 @@ class LifeCfgVehicles
 
     class O_Heli_Light_02_unarmed_F
     {
-        vItemSpace = 210;
+        vItemSpace = 120;
         storageFee[] = { 55000, 0, 22000, 0 };
         garageSell[] = { 72500, 0, 35000, 0 };
         insurance = 2500;
@@ -793,7 +793,7 @@ class LifeCfgVehicles
 
     class I_Heli_Transport_02_F
     {
-        vItemSpace = 375;
+        vItemSpace = 120;
         storageFee[] = { 75000, 0, 0, 0 };
         garageSell[] = { 125000, 0, 0, 0 };
         insurance = 2500;
