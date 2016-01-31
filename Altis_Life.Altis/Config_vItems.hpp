@@ -13,7 +13,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "fuelFull", "peach", "storagesmall", "storagebig" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "fuelFull", "peach", "storagesmall", "storagebig", "cement" };
     };
 
     class rebel {
@@ -21,7 +21,7 @@ class VirtualShops {
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge", "goldbar", "bankbond" };
     };
 
     class gang {
@@ -53,7 +53,7 @@ class VirtualShops {
         side = "";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "coffee", "donuts", "redgull", "fuelFull"};
+        items[] = { "coffee", "donuts", "redgull", "fuelFull", "repairKit"};
     };
 
     class drugdealer {
@@ -112,22 +112,6 @@ class VirtualShops {
         items[] = { "salt_refined" };
     };
 
-    class cement {
-        name = "STR_Shops_Cement";
-        side = "civ";
-        license = "";
-        level[] = { "", "", -1, "" };
-        items[] = { "cement" };
-    };
-
-    class gold {
-        name = "STR_Shops_Gold";
-        side = "civ";
-        license = "";
-        level[] = { "", "", -1, "" };
-        items[] = { "goldbar" };
-    };
-
     class cop {
         name = "STR_Shops_Cop";
         side = "cop";
@@ -183,6 +167,11 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = {"grape","sugar"};
     };
+
+    class downtown {
+        name = "STR_Shops_downtown";
+        items[] = {"fermwine","mash","wine","moonshineQual","moonshine"};
+    };
 };
 
 /*
@@ -198,26 +187,70 @@ class VirtualShops {
 */
 class VirtualItems {
     //Virtual Items
+    class repairKit {
+        variable = "repairKit";
+        displayName = "STR_Item_RepairKit";
+        weight = 4;
+        buyPrice = 150;
+        sellPrice = 150;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_repairKit.paa";
+    };
+
     class moonshine {
         variable = "moonshine";
-        displayName = "Moonshine";
+        displayName = "STR_Item_Moonshine";
         weight = 2;
         buyPrice = 750;
         sellPrice = 350;
         illegal = true;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_moonshine.paa";
+    };
+
+    class bankbond {
+        variable = "bankbond";
+        displayName = "STR_Item_Bankbond";
+        weight = 3;
+        buyPrice = 400;
+        sellPrice = 350;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_bankbonds.paa";
     };
 
     class moonshineQual {
         variable = "moonshineQual";
-        displayName = "Quality Moonshine";
+        displayName = "STR_Item_MoonshineQual";
         weight = 2;
         buyPrice = 750;
         sellPrice = 350;
         illegal = true;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_moonshine.paa";
+    };
+
+    class fermwine {
+        variable = "fermwine";
+        displayName = "STR_Item_FermWine";
+        weight = 2;
+        buyPrice = 750;
+        sellPrice = 350;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_wine.paa";
+    };
+
+    class wine {
+        variable = "wine";
+        displayName = "STR_Item_Wine";
+        weight = 2;
+        buyPrice = 750;
+        sellPrice = 350;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_wine.paa";
     };
 
     class pickaxe {
@@ -870,7 +903,7 @@ class VirtualItems {
         sellPrice = 1000;
         illegal = false;
         edible = 100;
-        icon = "icons\ico_cookedMeat.paa";
+        icon = "icons\ico_turtlesoup.paa";
     };
 
     class hen_raw {
