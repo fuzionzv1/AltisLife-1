@@ -144,23 +144,43 @@ class VirtualShops {
         items[] = { "defibrillator","bloodbag" };
     };
 
+    class hunting {
+        name = "Hunting";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = {"waterBottle", "apple", "tbacon", "redgull","repairKit"};
+    };
+
     class moonshineQual {
-        name = "STR_Shops_MoonshineQual";
+        name = "Moonshine Quality";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "moonshineQual" };
     };
 
     class moonshine {
-        name = "STR_Shops_Moonshine";
+        name = "Moonshine";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "moonshine" };
     };
 
     class butcher {
-        name = "STR_Shops_butcher";
+        name = "Butcher";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = {"goat_raw","goat","sheep_raw","sheep","rooster_raw","rooster","hen_raw","hen"};
     };
 
     class brewsupplies {
-        name = "STR_Shops_brewsupplies";
+        name = "Brew Supplies";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = {"grape","sugar"};
     };
 };
