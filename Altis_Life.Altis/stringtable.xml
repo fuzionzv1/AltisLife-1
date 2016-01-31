@@ -4955,6 +4955,21 @@
       <Portuguese>Controla se os jogadores terão os nomes em suas cabeças.</Portuguese>
       <Polish>Kontroluje czy gracze będą mieli nad głowami swoje Tagi z nazwą</Polish>
     </Key>
+      <Key ID="STR_pAct_DriverSeat">
+      <Original>Enter Driver Seat</Original>
+      <German>Auf den Fahrersitz</German>
+      <French>Place conducteur</French>
+    </Key>
+    <Key ID="STR_pAct_PassengerSeat">
+      <Original>Enter Passenger Seat</Original>
+      <German>Auf den Passagiersitz</German>
+      <French>Place passager</French>
+    </Key>
+    <Key ID="STR_pAct_GoOut">
+      <Original>Exit Vehicle</Original>
+      <German>Aus dem Fahrzeug austeigen</German>
+      <French>Sortir du vÃ©hicule</French>
+    </Key>
     <Key ID="STR_GUI_ShopStock">
       <Original>Shop Stock</Original>
       <German>Lagerbestand</German>
