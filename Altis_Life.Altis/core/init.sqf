@@ -19,40 +19,6 @@ enableSentences false;
 diag_log "::Life Client:: Initialization Variables";
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
 
-if(playerSide == west) then
-{
-	switch (true) do
-	{
-		case (FETCH_CONST(life_coplevel) == 1): { _bonus = LIFE_SETTINGS(getNumber,"cadet_add"); };
-		case (FETCH_CONST(life_coplevel) == 2): { _bonus = LIFE_SETTINGS(getNumber,"constable_add"); };
-		case (FETCH_CONST(life_coplevel) == 3): { _bonus = LIFE_SETTINGS(getNumber,"corporal_add"); };
-		case (FETCH_CONST(life_coplevel) == 4): { _bonus = LIFE_SETTINGS(getNumber,"sergeant_add"); };
-		case (FETCH_CONST(life_coplevel) == 5): { _bonus = LIFE_SETTINGS(getNumber,"lieutenant_add"); };
-		case (FETCH_CONST(life_coplevel) == 6): { _bonus = LIFE_SETTINGS(getNumber,"captain_add"); };
-		default { _bonus = 0; };
-	};
-};
-
-//Set bank amount for new players
-switch (playerSide) do
-{
-	case west:
-	{
-		BANK = LIFE_SETTINGS(getNumber,"bank_cop");
-		life_paycheck = _bonus + LIFE_SETTINGS(getNumber,"paycheck_cop");
-	};
-	case civilian:
-	{
-		BANK = LIFE_SETTINGS(getNumber,"bank_civ");
-		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
-	};
-	case independent:
-	{
-		BANK = LIFE_SETTINGS(getNumber,"bank_med");
-		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
-	};
-};
-
 diag_log "::Life Client:: Variables initialized";
 diag_log "::Life Client:: Setting up Eventhandlers";
 [] call life_fnc_setupEVH;
@@ -88,22 +54,41 @@ waitUntil {life_session_completed};
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;
 
+if(playerSide == west) then
+{
+	switch (true) do
+	{
+		case (FETCH_CONST(life_coplevel) == 1): { _bonus = LIFE_SETTINGS(getNumber,"cadet_add"); };
+		case (FETCH_CONST(life_coplevel) == 2): { _bonus = LIFE_SETTINGS(getNumber,"constable_add"); };
+		case (FETCH_CONST(life_coplevel) == 3): { _bonus = LIFE_SETTINGS(getNumber,"corporal_add"); };
+		case (FETCH_CONST(life_coplevel) == 4): { _bonus = LIFE_SETTINGS(getNumber,"sergeant_add"); };
+		case (FETCH_CONST(life_coplevel) == 5): { _bonus = LIFE_SETTINGS(getNumber,"lieutenant_add"); };
+		case (FETCH_CONST(life_coplevel) == 6): { _bonus = LIFE_SETTINGS(getNumber,"captain_add"); };
+		default { _bonus = 0; };
+	};
+};
+
+//Set bank amount for new players
 switch (playerSide) do
 {
 	case west:
 	{
+		BANK = LIFE_SETTINGS(getNumber,"bank_cop");
+		life_paycheck = _bonus + LIFE_SETTINGS(getNumber,"paycheck_cop");
 		_handle = [] spawn life_fnc_initCop;
 		waitUntil {scriptDone _handle};
 	};
 	case civilian:
 	{
-		//Initialize Civilian Settings
+		BANK = LIFE_SETTINGS(getNumber,"bank_civ");
+		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
 		_handle = [] spawn life_fnc_initCiv;
 		waitUntil {scriptDone _handle};
 	};
 	case independent:
 	{
-		//Initialize Medics and blah
+		BANK = LIFE_SETTINGS(getNumber,"bank_med");
+		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
 		_handle = [] spawn life_fnc_initMedic;
 		waitUntil {scriptDone _handle};
 	};
