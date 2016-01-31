@@ -116,24 +116,51 @@
     </Key>
 	<Key ID="STR_Shops_MoonshineQual">
 	  <Original>Quality Moonshine Distributor</Original>
+	  <German>Qualität Moonshine Distributor</German>
+      <French>Distributeur qualité Moonshine</French>
+      <Italian>Qualità Moonshine Distributore</Italian>
+      <Portuguese>Distribuidor qualidade Moonshine</Portuguese>
+      <Polish>Jakość Moonshine Dystrybutor</Polish>
 	</Key>
 	<Key ID="STR_Shops_Moonshine">
 	  <Original>Moonshine Distributor</Original>
+	  <German>Mondschein Verteiler</German>
+      <French>distributeur de clair de lune</French>
+      <Italian>distributore chiaro di luna</Italian>
+      <Portuguese>distribuidor de bebida alcoólica</Portuguese>
+      <Polish>dystrybutor bimber</Polish>
 	</Key>
 	<Key ID="STR_Shops_medical">
 	  <Original>Medical Supplies</Original>
+	  <German>Medizinische Versorgung</German>
+      <French>Fournitures médicales</French>
+      <Italian>Materiale medico</Italian>
+      <Portuguese>Suprimentos médicos</Portuguese>
+      <Polish>Artykuły medyczne</Polish>
 	</Key>
 	<Key ID="STR_Shops_hunting">
 	  <Original>Hunting Shop</Original>
+	  <German>Jagd-Shop</German>
+      <French>boutique de chasse</French>
+      <Italian>Caccia negozio</Italian>
+      <Portuguese>loja de caça</Portuguese>
+      <Polish>sklep myśliwski</Polish>
 	</Key>
 	<Key ID="STR_Shops_brewsupplies">
 	  <Original>Brewing Supplies</Original>
+	  <German>Brauver sorgungen</German>
+      <French>fournitures de brassage</French>
+      <Italian>forniture della birra</Italian>
+      <Portuguese>Brewing Suprimentos</Portuguese>
+      <Polish>Dostawy browarnicze</Polish>
 	</Key>
 	<Key ID="STR_Shops_downtown">
 	  <Original>Liquor Store</Original>
-	</Key>
-	<Key ID="STR_Shops_gasmarket">
-	  <Original>Stop N' Go Mart</Original>
+	  <German>Spirituosengeschäft</German>
+      <French>Magasin d'alcool</French>
+      <Italian>Negozio di liquori</Italian>
+      <Portuguese>Loja de bebidas</Portuguese>
+      <Polish>Sklep alkoholowy</Polish>
 	</Key>
     <Key ID="STR_Shops_Cement">
       <Original>Juan's Cement Laying</Original>
@@ -3994,6 +4021,86 @@
       <Portuguese>Açúcar</Portuguese>
       <Polish>Cukier</Polish>
 	</Key>
+	<Key ID="STR_Item_Mash">
+	  <Original>Moonshine Mash</Original>
+	  <German>Mondschein Maische</German>
+      <French>alcool de contrebande Mash</French>
+      <Italian>chiaro di luna Poltiglia</Italian>
+      <Portuguese>puré moonshine</Portuguese>
+      <Polish>bimber zacieru</Polish>
+	</Key>
+	<Key ID="STR_Item_FermWine">
+	  <Original>Fermented Wine</Original>
+	  <German>vergorenen Wein</German>
+      <French>vin fermenté</French>
+      <Italian>vino fermentato</Italian>
+      <Portuguese>vinho fermentado</Portuguese>
+      <Polish>sfermentowanego wina</Polish>
+	</Key>
+	<Key ID="STR_Item_Defibrillator">
+	  <Original>Defibrillator</Original>
+	  <German>Defibrillator</German>
+      <French>défibrillateur</French>
+      <Italian>defibrillatore</Italian>
+      <Portuguese>desfibrilador</Portuguese>
+      <Polish>defibrylator</Polish>
+	</Key>
+	<Key ID="STR_Item_Moonshine">
+	  <Original>Moonshine</Original>
+	  <German>Mondschein</German>
+      <French>Alcool de contrebande</French>
+      <Italian>Chiaro di luna</Italian>
+      <Portuguese>luar</Portuguese>
+      <Polish>Rojenia</Polish>
+	</Key>
+	<Key ID="STR_Item_MoonshineQual">
+	  <Original>Premium Moonshine</Original>
+	  <German>Premium-Mondschein</German>
+      <French>moonshine premium</French>
+      <Italian>Moonshine premium</Italian>
+      <Portuguese>moonshine prémio</Portuguese>
+      <Polish>bimber Premium</Polish>
+	</Key>
+	<Key ID="STR_Item_RepairKit">
+	  <Original>Repair Kit</Original>
+	  <German>Reperaturset</German>
+      <French>Trousse de réparation</French>
+      <Italian>Kit di riparazione</Italian>
+      <Portuguese>Kit de reparação</Portuguese>
+      <Polish>Zestaw naprawczy</Polish>
+	</Key>
+	<Key ID="STR_Item_RockU">
+	  <Original>Unprocessed Rock</Original>
+	  <German>Unverarbeitete Felsen</German>
+      <French>Non traité Rocher</French>
+      <Italian>Lordo rock</Italian>
+      <Portuguese>não transformados Rocha</Portuguese>
+      <Polish>nieprzetworzone Skała</Polish>
+	</Key>
+	<Key ID="STR_Item_RockP">
+	  <Original>Processed Rock</Original>
+	  <German>verarbeitet Felsen</German>
+      <French>Rocher transformés</French>
+      <Italian>elaborati rock</Italian>
+      <Portuguese>Rocha processados</Portuguese>
+      <Polish>przetwarzane Skała</Polish>
+	</Key>
+	<Key ID="STR_Item_Bankbond">
+	  <Original>Bank Bond</Original>
+	  <German>Bank-Bond</German>
+      <French>caution bancaire</French>
+      <Italian>di obbligazioni bancarie</Italian>
+      <Portuguese>fiança bancária</Portuguese>
+      <Polish>obligacji bankowych</Polish>
+	</Key>
+	<Key ID="STR_Item_Bloodbag">
+	  <Original>Blood Bag</Original>
+	  <German>Blutbeutel</German>
+      <French>poche de sang</French>
+      <Italian>sacca di sangue</Italian>
+      <Portuguese>bolsa de sangue</Portuguese>
+      <Polish>torba krwi</Polish>
+	</Key>
     <Key ID="STR_Item_SpikeStrip">
       <Original>Spike Strip</Original>
       <German>Nagelband</German>
@@ -4164,6 +4271,30 @@
       <Portuguese>Licença de Casas</Portuguese>
       <Polish>Zarządca nieruchomości</Polish>
     </Key>
+	<Key ID="STR_License_Wine">
+	  <Original>Wine Processor License</Original>
+	  <German>Wein prozessor lizenz</German>
+      <French>Vin licence par processeur</French>
+      <Italian>Vino Processor License</Italian>
+      <Portuguese>Licença de Processador vinho</Portuguese>
+      <Polish>Wino Processor License</Polish>
+	</Key>
+	<Key ID="STR_License_Moonshine">
+	  <Original>Moonshine Production Training</Original>
+	  <German>Moonshine Produktion Trainings</German>
+      <French>Moonshine formation de production</French>
+      <Italian>Moonshine Formazione Produzione</Italian>
+      <Portuguese>Formação Produção Moonshine</Portuguese>
+      <Polish>Moonshine Szkolenie Produkcja</Polish>
+	</Key>
+	<Key ID="STR_License_Hunting">
+	  <Original>Hunting License</Original>
+	  <German>Jagd lizenz</German>
+      <French>Permis de chasse</French>
+      <Italian>licenza di caccia</Italian>
+      <Portuguese>Licença de caça</Portuguese>
+      <Polish>Polowanie licencji</Polish>
+	</Key>
   </Package>
   <Package name="More_Item_Strings">
     <Key ID="STR_ISTR_Blast_VaultOnly">
@@ -5822,6 +5953,11 @@
       <Portuguese>Mina de Diamante</Portuguese>
       <Polish>Kopalnia diamentów</Polish>
     </Key>
+    <Key ID="STR_Station_Shop">
+      <Original>Fuel Station Store</Original>
+      <Portuguese>Loja de Conveniência</Portuguese>
+      <Polish>Sklep OLLEN</Polish>
+    </Key>
     <Key ID="STR_MAR_General_Store">
       <Original>General Store</Original>
       <Portuguese>Loja de Equipamentos</Portuguese>
@@ -6069,11 +6205,6 @@
       <Original>Helicopter Shop</Original>
       <Portuguese>Loja de Helicopteros</Portuguese>
       <Polish>Sklep lotniczy</Polish>
-    </Key>
-    <Key ID="STR_MAR_Station_Shop">
-      <Original>Fuel Station Store</Original>
-      <Portuguese>Loja de Conveniência</Portuguese>
-      <Polish>Sklep OLLEN</Polish>
     </Key>
     <Key ID="STR_MAR_Rebel_Market">
       <Original>Rebel Market</Original>

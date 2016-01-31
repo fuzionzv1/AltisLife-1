@@ -23,7 +23,7 @@ if!(_shop getVariable ["robbable",true]) exitWith { hint "This gas station was r
 if(currentWeapon player == "") exitWith {hint "You expect to rob a store without a gun?";};
 if(currentWeapon player == "Binocular") exitWith {hint "Nice try at that exploit...";};
 _cops = (west countSide playableUnits);
-if(_cops < 1) exitWith{hint "There is not enough Police to rob the Gas Station!"};
+// FOR TESTING PURPOSES if(_cops < 1) exitWith{hint "There is not enough Police to rob the Gas Station!"};
 if(_cashRegister == 0) exitWith { hint "There is no cash in the register!" };
 
 

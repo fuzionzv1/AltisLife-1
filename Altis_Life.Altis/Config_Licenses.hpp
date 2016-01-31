@@ -11,7 +11,7 @@ class Licenses {
 
     class wine {
         variable = "wine";
-        displayName = "Wine License";
+        displayName = "STR_License_Wine";
         price = 500;
         illegal = false;
         side = "civ";
@@ -19,7 +19,7 @@ class Licenses {
 
     class moonshine {
         variable = "moonshine";
-        displayName = "Moonshine License";
+        displayName = "STR_License_Moonshine";
         price = 500;
         illegal = false;
         side = "civ";
@@ -27,7 +27,7 @@ class Licenses {
 
     class hunting {
         variable = "hunting";
-        displayName = "Hunting License";
+        displayName = "STR_License_Hunting";
         price = 500;
         illegal = false;
         side = "civ";
