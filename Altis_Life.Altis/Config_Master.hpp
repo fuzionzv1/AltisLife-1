@@ -43,12 +43,12 @@ class Life_Settings
     paycheck_civ = 350; //Payment for civillians
     paycheck_med = 450; //Payment for medics
 
-    /* Paycheck Rank Addition */
+    /* Cop Paycheck Bonuses */
     cadet_add = 0;
-    const_add = 0;
-    corp_add = 0;
-    sgt_add = 0;
-    lt_add = 0;
+    constable_add = 0;
+    corporal_add = 0;
+    sergeant_add = 0;
+    lieutenant_add = 0;
     captain_add = 0;
 
     /* Federal Reserve settings */
