@@ -10,8 +10,26 @@
 *
 *    Itemname only needs to be filled if you want to rename the original object name.
 */
-class WeaponShops {
-    //Armory Shops
+class WeaponShops
+{
+    class hunting {
+        name = "Hunting Outpost";
+        side = "civ";
+        license = "hunting";
+        level = -1;
+        msg = "";
+        items[] = {
+            { "arifle_Mk20C_F", "", 3000 },
+            { "30Rnd_556x45_Stanag", "", 300 },
+            { "optic_ACO_grn", "", 150  },
+            { "optic_Holosight", "", 200  },
+            { "optic_Holosight_smg", "", 200 },
+            { "optic_Hamr", "", 300 },
+            { "optic_MRCO", "", 300 },
+            { "optic_Arco", "", 300 }
+        };
+    };
+
     class gun {
         name = "Altis Armory";
         side = "civ";
