@@ -198,29 +198,6 @@ class VirtualShops {
 */
 class VirtualItems {
     //Virtual Items
-
-    class sugar {
-        variable = "sugar";
-        displayName = "sugar";
-        weight = 2;
-        buyPrice = 750;
-        sellPrice = 350;
-        illegal = true;
-        edible = -1;
-        icon = "";
-    };
-
-    class grape {
-        variable = "grape";
-        displayName = "Grapes";
-        weight = 2;
-        buyPrice = 750;
-        sellPrice = 350;
-        illegal = true;
-        edible = -1;
-        icon = "";
-    };
-
     class moonshine {
         variable = "moonshine";
         displayName = "Moonshine";
