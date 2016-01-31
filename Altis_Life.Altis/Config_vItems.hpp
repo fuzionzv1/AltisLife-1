@@ -143,6 +143,46 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = { "defibrillator","bloodbag" };
     };
+
+    class hunting {
+        name = "Hunting";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = {"waterBottle", "apple", "tbacon", "redgull","repairKit"};
+    };
+
+    class moonshineQual {
+        name = "Moonshine Quality";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "moonshineQual" };
+    };
+
+    class moonshine {
+        name = "Moonshine";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "moonshine" };
+    };
+
+    class butcher {
+        name = "Butcher";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = {"goat_raw","goat","sheep_raw","sheep","rooster_raw","rooster","hen_raw","hen"};
+    };
+
+    class brewsupplies {
+        name = "Brew Supplies";
+        side = "";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = {"grape","sugar"};
+    };
 };
 
 /*
@@ -158,8 +198,28 @@ class VirtualShops {
 */
 class VirtualItems {
     //Virtual Items
+    class moonshine {
+        variable = "moonshine";
+        displayName = "Moonshine";
+        weight = 2;
+        buyPrice = 750;
+        sellPrice = 350;
+        illegal = true;
+        edible = -1;
+        icon = "";
+    };
 
-    //Misc
+    class moonshineQual {
+        variable = "moonshineQual";
+        displayName = "Quality Moonshine";
+        weight = 2;
+        buyPrice = 750;
+        sellPrice = 350;
+        illegal = true;
+        edible = -1;
+        icon = "";
+    };
+
     class pickaxe {
         variable = "pickaxe";
         displayName = "STR_Item_Pickaxe";
