@@ -8,6 +8,31 @@
 */
 class Licenses {
     //Civilian Licenses
+
+    class wine {
+        variable = "wine";
+        displayName = "Wine License";
+        price = 500;
+        illegal = false;
+        side = "civ";
+    };
+
+    class moonshine {
+        variable = "moonshine";
+        displayName = "Moonshine License";
+        price = 500;
+        illegal = false;
+        side = "civ";
+    };
+
+    class hunting {
+        variable = "hunting";
+        displayName = "Hunting License";
+        price = 500;
+        illegal = false;
+        side = "civ";
+    };
+
     class driver {
         variable = "driver";
         displayName = "STR_License_Driver";
