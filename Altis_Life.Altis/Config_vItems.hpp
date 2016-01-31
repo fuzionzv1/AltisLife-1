@@ -199,7 +199,7 @@ class VirtualShops {
 class VirtualItems {
     //Virtual Items
 
-    class grape {
+    class sugar {
         variable = "sugar";
         displayName = "sugar";
         weight = 2;
