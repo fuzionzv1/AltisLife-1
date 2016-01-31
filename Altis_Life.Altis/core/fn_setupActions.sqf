@@ -26,6 +26,15 @@ switch (playerSide) do
 
 		//IR Laser Remove
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Remove IR Laser (Lethal)</t>",life_fnc_mkDowning,"rem",1.5,true,true,"",'!("acc_pointer_IR" in (items player)) && ("acc_pointer_IR" in (primaryWeaponItems player)) && (currentWeapon player) == "srifle_DMR_03_F"']];
+
+        //CopEnter - Driver Seat
+        life_actions = life_actions + [player addAction[localize "STR_pAct_DriverSeat",life_fnc_copEnter,"driver",1.5,true,true,"",'!isNull cursorTarget && ((cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")) && (locked cursorTarget) != 0 && cursorTarget distance player < 3.5']];
+
+         //CopEnter - Passenger Seat
+         life_actions = life_actions + [player addAction[localize "STR_pAct_PassengerSeat",life_fnc_copEnter,"passenger",1.5,true,true,"",'!isNull cursorTarget && ((cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")) && (locked cursorTarget) != 0 && cursorTarget distance player < 3.5']];
+
+         //CopEnter - Exit
+         life_actions = life_actions + [player addAction[localize "STR_pAct_GoOut",life_fnc_copEnter,"exit",1.5,true,true,"",'(vehicle player != player) && (locked(vehicle player)==2)']];
 	};
 
 	case independent:
