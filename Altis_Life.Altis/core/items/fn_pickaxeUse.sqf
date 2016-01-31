@@ -38,15 +38,8 @@ while {life_carryWeight < life_maxWeight} do
 {
         if(player distance _originalPos > 1) exitWith { life_action_inUse = false; titleText["Stop moving! Collecting stopped.","PLAIN"]; };
         life_action_inUse = true;
-        for "_i" from 0 to 2 do
-        {
-            player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
-            waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
-            sleep 2.5;
-        };
-
+        sleep 2.5;
         if([true,SEL(_mine,0),_diff] call life_fnc_handleInv);
-
         _itemName = M_CONFIG(getText,"VirtualItems",SEL(_mine,0),"displayName");
         titleText[format [localize "STR_ISTR_Pick_Success",(localize _itemName),_diff,(life_carryWeight),(life_maxWeight)], "PLAIN"];
         if(((life_carryWeight) + _diff) >= (life_maxWeight)) exitWith {life_action_inUse = false; titleText["Your inventory is full", "PLAIN"];};

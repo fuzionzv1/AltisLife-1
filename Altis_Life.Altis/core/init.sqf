@@ -4,7 +4,7 @@
 */
 life_firstSpawn = true;
 life_session_completed = false;
-private["_handle","_timeStamp"];
+private["_handle","_timeStamp","_bonus"];
 0 cutText["Setting up client, please wait...","BLACK FADED"];
 0 cutFadeOut 9999999;
 _timeStamp = diag_tickTime;
@@ -19,13 +19,27 @@ enableSentences false;
 diag_log "::Life Client:: Initialization Variables";
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
 
+if(playerSide == west) then
+{
+	switch (true) do
+	{
+		case (FETCH_CONST(life_coplevel) == 1): { _bonus = LIFE_SETTINGS(getNumber,"cadet_add"); };
+		case (FETCH_CONST(life_coplevel) == 2): { _bonus = LIFE_SETTINGS(getNumber,"constable_add"); };
+		case (FETCH_CONST(life_coplevel) == 3): { _bonus = LIFE_SETTINGS(getNumber,"corporal_add"); };
+		case (FETCH_CONST(life_coplevel) == 4): { _bonus = LIFE_SETTINGS(getNumber,"sergeant_add"); };
+		case (FETCH_CONST(life_coplevel) == 5): { _bonus = LIFE_SETTINGS(getNumber,"lieutenant_add"); };
+		case (FETCH_CONST(life_coplevel) == 6): { _bonus = LIFE_SETTINGS(getNumber,"captain_add"); };
+		default { _bonus = 0; };
+	};
+};
+
 //Set bank amount for new players
 switch (playerSide) do
 {
 	case west:
 	{
 		BANK = LIFE_SETTINGS(getNumber,"bank_cop");
-		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_cop");
+		life_paycheck = _bonus + LIFE_SETTINGS(getNumber,"paycheck_cop");
 	};
 	case civilian:
 	{

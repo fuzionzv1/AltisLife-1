@@ -44,15 +44,8 @@ while {life_carryWeight < life_maxWeight} do
 	{
 		if(EQUAL(_diff,0)) exitWith {hint localize "STR_NOTF_InvFull"};
 		life_action_gathering = true;
-
-		for "_i" from 0 to 1 do
-		{
-			player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
-			waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
-			if(player distance _originalPos > 2) exitWith { life_action_gathering = false; titleText["Stop moving! Gathering Stopped.","PLAIN"]; };
-			sleep 2.5;
-		};
-
+		if(player distance _originalPos > 2) exitWith { life_action_gathering = false; titleText["Stop moving! Gathering Stopped.","PLAIN"]; };
+		sleep 3;
 		([true,SEL(_gather,0),_diff] call life_fnc_handleInv);
 		_itemName = M_CONFIG(getText,"VirtualItems",SEL(_gather,0),"displayName");
 		titleText[format[localize "STR_NOTF_Gather_Success",(localize _itemName),_diff],"PLAIN"];

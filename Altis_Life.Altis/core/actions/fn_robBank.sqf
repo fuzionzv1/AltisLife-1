@@ -21,7 +21,7 @@ if !(_shop getVariable ["robbable",true]) exitWith { hint "This vault was just c
 if(currentWeapon player == "") exitWith {hint "You expect to rob a bank without a gun?";};
 if(currentWeapon player == "Binocular") exitWith {hint "Nice try at that exploit...";};
 _cops = (west countSide playableUnits);
-if(_cops < 3) exitWith{hint "There is not enough Police to take from the vault! Need 3 cops online!"};
+// FOR TESTING PURPOSES if(_cops < 3) exitWith{hint "There is not enough Police to take from the vault! Need 3 cops online!"};
 
 _shop setVariable ["rip",true,true];
 _item = "bankbond";

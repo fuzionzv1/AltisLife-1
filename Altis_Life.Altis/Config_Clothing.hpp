@@ -8,12 +8,15 @@
 *            1: Variable Value Type (SCALAR / BOOL / EQUAL)
 *            2: What to compare to (-1 = Check Disabled)
 */
-class Clothing {
-    class bruce {
+class Clothing
+{
+    class bruce
+    {
         title = "STR_Shops_C_Bruce";
         license = "";
         side = "civ";
-        uniforms[] = {
+        uniforms[] =
+        {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_C_Poloshirt_blue", "Poloshirt Blue", 250, { "", "", -1 } },
             { "U_C_Poloshirt_burgundy", "Poloshirt Burgundy", 275, { "", "", -1 } },
@@ -30,7 +33,9 @@ class Clothing {
             { "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
             { "U_NikosAgedBody", "Casual Wears", 5000, { "", "", -1 } }
         };
-        headgear[] = {
+
+        headgear[] =
+        {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
             { "H_Bandanna_camo", "Camo Bandanna", 120, { "", "", -1 } },
             { "H_Bandanna_surfer", "Surfer Bandanna", 130, { "", "", -1 } },
@@ -54,7 +59,9 @@ class Clothing {
             { "H_Cap_red", "", 150, { "", "", -1 } },
             { "H_Cap_tan", "", 150, { "", "", -1 } }
         };
-        goggles[] = {
+
+        goggles[] =
+        {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
             { "G_Shades_Black", "", 25, { "", "", -1 } },
             { "G_Shades_Blue", "", 20, { "", "", -1 } },
@@ -70,10 +77,13 @@ class Clothing {
             { "G_Lowprofile", "", 30, { "", "", -1 } },
             { "G_Combat", "", 55, { "", "", -1 } }
         };
-        vests[] = {
+        vests[] =
+        {
             { "NONE", "Remove Vest", 0, { "", "", -1 } }
         };
-        backpacks[] = {
+
+        backpacks[] =
+        {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
             { "B_AssaultPack_cbr", "", 2500, { "", "", -1 } },
             { "B_Kitbag_mcamo", "", 4500, { "", "", -1 } },
@@ -86,24 +96,71 @@ class Clothing {
         };
     };
 
-    class cop {
+    class hunting
+    {
+        title = "STR_Shops_C_Hunting";
+        license = "hunting";
+        side = "civ";
+        uniforms[] =
+        {
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+            { "U_IG_Guerilla2_2", "Green stripped shirt & Pants", 5, { "", "", -1 } },
+            { "U_IG_Guerilla3_1", "Brown Jacket & Pants", 20, { "", "", -1 } },
+            { "U_IG_Guerilla2_3", "The Outback Rangler", 20, { "", "", -1 } },
+            { "U_OG_Guerilla1_1", "Blaze Orange", 20, { "", "", -1 } }
+        };
+
+        headgear[] =
+        {
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
+            { "H_Booniehat_grn", "", 20, { "", "", -1 } },
+            { "H_Booniehat_tan", "", 20, { "", "", -1 } },
+            { "H_Booniehat_dirty", "", 20, { "", "", -1 } }
+        };
+
+        goggles[] =
+        {
+            { "NONE", "Remove Glasses", 0, { "", "", -1 } }
+        };
+
+        vests[] =
+        {
+            { "NONE", "Remove Vest", 0, { "", "", -1 } }
+        };
+
+        backpacks[] =
+        {
+            { "NONE", "Remove Backpack", 0, { "", "", -1 } },
+            { "B_Kitbag_mcamo", "", 175, { "", "", -1 } },
+            { "B_HuntingBackpack", "", 200, { "", "", -1 } },
+            { "Carryall Woodland Camo", "", 250, { "", "", -1 } }
+        };
+    };
+
+    class cop
+    {
         title = "STR_Shops_C_Police";
         license = "";
         side = "cop";
-        uniforms[] = {
+        uniforms[] =
+        {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
             { "U_Competitor", "Cop Uniform", 25, { "life_coplevel", "SCALAR", 2 } },
             { "U_B_CombatUniform_mcam_worn", "Cop Uniform", 25, { "life_coplevel", "SCALAR", 5 } }
         };
-        headgear[] = {
+
+        headgear[] =
+        {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
             { "H_Cap_police", "", 100, { "life_coplevel", "SCALAR", 1 } },
             { "H_Beret_02", "", 100, { "life_coplevel", "SCALAR", 1 } },
             { "H_Beret_Colonel", "", 100, { "life_coplevel", "SCALAR", 1 } },
             { "H_Beret_blk", "", 100, { "life_coplevel", "SCALAR", 1 } }
         };
-        goggles[] = {
+
+        goggles[] =
+        {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
             { "G_Shades_Black", "", 25, { "", "", -1 } },
             { "G_Shades_Blue", "", 20, { "", "", -1 } },
@@ -119,7 +176,9 @@ class Clothing {
             { "G_Lowprofile", "", 30, { "", "", -1 } },
             { "G_Combat", "", 55, { "", "", -1 } }
         };
-        vests[] = {
+
+        vests[] =
+        {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_Rangemaster_belt", "", 800, { "", "", -1 } },
             { "V_TacVest_blk_POLICE", "", 1500, { "life_coplevel", "SCALAR", 1 } },
@@ -127,42 +186,56 @@ class Clothing {
 			{ "V_PlateCarrierSpec_blk", "", 1500, { "life_coplevel", "SCALAR", 4 } },
 			{ "V_PlateCarrierGL_blk", "", 1500, { "life_coplevel", "SCALAR", 5 } }
         };
-        backpacks[] = {
+
+        backpacks[] =
+        {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
             { "B_UAV_01_backpack_F", "", 800, { "life_coplevel", "SCALAR", 4 } }
 
         };
     };
 
-    class dive {
+    class dive
+    {
         title = "STR_Shops_C_Diving";
         license = "dive";
         side = "civ";
-        uniforms[] = {
+        uniforms[] =
+        {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_B_Wetsuit", "", 2000, { "", "", -1 } }
         };
-        headgear[] = {
+
+        headgear[] =
+        {
             { "NONE", "Remove Hat", 0, { "", "", -1 } }
         };
-        goggles[] = {
+
+        goggles[] =
+        {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
             { "G_Diving", "", 500, { "", "", -1 } }
         };
-        vests[] = {
+
+        vests[] =
+        {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_RebreatherB", "", 5000, { "", "", -1 } }
         };
-        backpacks[] = {
+
+        backpacks[] =
+        {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } }
         };
     };
 
-    class reb {
+    class reb
+    {
         title = "STR_Shops_C_Rebel";
         license = "rebel";
         side = "civ";
-        uniforms[] = {
+        uniforms[] =
+        {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_B_CombatUniform_mcam", "", 50000, { "", "", -1 } },
             { "U_B_CombatUniform_mcam_tshirt", "", 50000, { "", "", -1 } },
@@ -190,7 +263,9 @@ class Clothing {
             { "U_I_FullGhillie_sard", "", 50000, { "", "", -1 } },
             { "U_I_FullGhillie_ard", "", 50000, { "", "", -1 } }
         };
-        headgear[] = {
+
+        headgear[] =
+        {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
             { "H_Booniehat_grn", "", 850, { "", "", -1 } },
             { "H_Booniehat_dgtl", "", 850, { "", "", -1 } },
@@ -217,7 +292,9 @@ class Clothing {
             { "H_ShemagOpen_khk", "", 150, { "", "", -1 } },
             { "H_ShemagOpen_tan", "", 150, { "", "", -1 } },
         };
-        goggles[] = {
+
+        goggles[] =
+        {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
             { "G_Shades_Black", "", 25, { "", "", -1 } },
             { "G_Shades_Blue", "", 20, { "", "", -1 } },
@@ -228,7 +305,6 @@ class Clothing {
             { "G_Squares", "", 10, { "", "", -1 } },
             { "G_Lowprofile", "", 30, { "", "", -1 } },
             { "G_Combat", "", 55, { "", "", -1 } },
-            // BI
             { "G_Balaclava_blk", "", 150, { "", "", -1 } },
             { "G_Balaclava_combat", "", 150, { "", "", -1 } },
             { "G_Balaclava_lowprofile", "", 150, { "", "", -1 } },
@@ -242,7 +318,9 @@ class Clothing {
             { "G_Bandanna_sport", "", 150, { "", "", -1 } },
             { "G_Bandanna_tan", "", 150, { "", "", -1 } }
         };
-        vests[] = {
+
+        vests[] =
+        {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_PlateCarrier1_rgr", "", 12500, { "", "", -1 } },
             { "V_PlateCarrier1_blk", "", 4500, { "", "", -1 } },
@@ -255,7 +333,9 @@ class Clothing {
             { "V_HarnessO_gry", "", 7500, { "", "", -1 } },
             { "V_PlateCarrier_Kerry", "", 7500, { "", "", -1 } }
         };
-        backpacks[] = {
+
+        backpacks[] =
+        {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },
             { "B_AssaultPack_cbr", "", 2500, { "", "", -1 } },
             { "B_Kitbag_mcamo", "", 4500, { "", "", -1 } },
@@ -268,11 +348,13 @@ class Clothing {
         };
     };
 
-    class kart {
+    class kart
+    {
         title = "STR_Shops_C_Kart";
         license = "";
         side = "civ";
-        uniforms[] = {
+        uniforms[] =
+        {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_C_Driver_1_black", "", 1500, { "", "", -1 } },
             { "U_C_Driver_1_blue", "", 1500, { "", "", -1 } },
@@ -286,7 +368,9 @@ class Clothing {
             { "U_C_Driver_3", "", 3700, { "", "", -1 } },
             { "U_C_Driver_4", "", 3700, { "", "", -1 } }
         };
-        headgear[] = {
+
+        headgear[] =
+        {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
             { "H_RacingHelmet_1_black_F", "", 1000, { "", "", -1 } },
             { "H_RacingHelmet_1_red_F", "", 1000, { "", "", -1 } },
@@ -299,13 +383,19 @@ class Clothing {
             { "H_RacingHelmet_3_F", "", 2500, { "", "", -1 } },
             { "H_RacingHelmet_4_F", "", 2500, { "", "", -1 } }
         };
-        goggles[] = {
+
+        goggles[] =
+        {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } }
         };
-        vests[] = {
+
+        vests[] =
+        {
             { "NONE", "Remove Vest", 0, { "", "", -1 } }
         };
-        backpacks[] = {
+
+        backpacks[] =
+        {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } }
         };
     };

@@ -1,18 +1,20 @@
-class CarShops {
+class CarShops
+{
     /*
     *    ARRAY FORMAT:
     *        0: STRING (Classname)
     *        1: SCALAR (Rental Price)
     *        2: ARRAY (license required)
-    *            Ex: { "driver", "trucking", "rebel" }
     *        3: ARRAY (This is for limiting items to certain things)
     *            0: Variable to read from
     *            1: Variable Value Type (SCALAR / BOOL /EQUAL)
     *            2: What to compare to (-1 = Check Disabled)
     */
-    class civ_car {
+    class civ_car
+    {
         side = "civ";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "B_Quadbike_01_F", 2500, { "" }, { "", "", -1 } },
             { "C_Hatchback_01_F", 9500, { "driver" }, { "", "", -1 } },
             { "C_Offroad_01_F", 12500, { "driver" }, { "", "", -1 } },
@@ -23,9 +25,21 @@ class CarShops {
         };
     };
 
-    class kart_shop {
+    class hunting_car
+    {
         side = "civ";
-        vehicles[] = {
+        vehicles[] =
+        {
+            { "I_Quadbike_01_F", 1500, { "hunting" }, { "", "", -1 } },
+            { "C_Offroad_stripped_F", 4000, { "hunting" }, { "", "", -1 } }
+        };
+    };
+
+    class kart_shop
+    {
+        side = "civ";
+        vehicles[] =
+        {
             { "C_Kart_01_Blu_F", 15000 , { "driver" }, { "", "", -1 } },
             { "C_Kart_01_Fuel_F", 15000, { "driver" }, { "", "", -1 } },
             { "C_Kart_01_Red_F", 15000, { "driver" }, { "", "", -1 } },
@@ -33,9 +47,11 @@ class CarShops {
         };
     };
 
-    class med_shop {
+    class med_shop
+    {
         side = "med";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "C_Offroad_01_F", 10000, { "" }, { "", "", -1 } },
             { "I_Truck_02_medical_F", 25000, { "" }, { "", "", -1 } },
             { "O_Truck_03_medical_F", 45000, { "" }, { "", "", -1 } },
@@ -43,17 +59,21 @@ class CarShops {
         };
     };
 
-    class med_air_hs {
+    class med_air_hs
+    {
         side = "med";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "B_Heli_Light_01_F", 50000, { "mAir" }, { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", 75000, { "mAir" }, { "", "", -1 } }
         };
     };
 
-    class civ_truck {
+    class civ_truck
+    {
         side = "civ";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "C_Van_01_box_F", 60000, { "trucking" }, { "", "", -1 } },
             { "B_Truck_01_transport_F", 75000, { "trucking" }, { "", "", -1 } },
             { "B_Truck_01_box_F", 75000, { "trucking" }, { "", "", -1 } },
@@ -62,9 +82,11 @@ class CarShops {
         };
     };
 
-    class reb_car {
+    class reb_car
+    {
         side = "civ";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "B_Quadbike_01_F", 2500, { "" }, { "", "", -1 } },
             { "B_G_Offroad_01_F", 15000, { "rebel" }, { "", "", -1 } },
             { "O_MRAP_02_F", 150000, { "" }, { "rebel", "", -1 } },
@@ -75,9 +97,11 @@ class CarShops {
         };
     };
 
-    class cop_car {
+    class cop_car
+    {
         side = "cop";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "C_Quadbike_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 1 } },
             { "C_Offroad_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 2 } },
             { "C_Hatchback_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 2 } },
@@ -89,25 +113,31 @@ class CarShops {
         };
     };
 
-    class reb_air {
+    class reb_air
+    {
         side = "civ";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "O_Heli_Light_02_unarmed_F", 5000, { "rebel" }, { "", "", -1 } },
             { "I_Heli_light_03_unarmed_F", 200000, { "rebel" }, { "", "", -1 } },
             { "B_Heli_Light_01_F", 200000, { "rebel" }, { "", "", -1 } }
         };
     };
 
-    class civ_air {
+    class civ_air
+    {
         side = "civ";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "C_Heli_Light_01_civil_F", 253, { "pilot" }, { "", "", -1 } },
         };
     };
 
-    class cop_air {
+    class cop_air
+    {
         side = "cop";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "B_Heli_Light_01_F", 75000, { "" }, { "life_coplevel", "SCALAR", 2 } },
             { "I_Heli_light_03_unarmed_F", 200000, { "" }, { "life_coplevel", "SCALAR", 3 } },
             { "O_Heli_Light_02_unarmed_F", 200000, { "" }, { "life_coplevel", "SCALAR", 4 } },
@@ -118,18 +148,22 @@ class CarShops {
     };
 
 
-    class cop_ship {
+    class cop_ship
+    {
         side = "cop";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "B_Boat_Transport_01_F", 3000, { "" }, { "", "", 2 } },
             { "C_Boat_Civil_01_police_F", 20000, { "" }, { "", "", 2 } },
             { "B_SDV_01_F", 100000, { "" }, { "", "", 2 } }
         };
     };
 
-    class civ_ship {
+    class civ_ship
+    {
         side = "civ";
-        vehicles[] = {
+        vehicles[] =
+        {
             { "C_Rubberboat", 5000, { "boat" }, { "", "", -1 } },
             { "C_Boat_Civil_01_F", 22000, { "boat" }, { "", "", -1 } },
             { "B_SDV_01_F", 150000, { "boat" }, { "", "", -1 } }
@@ -137,31 +171,32 @@ class CarShops {
     };
 };
 
-class LifeCfgVehicles {
-    /*
-    *    Vehicle Configs (Contains textures and other stuff)
-    *
-    *    storageFee (Getting vehicles out of garage) format:
-    *        INDEX 0: Civilian Price
-    *        INDEX 1: Cop Price
-    *        INDEX 2: EMS Price
-    *        INDEX 3: OPFOR Price (Not implemented in vanilla but still leaving support
-    *
-    *    garageSell (Selling vehicles from garage) format:
-    *        INDEX 0: Civilian Price
-    *        INDEX 1: Cop Price
-    *        INDEX 2: EMS Price
-    *        INDEX 3: OPFOR Price (Not implemented in vanilla but still leaving support
-    *
-    *    Textures config follows { Texture Name, side, {texture(s)path}}
-    *    Texture(s)path follows this format:
-    *    INDEX 0: Texture Layer 0
-    *       INDEX 1: Texture Layer 1
-    *    INDEX 2: Texture Layer 2
-    *    etc etc etc
-    */
+/*
+*    Vehicle Configs
+*
+*    storageFee (Getting vehicles out of garage) format:
+*        INDEX 0: Civilian Price
+*        INDEX 1: Cop Price
+*        INDEX 2: EMS Price
+*        INDEX 3: OPFOR Price (Not implemented in vanilla but still leaving support
+*
+*    garageSell (Selling vehicles from garage) format:
+*        INDEX 0: Civilian Price
+*        INDEX 1: Cop Price
+*        INDEX 2: EMS Price
+*        INDEX 3: OPFOR Price (Not implemented in vanilla but still leaving support
+*
+*    Textures config follows { Texture Name, side, {texture(s)path}}
+*    Texture(s)path follows this format:
+*    INDEX 0: Texture Layer 0
+*    INDEX 1: Texture Layer 1
+*    INDEX 2: Texture Layer 2
+*/
 
-    class Default {
+class LifeCfgVehicles
+{
+    class Default
+    {
         vItemSpace = -1;
         storageFee[] = { 1000, 1000, 1000, 1000 };
         garageSell[] = { 0, 0, 0, 0 };
@@ -170,7 +205,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class I_Truck_02_medical_F {
+    class I_Truck_02_medical_F
+    {
         vItemSpace = 150;
         storageFee[] = { 0, 0, 1500, 0 };
         garageSell[] = { 0, 0, 5000, 0 };
@@ -179,7 +215,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class O_Truck_03_medical_F {
+    class O_Truck_03_medical_F
+    {
         vItemSpace = 200;
         storageFee[] = { 0, 0, 3000, 0 };
         garageSell[] = { 0, 0, 10000, 0 };
@@ -188,7 +225,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class B_Truck_01_medical_F {
+    class B_Truck_01_medical_F
+    {
         vItemSpace = 250;
         storageFee[] = { 0, 0, 6500, 0 };
         garageSell[] = { 0, 0, 25000, 0 };
@@ -197,7 +235,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class C_Rubberboat {
+    class C_Rubberboat
+    {
         vItemSpace = 45;
         storageFee[] = { 400, 300, 0, 0 };
         garageSell[] = { 950, 350, 0, 0 };
@@ -206,7 +245,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class B_Heli_Transport_03_unarmed_F {
+    class B_Heli_Transport_03_unarmed_F
+    {
         vItemSpace = 200;
         storageFee[] = { 0, 50000, 0, 0 };
         garageSell[] = { 0, 85000, 0, 0 };
@@ -215,7 +255,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class B_Heli_Light_01_F {
+    class B_Heli_Light_01_F
+    {
         vItemSpace = 200;
         storageFee[] = { 0, 50000, 0, 0 };
         garageSell[] = { 0, 85000, 0, 0 };
@@ -224,7 +265,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class I_Heli_light_03_unarmed_F {
+    class I_Heli_light_03_unarmed_F
+    {
         vItemSpace = 200;
         storageFee[] = { 0, 50000, 0, 0 };
         garageSell[] = { 0, 85000, 0, 0 };
@@ -233,7 +275,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class B_Heli_Transport_01_F {
+    class B_Heli_Transport_01_F
+    {
         vItemSpace = 200;
         storageFee[] = { 0, 50000, 0, 0 };
         garageSell[] = { 0, 85000, 0, 0 };
@@ -242,16 +285,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class B_G_Boat_Transport_01_F {
-        vItemSpace = 45;
-        storageFee[] = { 1000, 0, 0, 0 };
-        garageSell[] = { 0, 850, 0, 0 };
-        insurance = 2500;
-        chopShop = 5000;
-        textures[] = { };
-    };
-
-    class B_Boat_Transport_01_F {
+    class B_Boat_Transport_01_F
+    {
         vItemSpace = 45;
         storageFee[] = { 0, 450, 0, 0 };
         garageSell[] = { 0, 850, 0, 0 };
@@ -260,25 +295,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class O_Truck_03_transport_F {
-        vItemSpace = 285;
-        storageFee[] = { 1000, 0, 0, 0 };
-        garageSell[] = { 3500, 0, 0, 0 };
-        insurance = 2500;
-        chopShop = 5000;
-        textures[] = { };
-    };
-
-    class O_Truck_03_device_F {
-        vItemSpace = 350;
-        storageFee[] = { 95000, 0, 0, 0 };
-        garageSell[] = { 185000, 0, 0, 0 };
-        insurance = 25000;
-        chopShop = 125000;
-        textures[] = { };
-    };
-
-    class Land_CargoBox_V1_F {
+    class Land_CargoBox_V1_F
+    {
         vItemSpace = 5000;
         storageFee[] = { 1000, 1000, 1000, 1000 };
         garageSell[] = { 0, 0, 0, 0 };
@@ -287,7 +305,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class Box_IND_Grenades_F {
+    class Box_IND_Grenades_F
+    {
         vItemSpace = 350;
         storageFee[] = { 1000, 1000, 1000, 1000 };
         garageSell[] = { 0, 0, 0, 0 };
@@ -296,7 +315,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class B_supplyCrate_F {
+    class B_supplyCrate_F
+    {
         vItemSpace = 700;
         storageFee[] = { 1000, 1000, 1000, 1000 };
         garageSell[] = { 0, 0, 0, 0 };
@@ -305,7 +325,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class B_G_Offroad_01_F {
+    class B_G_Offroad_01_F
+    {
         vItemSpace = 65;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 3500, 0, 0, 0 };
@@ -314,7 +335,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class B_G_Offroad_01_armed_F {
+    class B_G_Offroad_01_armed_F
+    {
         vItemSpace = 65;
         storageFee[] = { 750, 500, 650, 850 };
         garageSell[] = { 6500, 2500, 0, 0 };
@@ -323,7 +345,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class O_G_Offroad_01_armed_F {
+    class O_G_Offroad_01_armed_F
+    {
         vItemSpace = 65;
         storageFee[] = { 750, 500, 650, 850 };
         garageSell[] = { 6500, 2500, 0, 0 };
@@ -332,16 +355,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class I_G_Van_01_transport_F {
-        vItemSpace = 100;
-        storageFee[] = { 1000, 0, 0, 0 };
-        garageSell[] = { 3500, 0, 0, 0 };
-        insurance = 2500;
-        chopShop = 5000;
-        textures[] = { };
-    };
-
-    class C_Boat_Civil_01_F {
+    class C_Boat_Civil_01_F
+    {
         vItemSpace = 85;
         storageFee[] = { 4500, 2500, 0, 0 };
         garageSell[] = { 6800, 3500, 0, 0 };
@@ -350,7 +365,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class C_Boat_Civil_01_police_F {
+    class C_Boat_Civil_01_police_F
+    {
         vItemSpace = 85;
         storageFee[] = { 0, 3500, 0, 0 };
         garageSell[] = { 0, 4950, 0, 0 };
@@ -359,16 +375,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class C_Boat_Civil_01_rescue_F {
-        vItemSpace = 85;
-        storageFee[] = { 1000, 0, 0, 0 };
-        garageSell[] = { 3500, 0, 0, 0 };
-        insurance = 2500;
-        chopShop = 5000;
-        textures[] = { };
-    };
-
-    class B_Truck_01_box_F {
+    class B_Truck_01_box_F
+    {
         vItemSpace = 450;
         storageFee[] = { 35000, 0, 0, 0 };
         garageSell[] = { 150000, 0, 0, 0 };
@@ -377,7 +385,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class B_Truck_01_transport_F {
+    class B_Truck_01_transport_F
+    {
         vItemSpace = 325;
         storageFee[] = { 25650, 0, 0, 0 };
         garageSell[] = { 135000, 0, 0, 0 };
@@ -386,7 +395,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class O_MRAP_02_F {
+    class O_MRAP_02_F
+    {
         vItemSpace = 60;
         storageFee[] = { 45000, 0, 0, 0 };
         garageSell[] = { 65000, 0, 0, 0 };
@@ -395,7 +405,8 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class I_MRAP_03_F {
+    class I_MRAP_03_F
+    {
         vItemSpace = 58;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 3500, 0, 0, 0 };
@@ -404,13 +415,15 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
-    class C_Offroad_01_F {
+    class C_Offroad_01_F
+    {
         vItemSpace = 65;
         storageFee[] = { 1000, 500, 650, 1000 };
         garageSell[] = { 6500, 2500, 0, 0 };
         insurance = 2500;
         chopShop = 2500;
-        textures[] = {
+        textures[] =
+        {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa"
@@ -438,16 +451,14 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
-            { "Fed", "fed", {
-                "#(ai,64,64,1)Fresnel(0.3,3)"
-            } },
             { "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             } }
         };
     };
 
-    class C_Kart_01_Blu_F {
+    class C_Kart_01_Blu_F
+    {
         vItemSpace = 20;
         storageFee[] = { 1500, 0, 0, 0 };
         garageSell[] = { 3500, 0, 0, 0 };
@@ -456,7 +467,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class C_Kart_01_Fuel_F {
+    class C_Kart_01_Fuel_F
+    {
         vItemSpace = 20;
         storageFee[] = { 1500, 0, 0, 0 };
         garageSell[] = { 3500, 0, 0, 0 };
@@ -465,7 +477,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class C_Kart_01_Red_F {
+    class C_Kart_01_Red_F
+    {
         vItemSpace = 20;
         storageFee[] = { 1500, 0, 0, 0 };
         garageSell[] = { 3500, 0, 0, 0 };
@@ -474,7 +487,8 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class C_Kart_01_Vrana_F {
+    class C_Kart_01_Vrana_F
+    {
         vItemSpace = 20;
         storageFee[] = { 1500, 0, 0, 0 };
         garageSell[] = { 3500, 0, 0, 0 };
@@ -483,13 +497,15 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    class C_Hatchback_01_sport_F {
+    class C_Hatchback_01_sport_F
+    {
         vItemSpace = 45;
         storageFee[] = { 2500, 1000, 0, 0 };
         garageSell[] = { 15000, 7500, 0, 0 };
         insurance = 5500;
         chopShop = 4500;
-        textures[] = {
+        textures[] =
+        {
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
             } },
@@ -514,13 +530,45 @@ class LifeCfgVehicles {
         };
     };
 
-    class B_Quadbike_01_F {
+    class C_Offroad_stripped_F
+    {
+        vItemSpace = 150;
+        storageFee[] = { 312, 0, 0, 0 };
+        garageSell[] = { 2400, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 2500;
+        textures[] =
+        {
+            { "Hunting", "civ", {
+                "textures\hunting_offroad.jpg"
+            } },
+        };
+    };
+
+    class I_Quadbike_01_F
+    {
         vItemSpace = 25;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 950, 0, 0, 0 };
         insurance = 2500;
         chopShop = 2500;
-        textures[] = {
+        textures[] =
+        {
+            { "Hunting", "civ", {
+                "textures\hunting_quadbike.jpg"
+            } }
+        };
+    };
+
+    class B_Quadbike_01_F
+    {
+        vItemSpace = 25;
+        storageFee[] = { 1000, 0, 0, 0 };
+        garageSell[] = { 950, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 2500;
+        textures[] =
+        {
             { "Brown", "cop", {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
             } },
@@ -551,56 +599,15 @@ class LifeCfgVehicles {
         };
     };
 
-    class I_Truck_02_covered_F {
-        vItemSpace = 250;
-        storageFee[] = { 14500, 0, 0, 0 };
-        garageSell[] = { 62000, 0, 0, 0 };
-        insurance = 6500;
-        chopShop = 20000;
-        textures[] = {
-            { "Orange", "civ", {
-                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
-                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            } },
-            { "Black", "fed", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }
-        };
-    };
-
-    class I_Truck_02_transport_F {
-        vItemSpace = 200;
-        storageFee[] = { 12000, 0, 0, 0 };
-        garageSell[] = { 49800, 3500, 0, 0 };
-        insurance = 6500;
-        chopShop = 20000;
-        textures[] = {
-            { "Orange", "civ", {
-                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
-                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            } },
-            { "Black", "fed", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }
-        };
-    };
-
-    class O_Truck_03_covered_F {
-        vItemSpace = 300;
-        storageFee[] = { 25000, 0, 0, 0 };
-        garageSell[] = { 65000, 0, 0, 0 };
-        insurance = 2500;
-        chopShop = 5000;
-        textures[] = {};
-    };
-
-    class C_Hatchback_01_F {
+    class C_Hatchback_01_F
+    {
         vItemSpace = 40;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 4500, 3500, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {
+        textures[] =
+        {
             { "Beige", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base01_co.paa"
             } },
@@ -628,13 +635,15 @@ class LifeCfgVehicles {
         };
     };
 
-    class C_SUV_01_F {
+    class C_SUV_01_F
+    {
         vItemSpace = 50;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 15000, 7500, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {
+        textures[] =
+        {
             { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
             } },
@@ -653,13 +662,15 @@ class LifeCfgVehicles {
         };
     };
 
-    class C_Van_01_transport_F {
+    class C_Van_01_transport_F
+    {
         vItemSpace = 100;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 25000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {
+        textures[] =
+        {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
             } },
@@ -669,13 +680,15 @@ class LifeCfgVehicles {
         };
     };
 
-    class C_Van_01_box_F {
+    class C_Van_01_box_F
+    {
         vItemSpace = 150;
         storageFee[] = { 1000, 0, 0, 0 };
         garageSell[] = { 35000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {
+        textures[] =
+        {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
             } },
@@ -685,29 +698,30 @@ class LifeCfgVehicles {
         };
     };
 
-    class B_MRAP_01_F {
+    class B_MRAP_01_F
+    {
         vItemSpace = 65;
         storageFee[] = { 0, 7500, 0, 0 };
         garageSell[] = { 0, 10000, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {
+        textures[] =
+        {
             { "Regular", "cop", {
                 "\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa"
-            } },
-            { "Black", "fed", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } }
         };
     };
 
-    class C_Heli_Light_01_civil_F {
+    class C_Heli_Light_01_civil_F
+    {
         vItemSpace = 90;
         storageFee[] = { 45000, 19500, 0, 0 };
         garageSell[] = { 57000, 35000, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {
+        textures[] =
+        {
             { "Civ Black", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
             } },
@@ -717,7 +731,7 @@ class LifeCfgVehicles {
             { "Civ Red", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa"
             } },
-            { "Digi Green", "donate", {
+            { "Digi Green", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             } },
             { "Blueline", "civ", {
@@ -750,13 +764,15 @@ class LifeCfgVehicles {
         };
     };
 
-    class O_Heli_Light_02_unarmed_F {
+    class O_Heli_Light_02_unarmed_F
+    {
         vItemSpace = 210;
         storageFee[] = { 55000, 0, 22000, 0 };
         garageSell[] = { 72500, 0, 35000, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {
+        textures[] =
+        {
             { "Black", "cop", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
             } },
@@ -775,13 +791,15 @@ class LifeCfgVehicles {
         };
     };
 
-    class I_Heli_Transport_02_F {
+    class I_Heli_Transport_02_F
+    {
         vItemSpace = 375;
         storageFee[] = { 75000, 0, 0, 0 };
         garageSell[] = { 125000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = {
+        textures[] =
+        {
             { "Ion", "civ", {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_ion_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_ion_co.paa",
