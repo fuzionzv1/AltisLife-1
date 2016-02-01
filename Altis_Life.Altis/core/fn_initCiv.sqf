@@ -1,3 +1,4 @@
+#include "..\script_macros.hpp"
 /*
 	File: fn_initCiv.sqf
 	Author: Bryan "Tonic" Boardwine
