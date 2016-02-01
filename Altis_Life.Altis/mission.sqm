@@ -438,7 +438,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_25";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 25";
+					description="WhiteListed - Cop 20";
 				};
 				class Item20
 				{
@@ -451,7 +451,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_24";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 24";
+					description="WhiteListed - Cop 21";
 				};
 				class Item21
 				{
@@ -464,7 +464,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_23";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 23";
+					description="WhiteListed - Cop 22";
 				};
 				class Item22
 				{
@@ -477,7 +477,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_22";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 22";
+					description="WhiteListed - Cop 23";
 				};
 				class Item23
 				{
@@ -490,7 +490,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_21";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 21";
+					description="WhiteListed - Cop 24";
 				};
 				class Item24
 				{
@@ -503,7 +503,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_20";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 20";
+					description="WhiteListed - Cop 25";
 				};
 				class Item25
 				{
@@ -516,7 +516,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_30";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 30";
+					description="WhiteListed - Cop 26";
 				};
 				class Item26
 				{
@@ -529,7 +529,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_29";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 29";
+					description="WhiteListed - Cop 27";
 				};
 				class Item27
 				{
@@ -555,7 +555,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_27";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 27";
+					description="WhiteListed - Cop 29";
 				};
 				class Item29
 				{
@@ -568,7 +568,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_26";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Cop 26";
+					description="WhiteListed - Cop 30";
 				};
 				class Item30
 				{
@@ -581,7 +581,7 @@ class Mission
 					skill=0.60000002;
 					text="swat_1";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - swat Leader";
+					description="WhiteListed - Swat Commander";
 				};
 				class Item31
 				{
@@ -594,7 +594,7 @@ class Mission
 					skill=0.60000002;
 					text="swat_2";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - swat recon";
+					description="WhiteListed - Swat Recon";
 				};
 				class Item32
 				{
@@ -607,7 +607,7 @@ class Mission
 					skill=0.60000002;
 					text="swat_3";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - swat Assult";
+					description="WhiteListed - Swat Assault";
 				};
 				class Item33
 				{
@@ -620,7 +620,7 @@ class Mission
 					skill=0.60000002;
 					text="swat_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - swat Assult";
+					description="WhiteListed - Swat Assault";
 				};
 				class Item34
 				{
@@ -633,7 +633,7 @@ class Mission
 					skill=0.60000002;
 					text="swat_5";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - swat Assult";
+					description="WhiteListed - Swat Assault";
 				};
 			};
 		};

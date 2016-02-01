@@ -32,6 +32,10 @@ if((FETCH_CONST(life_coplevel) == 0) && (FETCH_CONST(life_adminlevel) == 0)) the
 	sleep 30;
 };
 
+if(str(player) in ["swat_1"]) then { life_swat_commander = true; };
+if(str(player) in ["swat_2"]) then { life_swat_recon = true; };
+if(str(player) in ["swat_3","swat_4","swat_5"]) then { life_swat_assault = true; };
+
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
