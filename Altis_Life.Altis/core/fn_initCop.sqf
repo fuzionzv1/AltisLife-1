@@ -17,10 +17,19 @@ if(life_blacklisted) exitWith
 	sleep 30;
 };
 
+if(str(player) in ["swat_1","swat_2","swat_3","swat_4","swat_5"]) then
+{
+	if(!(life_is_swat)) exitWith
+	{
+		["NotWhitelisted",false,true] call BIS_fnc_endMission;
+		sleep 30;
+	};
+};
+
 if((FETCH_CONST(life_coplevel) == 0) && (FETCH_CONST(life_adminlevel) == 0)) then
 {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
-	sleep 35;
+	sleep 30;
 };
 
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
