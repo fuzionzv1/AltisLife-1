@@ -205,6 +205,26 @@ class LifeCfgVehicles
         textures[] = {};
     };
 
+    class O_Truck_02_transport_F
+    {
+        vItemSpace = 320;
+        storageFee[] = { 1500, 0, 0, 0 };
+        garageSell[] = { 1500, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 3000;
+        textures[] = {};
+    };
+
+    class O_Truck_02_covered_F
+    {
+        vItemSpace = 320;
+        storageFee[] = { 1500, 0, 0, 0 };
+        garageSell[] = { 1500, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 3000;
+        textures[] = {};
+    };
+
     class I_Truck_02_medical_F
     {
         vItemSpace = 20;
