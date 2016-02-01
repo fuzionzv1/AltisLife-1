@@ -36,6 +36,8 @@ if(str(player) in ["swat_1"]) then { life_swat_commander = true; };
 if(str(player) in ["swat_2"]) then { life_swat_recon = true; };
 if(str(player) in ["swat_3","swat_4","swat_5"]) then { life_swat_assault = true; };
 
+if(life_swat_assault OR life_swat_recon OR life_swat_commander) then {[] call life_fnc_swatLoadout;};
+
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
