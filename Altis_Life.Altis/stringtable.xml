@@ -1197,11 +1197,22 @@
       <Portuguese>Garagem de Veículos</Portuguese>
       <Polish>Garaż</Polish>
     </Key>
+    	<Key ID="STR_Boat_Garage_Title">
+      <Original>Boat Garage</Original>
+      <German>Bootsgarage</Germaan>
+      <French>Bateau Garage</French>
+      <Italian>Garage Barca</Italian>
+      <Portuguese>Garagem de Barco</Portuguese>
+      <Polish>łódź Garaż</Polish>
+      	</Key>
+    </Key>
 	<Key ID="STR_Air_Garage_Title">
 	  <Original>Air Garage</Original>
-	</Key>
-	<Key ID="STR_Boat_Garage_Title">
-	  <Original>Air Garage</Original>
+	  <German>Luftgarage</German>
+      <French>Garage de l'air</French>
+      <Italian>Garage Aria</Italian>
+      <Portuguese>Garagem Ar</Portuguese>
+      <Polish>garaż powietrza</Polish>
 	</Key>
     <Key ID="STR_Garage_GetVehicle">
       <Original>Get Vehicle</Original>
@@ -2429,6 +2440,11 @@
     </Key>
 	<Key ID="STR_NOTF_CannotSeizePerson">
 	  <Original>You couldn't effectively take those items off. Try Again.</Original>
+      <German>Sie könnten nicht effektiv nehmen diese Elemente aus. Versuch es noch einmal.</German>
+      <French>Vous ne pourriez pas prendre efficacement ces éléments de hors . Réessayer.</French>
+      <Italian>Non si poteva prendere efficacemente quegli elementi fuori . Riprova.</Italian>
+      <Portuguese>Você não poderia ter efetivamente esses itens fora . Tente novamente.</Portuguese>
+      <Polish>Nie można skutecznie podjąć te pozycje off . Spróbuj ponownie.</Polish>
 	</Key>
     <Key ID="STR_NOTF_Repairing">
       <Original>Repairing %1</Original>
