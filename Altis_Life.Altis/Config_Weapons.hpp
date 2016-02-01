@@ -12,50 +12,57 @@
 */
 class WeaponShops
 {
-    class hunting {
+    class hunting
+    {
         name = "Hunting Outpost";
         side = "civ";
         license = "hunting";
         level = -1;
         msg = "";
-        items[] = {
-            { "arifle_Mk20C_F", "", 5250, 2000 },
-            { "30Rnd_556x45_Stanag", "", 130, -75 },
-            { "optic_ACO_grn", "", 200, 50 },
-            { "optic_Holosight", "", 225, 55 },
-            { "optic_Holosight_smg", "", 225, 55 },
-            { "optic_Hamr", "", 450, 200 },
-            { "optic_MRCO", "", 475, 200 },
-            { "optic_Arco", "", 525, 200 }
+        items[] =
+        {
+            //  classname,      customName,  BUY,   SELL
+            { "arifle_Mk20C_F",      "",    5250,  2000  },
+            { "30Rnd_556x45_Stanag", "",    130,   -75   },
+            { "optic_ACO_grn",       "",    200,   50    },
+            { "optic_Holosight",     "",    225,   55    },
+            { "optic_Holosight_smg", "",    225,   55    },
+            { "optic_Hamr",          "",    450,   200   },
+            { "optic_MRCO",          "",    475,   200   },
+            { "optic_Arco",          "",    525,   200   }
         };
     };
 
-    class gun {
+    class gun
+    {
         name = "Altis Armory";
         side = "civ";
         license = "gun";
         level[] = { "", "", -1, "" };
-        items[] = {
-            { "hgun_Rook40_F", "", 2000, 1200 },
-            { "hgun_Pistol_heavy_02_F", "", 3500, 2000 },
-            { "hgun_ACPC2_F", "", 2750, 1900 },
-            { "hgun_PDW2000_F", "", 4500, 2250 },
-            { "arifle_SDAR_F", "", 4750, 2400 },
-            { "optic_ACO_grn_smg", "", 200, 100 },
-            { "16Rnd_9x21_Mag", "", 25, 11 },
-            { "9Rnd_45ACP_Mag", "", 30, 15 },
-            { "6Rnd_45ACP_Cylinder", "", 35, 18 },
+        items[] =
+        {
+            { "hgun_Rook40_F",             "",   2000,  1200 },
+            { "hgun_Pistol_heavy_02_F",    "",   3500,  2000 },
+            { "hgun_ACPC2_F",              "",   2750,  1900 },
+            { "hgun_PDW2000_F",            "",   4500,  2250 },
+            { "arifle_SDAR_F",             "",   4750,  2400 },
+            { "optic_ACO_grn_smg",         "",   200,   100  },
+            { "16Rnd_9x21_Mag",            "",   25,    11   },
+            { "9Rnd_45ACP_Mag",            "",   30,    15   },
+            { "6Rnd_45ACP_Cylinder",       "", 35, 18 },
             { "30Rnd_9x21_Mag", "", 110, 65 },
-            { "20Rnd_556x45_UW_mag", "", 120, 70 },
+            { "20Rnd_556x45_UW_mag", "", 120, 70 }
         };
     };
 
-    class rebel {
+    class rebel
+    {
         name = "Han's Rebel Supplies";
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
-        items[] = {
+        items[] =
+        {
             { "arifle_TRG20_F", "", 5250, 2500 },
             { "arifle_Katiba_F", "", 6500, 3250 },
             { "arifle_Katiba_C_F", "", 6000, 2750 },
@@ -97,17 +104,19 @@ class WeaponShops
             { "SmokeShellPurple", "", 100, 50 },
             { "SmokeShellBlue", "", 100, 50 },
             { "SmokeShellOrange", "", 100, 50 },
-            { "SmokeShell", "", 100, 50 },
+            { "SmokeShell", "", 100, 50 }
         };
     };
 
 
-    class rebelSupplies {
+    class rebelSupplies
+    {
         name = "Rebel Supplies";
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
-        items[] = {
+        items[] =
+        {
             { "ItemWatch", "", 10, 5 },
             { "ItemCompass", "", 20, 10 },
             { "ItemGPS", "", 40, 20 },
@@ -115,17 +124,18 @@ class WeaponShops
             { "Binocular", "", 10, 5 },
             { "NVGoggles", "", 60, 35 },
             { "NVGoggles_INDEP", "", 60, 30 },
-            { "FirstAidKit", "", 50, 25 },
-            { "ToolKit", "", 50, 25 },
+            { "FirstAidKit", "", 50, 25 }
         };
     };
 
-    class gang {
+    class gang
+    {
         name = "Arms Dealer";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = {
+        items[] =
+        {
             { "hgun_Rook40_F", "", 1500, 1000 },
             { "hgun_Pistol_heavy_02_F", "", 2500, 1250 },
             { "hgun_ACPC2_F", "", 2000, 1000 },
@@ -140,42 +150,45 @@ class WeaponShops
     };
 
     //Basic Shops
-    class genstore {
+    class genstore
+    {
         name = "Altis General Store";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = {
+        items[] =
+        {
             { "Binocular", "", 70, -1 },
             { "ItemGPS", "", 90, -1 },
             { "ItemMap", "", 50, -1 },
             { "ItemCompass", "", 15, -1 },
             { "ItemWatch", "", 25, -1 },
-            { "ToolKit", "", 75, -1 },
             { "FirstAidKit", "", 50, -1 },
-            { "NVGoggles", "", 200, -1 },
+            { "NVGoggles", "", 200, -1 }
         };
     };
 
-    class f_station_store {
+    class f_station_store
+    {
         name = "Altis Fuel Station Store";
         side = "";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = {
+        items[] =
+        {
             { "Binocular", "", 70, -1 },
             { "ItemGPS", "", 90, -1 },
             { "ItemMap", "", 50, -1 },
             { "ItemCompass", "", 15, -1 },
             { "ItemWatch", "", 25, -1 },
-            { "ToolKit", "", 75, -1 },
             { "FirstAidKit", "", 50, -1 },
-            { "NVGoggles", "", 200, -1 },
+            { "NVGoggles", "", 200, -1 }
         };
     };
 
     //copgen
-    class copstore {
+    class copstore
+    {
         name = "store";
         side = "cop";
         license = "";
@@ -183,37 +196,40 @@ class WeaponShops
         items[] = {
             { "ItemWatch", "", 10, -1 },
             { "Binocular", "", 15, -1 },
-            { "ToolKit", "", 25, -1 },
             { "FirstAidKit", "", 15, -1 },
             { "ItemCompass", "", 50, -1 },
             { "ItemGPS", "", 12, -1 },
             { "ItemMap", "", 30, -1 },
-            { "NVGoggles_OPFOR", "", 30, -1 },
+            { "NVGoggles_OPFOR", "", 30, -1 }
         };
     };
 
     //Cop Shops
-    class cop_cadet {
+    class cop_cadet
+    {
         name = "Cadet Armory";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 1, "You are not a Cadet!" };
-        items[] = {
+        items[] =
+        {
             { "arifle_TRG20_F", "", 2000, -1 },
             { "hgun_P07_F", "", 500, -1 },
             { "16Rnd_9x21_Mag", "", 50, -1 },
             { "30Rnd_556x45_Stanag_Tracer_Green", "", 125, -1 },
             { "optic_Aco", "", 125, -1 },
-            { "optic_ACO_grn", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 }
         };
     };
 
-    class cop_constable {
+    class cop_constable
+    {
         name = "Constable Armory";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 2, "You must be a Constable!" };
-        items[] = {
+        items[] =
+        {
             { "hgun_P07_F", "", 200, -1 },
             { "30Rnd_9x21_Mag", "Downing mags", 125, -1 },
             { "arifle_SDAR_F", "", 1500, -1 },
@@ -233,16 +249,18 @@ class WeaponShops
             { "optic_Arco", "", 350, -1 },
 			{ "optic_Hamr", "", 250, -1 },
             { "optic_Aco", "", 125, -1 },
-            { "optic_ACO_grn", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 }
         };
     };
 
-    class cop_corporal {
+    class cop_corporal
+    {
         name = "Corporal Armory";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 3, "You must be a Corporal!" };
-        items[] = {
+        items[] =
+        {
             { "hgun_P07_F", "", 500, -1 },
             { "30Rnd_9x21_Mag", "Downing mags", 125, -1 },
             { "arifle_SDAR_F", "", 2000, -1 },
@@ -263,16 +281,18 @@ class WeaponShops
             { "optic_Arco", "", 350, -1 },
             { "optic_Hamr", "", 350, -1 },
             { "optic_Aco", "", 125, -1 },
-            { "optic_ACO_grn", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 }
         };
     };
 
-	 class cop_sergeant {
+	class cop_sergeant
+    {
         name = "Sergeant Armory";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 4, "You must be a Sergeant Rank!" };
-        items[] = {
+        items[] =
+        {
             { "hgun_P07_F", "", 500, -1 },
             { "30Rnd_9x21_Mag", "Downing mags", 125, -1 },
             { "arifle_SDAR_F", "", 2000, -1 },
@@ -313,16 +333,18 @@ class WeaponShops
 			{ "3Rnd_SmokeBlue_Grenade_shell", "", 170, -1 },
 			{ "3Rnd_SmokeOrange_Grenade_shell", "", 170, -1 },
 			{ "B_UAV_01_backpack_F", "", 5000, -1 },
-            { "B_UavTerminal", "", 500, -1 },
+            { "B_UavTerminal", "", 500, -1 }
         };
     };
 
-	 class cop_lieutenant {
+	class cop_lieutenant
+    {
         name = "Lieutenant Armory";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 5, "You must be a Lieutenant!" };
-        items[] = {
+        items[] =
+        {
             { "hgun_P07_F", "", 500, -1 },
             { "30Rnd_9x21_Mag", "Downing mags", 125, -1 },
             { "hgun_Pistol_heavy_01_F", "", 1500, -1 },
@@ -371,21 +393,21 @@ class WeaponShops
             { "optic_Arco", "", 350, -1 },
 			{ "optic_Hamr", "", 250, -1 },
             { "optic_Aco", "", 125, -1 },
-            { "optic_ACO_grn", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 }
         };
     };
 
-
     //Medic Shops
-    class med_basic {
+    class med_basic
+    {
         name = "store";
         side = "med";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = {
+        items[] =
+        {
             { "ItemGPS", "", 100, -1 },
             { "Binocular", "", 150, -1 },
-            { "ToolKit", "", 150, -1 },
             { "FirstAidKit", "", 150, -1 },
             { "Medikit", "", 250, -1 },
             { "NVGoggles", "", 120, -1 },

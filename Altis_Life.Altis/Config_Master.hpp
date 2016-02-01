@@ -27,16 +27,12 @@ class Life_Settings
     enable_fatigue = true; //Set to false to disable the ARMA 3 false system.
     total_maxWeight = 24; //Static variable for the maximum weight allowed without having a backpack
     paycheck_period = 5; //Scaled in minutes
+    rahim_singleshot = true; //Set the rahim to always be single fire
 
     /* Impound Variables */
     impound_car = 350; //Price for impounding cars
     impound_boat = 250; //Price for impounding boats
     impound_air = 850; //Price for impounding helicopters / planes
-
-    /* Initial Bank Amount */
-    bank_cop = 20000; //Amount of cash on bank for new cops
-    bank_civ = 20000; //Amount of cash on bank for new civillians
-    bank_med = 20000; //Amount of cash on bank for new medics
 
     /* Paycheck Amount */
     paycheck_cop = 0; //Base payment for cops

@@ -28,6 +28,7 @@ switch (true) do
 //Mine check
 if(EQUAL(SEL(_mine, 0),"")) exitWith {hint localize "STR_ISTR_Pick_NotNear"};
 if(vehicle player != player) exitWith {hint localize "STR_ISTR_Pick_MineVeh";};
+if(life_action_inUse) exitWith {}; // prevent spamming
 
 _diff = [SEL(_mine,0),SEL(_mine,1),life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 

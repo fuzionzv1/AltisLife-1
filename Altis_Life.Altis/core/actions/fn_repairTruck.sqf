@@ -10,24 +10,28 @@ private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName","_test"];
 _veh = cursorTarget;
 life_interrupted = false;
 if(isNull _veh) exitwith {};
-if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then {
-	if("ToolKit" in (items player)) then {
+if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then
+{
+	_displayName = FETCH_CONFIG2(getText,CONFIG_VEHICLES,(typeOf _veh),"displayName");
+	_upp = format[localize "STR_NOTF_Repairing",_displayName];
+
+	//Setup our progress bar.
+	disableSerialization;
+	3 cutRsc ["life_progress","PLAIN"];
+	_ui = GVAR_UINS "life_progress";
+	_progress = _ui displayCtrl 38201;
+	_pgText = _ui displayCtrl 38202;
+	_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
+	_progress progressSetPosition 0.01;
+	_cP = 0.01;
+
+	if(life_inv_repairKit > 0) then
+	{
 		life_action_inUse = true;
-		_displayName = FETCH_CONFIG2(getText,CONFIG_VEHICLES,(typeOf _veh),"displayName");
-		_upp = format[localize "STR_NOTF_Repairing",_displayName];
-
-		//Setup our progress bar.
-		disableSerialization;
-		3 cutRsc ["life_progress","PLAIN"];
-		_ui = GVAR_UINS "life_progress";
-		_progress = _ui displayCtrl 38201;
-		_pgText = _ui displayCtrl 38202;
-		_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
-		_progress progressSetPosition 0.01;
-		_cP = 0.01;
-
-		while{true} do {
-			if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+		while{true} do
+		{
+			if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then
+			{
 				[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 				player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
 				player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
@@ -48,8 +52,11 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		player playActionNow "stop";
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_ActionInVehicle","PLAIN"];};
-		player removeItem "ToolKit";
 		_veh setDamage 0;
 		titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
+	}
+	else
+	{
+		if(life_inv_repairKit == 0) exitWith {hint localize "STR_NOTF_RepairKit"};
 	};
 };
