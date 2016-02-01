@@ -198,6 +198,17 @@ class VirtualItems {
         icon = "icons\ico_repairKit.paa";
     };
 
+    class mash {
+        variable = "mash";
+        displayName = "STR_Item_Mash";
+        weight = 2;
+        buyPrice = 750;
+        sellPrice = 350;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_moonshine.paa";
+    };
+
     class moonshine {
         variable = "moonshine";
         displayName = "STR_Item_Moonshine";
