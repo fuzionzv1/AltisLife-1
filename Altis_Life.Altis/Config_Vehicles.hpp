@@ -53,9 +53,9 @@ class CarShops
         vehicles[] =
         {
             { "C_Offroad_01_F", 1000, { "" }, { "", "", -1 } },
-            { "I_Truck_02_medical_F", 25000, { "" }, { "", "", -1 } },
-            { "O_Truck_03_medical_F", 30000, { "" }, { "", "", -1 } },
-            { "B_Truck_01_medical_F", 90000, { "" }, { "", "", -1 } }
+            { "I_Truck_02_medical_F", 35000, { "" }, { "", "", -1 } },
+            { "O_Truck_03_medical_F", 55000, { "" }, { "", "", -1 } },
+            { "B_Truck_01_medical_F", 45000, { "" }, { "", "", -1 } }
         };
     };
 
@@ -109,7 +109,7 @@ class CarShops
             { "C_SUV_01_F", 3000, { "" }, { "life_coplevel", "SCALAR", 2 } },
             { "B_MRAP_01_F", 12000, { "" }, { "life_coplevel", "SCALAR", 4 } },
             { "I_MRAP_03_F", 15000, { "" }, { "life_coplevel", "SCALAR", 5 } },
-            { "B_G_Offroad_01_armed_F", 17000, { "" }, { "life_coplevel", "SCALAR", 5 } }
+            { "B_G_Offroad_01_armed_F", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } }
         };
     };
 
@@ -120,7 +120,7 @@ class CarShops
         {
             { "O_Heli_Light_02_unarmed_F", 100000, { "rebel" }, { "", "", -1 } },
             { "I_Heli_light_03_unarmed_F", 85000, { "rebel" }, { "", "", -1 } },
-            { "B_Heli_Light_01_F", 55000, { "rebel" }, { "", "", -1 } }
+            { "B_Heli_Light_01_F", 65000, { "rebel" }, { "", "", -1 } }
         };
     };
 
