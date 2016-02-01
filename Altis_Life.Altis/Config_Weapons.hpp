@@ -46,7 +46,7 @@ class WeaponShops
             { "9Rnd_45ACP_Mag", "", 30, 15 },
             { "6Rnd_45ACP_Cylinder", "", 35, 18 },
             { "30Rnd_9x21_Mag", "", 110, 65 },
-            { "20Rnd_556x45_UW_mag", "", 120, 70 },
+            { "20Rnd_556x45_UW_mag", "", 120, 70 }
         };
     };
 
@@ -97,7 +97,7 @@ class WeaponShops
             { "SmokeShellPurple", "", 100, 50 },
             { "SmokeShellBlue", "", 100, 50 },
             { "SmokeShellOrange", "", 100, 50 },
-            { "SmokeShell", "", 100, 50 },
+            { "SmokeShell", "", 100, 50 }
         };
     };
 
@@ -116,7 +116,7 @@ class WeaponShops
             { "NVGoggles", "", 60, 35 },
             { "NVGoggles_INDEP", "", 60, 30 },
             { "FirstAidKit", "", 50, 25 },
-            { "ToolKit", "", 50, 25 },
+            { "ToolKit", "", 50, 25 }
         };
     };
 
@@ -153,7 +153,7 @@ class WeaponShops
             { "ItemWatch", "", 25, -1 },
             { "ToolKit", "", 75, -1 },
             { "FirstAidKit", "", 50, -1 },
-            { "NVGoggles", "", 200, -1 },
+            { "NVGoggles", "", 200, -1 }
         };
     };
 
@@ -170,7 +170,7 @@ class WeaponShops
             { "ItemWatch", "", 25, -1 },
             { "ToolKit", "", 75, -1 },
             { "FirstAidKit", "", 50, -1 },
-            { "NVGoggles", "", 200, -1 },
+            { "NVGoggles", "", 200, -1 }
         };
     };
 
@@ -188,7 +188,7 @@ class WeaponShops
             { "ItemCompass", "", 50, -1 },
             { "ItemGPS", "", 12, -1 },
             { "ItemMap", "", 30, -1 },
-            { "NVGoggles_OPFOR", "", 30, -1 },
+            { "NVGoggles_OPFOR", "", 30, -1 }
         };
     };
 
@@ -204,7 +204,7 @@ class WeaponShops
             { "16Rnd_9x21_Mag", "", 50, -1 },
             { "30Rnd_556x45_Stanag_Tracer_Green", "", 125, -1 },
             { "optic_Aco", "", 125, -1 },
-            { "optic_ACO_grn", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 }
         };
     };
 
@@ -233,7 +233,7 @@ class WeaponShops
             { "optic_Arco", "", 350, -1 },
 			{ "optic_Hamr", "", 250, -1 },
             { "optic_Aco", "", 125, -1 },
-            { "optic_ACO_grn", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 }
         };
     };
 
@@ -263,7 +263,7 @@ class WeaponShops
             { "optic_Arco", "", 350, -1 },
             { "optic_Hamr", "", 350, -1 },
             { "optic_Aco", "", 125, -1 },
-            { "optic_ACO_grn", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 }
         };
     };
 
@@ -313,7 +313,7 @@ class WeaponShops
 			{ "3Rnd_SmokeBlue_Grenade_shell", "", 170, -1 },
 			{ "3Rnd_SmokeOrange_Grenade_shell", "", 170, -1 },
 			{ "B_UAV_01_backpack_F", "", 5000, -1 },
-            { "B_UavTerminal", "", 500, -1 },
+            { "B_UavTerminal", "", 500, -1 }
         };
     };
 
@@ -371,7 +371,7 @@ class WeaponShops
             { "optic_Arco", "", 350, -1 },
 			{ "optic_Hamr", "", 250, -1 },
             { "optic_Aco", "", 125, -1 },
-            { "optic_ACO_grn", "", 125, -1 },
+            { "optic_ACO_grn", "", 125, -1 }
         };
     };
 
