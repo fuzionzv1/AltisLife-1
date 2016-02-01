@@ -1,4 +1,4 @@
-#include "..\..\script_macros.hpp"
+#include "..\..\..\script_macros.hpp"
 /*
 	File: fn_swatLoadout.sqf
 	Author: Jesse Schultz
@@ -27,8 +27,20 @@ if(hmd player != "") then {	player unlinkItem (hmd player); };
 if(life_swat_commander) then
 {
 	player addUniform "U_Competitor";
-	player addVest "V_TacVest_blk_POLICE";
+	player addVest "V_PlateCarrier1_blk";
 	player addHeadgear "H_Cap_police";
+	player addWeapon "NVGoggles_OPFOR";
+	player addWeapon "arifle_MXM_Black_F";
+	player addPrimaryWeaponItem "optic_MRCO";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag";
+	player addMagazine "30Rnd_65x39_caseless_mag";
+	player addMagazine "30Rnd_65x39_caseless_mag";
+	player addMagazine "30Rnd_65x39_caseless_mag";
 	player addWeapon "hgun_P07_F";
 	player addMagazine "30Rnd_9x21_Mag";
 };
@@ -37,8 +49,23 @@ if(life_swat_commander) then
 if(life_swat_recon) then
 {
 	player addUniform "U_Competitor";
-	player addVest "V_TacVest_blk_POLICE";
+	player addVest "V_PlateCarrier1_blk";
 	player addHeadgear "H_Cap_police";
+	player addWeapon "NVGoggles_OPFOR";
+	player addPrimaryWeaponItem "optic_MRCO";
+	player addItem "B_UavTerminal";
+	player addbackpack "B_UAV_01_backpack_F";
+	player assignItem "B_UAVTerminal";
+	player addWeapon "arifle_MXC_Black_F";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
+	player addMagazine "30Rnd_65x39_caseless_mag";
+	player addMagazine "30Rnd_65x39_caseless_mag";
+	player addMagazine "30Rnd_65x39_caseless_mag";
+	player addMagazine "30Rnd_65x39_caseless_mag";
 	player addWeapon "hgun_P07_F";
 	player addMagazine "30Rnd_9x21_Mag";
 };
@@ -47,10 +74,23 @@ if(life_swat_recon) then
 if(life_swat_assault) then
 {
 	player addUniform "U_Competitor";
-	player addVest "V_TacVest_blk_POLICE";
+	player addVest "V_PlateCarrier1_blk";
 	player addHeadgear "H_Cap_police";
+	player addPrimaryWeaponItem "optic_MRCO";
+	player addWeapon "NVGoggles_OPFOR";
 	player addWeapon "hgun_P07_F";
 	player addMagazine "30Rnd_9x21_Mag";
+	player addWeapon "srifle_DMR_03_F";
+	player addPrimaryWeaponItem "acc_pointer_IR";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
+	player addMagazine "20Rnd_762x51_Mag";
 };
 
 /* ITEMS */
