@@ -298,6 +298,12 @@ class Life_Client_Core
 		class vehInvSearch {};
 	};
 
+	class Swat
+	{
+		file = "core\cop\swat";
+		class swatLoadout {};
+	};
+
 	class Gangs
 	{
 		file = "core\gangs";

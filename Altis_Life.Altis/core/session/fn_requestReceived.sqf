@@ -56,6 +56,7 @@ switch(playerSide) do
 		life_blacklisted = SEL(_this,9);
 		life_hunger = SEL(_this,10);
 		life_thirst = SEL(_this,11);
+		life_is_swat = SEL(_this,12);
 	};
 
 	case civilian:
