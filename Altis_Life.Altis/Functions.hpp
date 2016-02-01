@@ -270,6 +270,7 @@ class Life_Client_Core
 		file = "core\cop";
 		class airhorn {};
 		class bountyReceive {};
+		class copEnter {};
 		class copInteractionMenu {};
 		class copLights {};
 		class copLoadout {};
