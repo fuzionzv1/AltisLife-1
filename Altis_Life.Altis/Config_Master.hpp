@@ -33,11 +33,6 @@ class Life_Settings
     impound_boat = 250; //Price for impounding boats
     impound_air = 850; //Price for impounding helicopters / planes
 
-    /* Initial Bank Amount */
-    bank_cop = 20000; //Amount of cash on bank for new cops
-    bank_civ = 20000; //Amount of cash on bank for new civillians
-    bank_med = 20000; //Amount of cash on bank for new medics
-
     /* Paycheck Amount */
     paycheck_cop = 0; //Base payment for cops
     paycheck_civ = 500; //Payment for civillians

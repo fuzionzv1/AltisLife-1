@@ -73,21 +73,18 @@ switch (playerSide) do
 {
 	case west:
 	{
-		BANK = LIFE_SETTINGS(getNumber,"bank_cop");
 		life_paycheck = _bonus + LIFE_SETTINGS(getNumber,"paycheck_cop");
 		_handle = [] spawn life_fnc_initCop;
 		waitUntil {scriptDone _handle};
 	};
 	case civilian:
 	{
-		BANK = LIFE_SETTINGS(getNumber,"bank_civ");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
 		_handle = [] spawn life_fnc_initCiv;
 		waitUntil {scriptDone _handle};
 	};
 	case independent:
 	{
-		BANK = LIFE_SETTINGS(getNumber,"bank_med");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
 		_handle = [] spawn life_fnc_initMedic;
 		waitUntil {scriptDone _handle};

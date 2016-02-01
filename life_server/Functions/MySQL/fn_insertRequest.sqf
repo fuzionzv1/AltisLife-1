@@ -12,7 +12,7 @@ params [
 	"_uid",
 	"_name",
 	["_money",0],
-	["_bank",2500],
+	["_bank",10000],
 	["_returnToSender",objNull,[objNull]]
 ];
 
