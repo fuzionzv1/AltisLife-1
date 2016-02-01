@@ -188,6 +188,7 @@ class Life_Client_Core
 		class nearestDoor {};
 		class nearUnits {};
 		class numberText {};
+		class nearestObjects {};
 		class onFired {};
 		class onTakeItem {};
 		class playerCount {};
