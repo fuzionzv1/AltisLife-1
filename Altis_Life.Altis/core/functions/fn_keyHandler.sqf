@@ -6,7 +6,7 @@
 	Description:
 	Main key handler for event 'keyDown'
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_list"];
 _ctrl = SEL(_this,0);
 _code = SEL(_this,1);
 _shift = SEL(_this,2);
@@ -130,7 +130,6 @@ switch (_code) do {
 					[vehicle player] call life_fnc_openInventory;
 				};
 			} else {
-				private "_list";
 				_list = ["landVehicle","Air","Ship","House_F"];
 				if(KINDOF_ARRAY(cursorTarget,_list) && {player distance cursorTarget < 7} && {vehicle player == player} && {alive cursorTarget} && {!life_action_inUse}) then {
 					if(cursorTarget in life_vehicles) then {

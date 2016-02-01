@@ -2121,11 +2121,6 @@
       <Portuguese>Não existe um veículo por perto...</Portuguese>
       <Polish>W pobliżu nie ma pojazdu...</Polish>
     </Key>
-    <Key ID="STR_NOTF_PlayerNear">
-      <Original>You can't open trunk while a player is near!</Original>
-      <Portuguese>Você não pode abrir o inventário enquanto estiver perto de um jogador!</Portuguese>
-      <Polish>Nie możesz otworzyć wyposażenia gdy inny gracz jest w pobliżu!</Polish>
-    </Key>
     <Key ID="STR_NOTF_Restrained">
       <Original>%1 was restrained by %2</Original>
       <German>%1 wurde von %2 festgenommen</German>
