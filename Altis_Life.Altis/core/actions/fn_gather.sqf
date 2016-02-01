@@ -11,8 +11,8 @@ private["_gather","_itemWeight","_diff","_itemName","_resourceZones","_zone"];
 _resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","sugar_1","sugar_2","corn_1","corn_2","grape_1","grape_2"];
 _zone = "";
 
-if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
-life_action_gathering = true;
+if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
+life_action_inUse = true;
 //Find out what zone we're near
 {
 	if(player distance (getMarkerPos _x) < 60) exitWith {_zone = _x;};

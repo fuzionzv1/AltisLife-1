@@ -36,20 +36,43 @@ if(isNull _curTarget) exitWith
 	else
 	{
 		_animal = [position player, ["Sheep_random_F","Goat_random_F","Hen_random_F","Cock_random_F","Rabbit_F"], 3.5] call life_fnc_nearestObjects;
- 		if (count _animal > 0) then {
- 		_animals = _animal select 0;
- 		if (!alive _animals) then {
- 		[_animals] call life_fnc_gutAnimal;
- 			    };
- 		} else {
- 			if(playerSide == civilian && !life_action_gathering) then {
+ 		if (count _animal > 0) then
+ 		{
+ 			_animals = _animal select 0;
+ 			if (!alive _animals) then
+ 			{
+ 				[_animals] call life_fnc_gutAnimal;
+ 			};
+ 		}
+ 		else
+ 		{
+ 			if(playerSide == civilian && !life_action_gathering && !life_action_inUse) then
+ 			{
+ 				if(life_action_gathering) exitWith {}; // prevent spamming
+ 				life_action_gathering = true;
  				_handle = [] spawn life_fnc_gather;
  				waitUntil {scriptDone _handle};
  				life_action_gathering = false;
+ 			}
+ 			else
+ 			{
+ 				_resourceZones = ["salt_1","salt_2","diamond_1","diamond_2","oil_1","oil_2","rock_1","rock_2","rock_3","rock_4"];
+ 				{
+ 					if(player distance (getMarkerPos _x) < 60) exitWith
+ 					{
+ 						_foundZone;
+ 					};
+ 				} forEach _resourceZones;
+
+ 				if(EQUAL(_foundZone,"")) exitWith {};
+ 				_handle = [] spawn life_fnc_pickaxeUse;
+ 				waitUntil {scriptDone _handle};
+ 				life_action_inUse = false;
  			};
 		};
 	};
 };
+
 if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith
 {
 	[_curTarget] call life_fnc_houseMenu;
