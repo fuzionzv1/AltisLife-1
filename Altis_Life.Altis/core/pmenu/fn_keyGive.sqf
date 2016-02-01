@@ -2,7 +2,6 @@
 /*
 	File: fn_keyGive.sqf
 	Author: Bryan "Tonic" Boardwine
-	
 	Description:
 	Gives a copy of the key for the selected vehicle to the selected player.
 	Player must be within range.
@@ -15,13 +14,16 @@ _list = _dialog displayCtrl 2701;
 _plist = _dialog displayCtrl 2702;
 
 _sel = lbCurSel _list;
+if((_list lbText _sel) == "You don't own any vehicles") exitWith {hint "You didn't select a vehicle.";};
 _vehicle = _list lbData _sel;
 _vehicle = life_vehicles select parseNumber(_vehicle);
 
+if((lbCurSel 2702) == -1) exitWith {hint "You didn't select a player.";};
 _sel = lbCurSel _plist;
 _unit = _plist lbData _sel;
 _unit = call compile format["%1", _unit];
-if(isNull _unit OR isNil "_unit") exitWith {}; 
+if(isNull _unit OR isNil "_unit") exitWith {};
+if(_unit == player) exitWith {};
 
 _uid = getPlayerUID _unit;
 _owners = _vehicle GVAR "vehicle_info_owners";
