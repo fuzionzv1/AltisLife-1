@@ -2,7 +2,7 @@
 /*
     File: fn_loadGear.sqf
     Author: Bryan "Tonic" Boardwine
-    
+
     Description:
     Loads saved civilian gear, this is limited for a reason and that's balance.
 */
@@ -15,10 +15,18 @@ waitUntil {scriptDone _handle};
 
 if(EQUAL(count _itemArray,0)) exitWith {
     switch(playerSide) do {
-        case west: {
-            [] call life_fnc_copLoadout;
+        case west:
+        {
+            if(life_swat_commander OR life_swat_assault OR life_swat_recon) then
+            {
+                [] call life_fnc_swatLoadout;
+            }
+            else
+            {
+                [] call life_fnc_copLoadout;
+            };
         };
-        
+
         case civilian: {
             [] call life_fnc_civLoadout;
         };

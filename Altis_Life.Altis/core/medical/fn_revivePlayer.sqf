@@ -6,9 +6,10 @@
 	Description:
 	Starts the revive process on the player.
 */
-private["_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title"];
+private["_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title","_reviveCost"];
 _target = param [0,ObjNull,[ObjNull]];
-if(isNull _target) exitWith {}; //DAFUQ?@!%$!R?EFFD?TGSF?HBS?DHBFNFD?YHDGN?D?FJH
+if(isNull _target) exitWith {};
+_reviveCost = LIFE_SETTINGS(getNumber,"revive_fee");
 
 _revivable = _target GVAR ["Revive",FALSE];
 if(_revivable) exitWith {};
@@ -66,12 +67,12 @@ if((player GVAR ["restrained",false])) exitWith {life_action_inUse = false;};
 if(!isNil "_badDistance") exitWith {titleText[localize "STR_Medic_TooFar","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 
-ADD(BANK,(LIFE_SETTINGS(getNumber,"revive_fee")));
+ADD(BANK,_reviveCost);
 
 life_action_inUse = false;
 _target SVAR ["Revive",TRUE,TRUE];
 [profileName] remoteExecCall ["life_fnc_revived",_target];
-titleText[format[localize "STR_Medic_RevivePayReceive",_targetName,[(call life_revive_fee)] call life_fnc_numberText],"PLAIN"];
+titleText[format[localize "STR_Medic_RevivePayReceive",_targetName,[_reviveCost] call life_fnc_numberText],"PLAIN"];
 
 sleep .6;
 player reveal _target;

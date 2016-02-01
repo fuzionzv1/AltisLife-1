@@ -73,21 +73,18 @@ switch (playerSide) do
 {
 	case west:
 	{
-		BANK = LIFE_SETTINGS(getNumber,"bank_cop");
 		life_paycheck = _bonus + LIFE_SETTINGS(getNumber,"paycheck_cop");
 		_handle = [] spawn life_fnc_initCop;
 		waitUntil {scriptDone _handle};
 	};
 	case civilian:
 	{
-		BANK = LIFE_SETTINGS(getNumber,"bank_civ");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
 		_handle = [] spawn life_fnc_initCiv;
 		waitUntil {scriptDone _handle};
 	};
 	case independent:
 	{
-		BANK = LIFE_SETTINGS(getNumber,"bank_med");
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
 		_handle = [] spawn life_fnc_initMedic;
 		waitUntil {scriptDone _handle};
@@ -107,6 +104,8 @@ diag_log "Display 46 Found";
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call life_fnc_keyHandler"];
 (findDisplay 46) displayAddEventHandler ["MouseButtonDown", "_this call life_fnc_mouseDownHandler"];
 (findDisplay 46) displayAddEventHandler ["MouseButtonUp", "_this call life_fnc_mouseUpHandler"];
+
+setPlayerRespawnTime life_respawn_timer;
 
 player addRating 99999999;
 diag_log "------------------------------------------------------------------------------------------------------";

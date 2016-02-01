@@ -1189,6 +1189,20 @@
       <Portuguese>Garagem de Veículos</Portuguese>
       <Polish>Garaż</Polish>
     </Key>
+	<Key ID="STR_Civ_Garage_Title">
+      <Original>Civilian Vehicle Garage</Original>
+      <German>Fahrzeug Garage</German>
+      <French>Garage Vehicule</French>
+      <Italian>Garage Veicoli</Italian>
+      <Portuguese>Garagem de Veículos</Portuguese>
+      <Polish>Garaż</Polish>
+    </Key>
+	<Key ID="STR_Air_Garage_Title">
+	  <Original>Air Garage</Original>
+	</Key>
+	<Key ID="STR_Boat_Garage_Title">
+	  <Original>Air Garage</Original>
+	</Key>
     <Key ID="STR_Garage_GetVehicle">
       <Original>Get Vehicle</Original>
       <German>Ausparken</German>
@@ -2437,6 +2451,9 @@
       <Portuguese>Você reparou esse veículo.</Portuguese>
       <Polish>Naprawiłeś pojazd</Polish>
     </Key>
+	<Key ID="STR_NOTF_RepairKit">
+	  <Original>You need to purchase a Repair Kit from the market or gas station!</Original>
+	</Key>
     <Key ID="STR_NOTF_Gather_Success">
       <Original>You have gathered %2 %1(s)</Original>
       <Portuguese>Você colheu %2 %1(s)</Portuguese>
