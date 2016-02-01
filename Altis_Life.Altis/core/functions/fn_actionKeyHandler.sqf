@@ -46,6 +46,7 @@ if(isNull _curTarget) exitWith
  		}
  		else
  		{
+ 			private ["_resourceZones","_foundZone","_handle"];
  			if(playerSide == civilian && !life_action_gathering && !life_action_inUse) then
  			{
  				if(life_action_gathering) exitWith {}; // prevent spamming
