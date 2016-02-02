@@ -31,12 +31,15 @@ if(EQUAL(LIFE_SETTINGS(getNumber,"rahim_singleshot"),1)) then
 	{
 		while {true} do
 		{
-			waitUntil {sleep 2; currentWeapon player == "srifle_DMR_01_F"};
-			_weapon = currentWeapon player;
-			_ammo = player ammo _weapon;
-			player setAmmo [_weapon,0];
-			player forceWeaponFire [_weapon,"Single"];
-			player setAmmo [_weapon,_ammo];
+			waitUntil {sleep 1.5; currentWeapon player == "srifle_DMR_01_F"};
+			if(currentWeaponMode player == "FullAuto") then
+			{
+				_weapon = currentWeapon player;
+				_ammo = player ammo _weapon;
+				player setAmmo [_weapon,0];
+				player forceWeaponFire [_weapon,"Single"];
+				player setAmmo [_weapon,_ammo];
+			};
 		};
 	};
 };
