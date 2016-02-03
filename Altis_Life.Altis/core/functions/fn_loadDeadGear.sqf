@@ -48,7 +48,8 @@ if(!(EQUAL(_backpack,""))) then {_handle = [_backpack,true,false,false,false] sp
 	waitUntil {scriptDone _handle};
 } foreach _magazines;
 
-if(!(EQUAL(_primary,""))) then {[_primary,true,false,false,false] spawn life_fnc_handleItem;};
+//if(!(EQUAL(_primary,""))) then {[_primary,true,false,false,false] spawn life_fnc_handleItem;};
+if(!(EQUAL(_primary,""))) then {player addWeapon _primary};
 if(!(EQUAL(_launcher,""))) then {[_launcher,true,false,false,false] spawn life_fnc_handleItem;};
 if(!(EQUAL(_handgun,""))) then {[_handgun,true,false,false,false] spawn life_fnc_handleItem;};
 
