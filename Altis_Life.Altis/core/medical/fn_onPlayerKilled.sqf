@@ -76,6 +76,8 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 	};
 };
 
+life_dead_gear = [player] call life_fnc_fetchDeadGear;
+
 //Killed by cop stuff...
 if(side _killer == west && playerSide != west) then {
 	life_copRecieve = _killer;

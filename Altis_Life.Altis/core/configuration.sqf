@@ -40,6 +40,7 @@ life_swat_commander = false;
 life_swat_recon = false;
 life_swat_assault = false;
 life_fed_break = 0;
+life_dead_gear = [];
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
