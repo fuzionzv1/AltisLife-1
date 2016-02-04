@@ -5863,8 +5863,8 @@
       <French>Ravitaillez en essence le véhicule le plus proche</French>
     </Key>
     <Key ID="STR_Price_Fuel_Pump">
-      <Original>Price per liter : %1$</Original>
-      <French>Prix au litre : %1$</French>
+      <Original>Price Per Liter: $%1</Original>
+      <French>Prix au litre: %1$</French>
     </Key>
     <Key ID="STR_Fuel_Tank_Vehicle">
       <Original>Current fuel Amount:</Original>

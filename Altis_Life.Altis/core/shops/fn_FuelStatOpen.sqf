@@ -35,7 +35,7 @@ _control = ((findDisplay 20300) displayCtrl 20302);
 lbClear _control; //Flush the list.
 
 ctrlsettext [20322,format [localize "STR_Price_Fuel_Pump",life_fuelPrices]];
-ctrlsettext [20323,format ["Total : %1$",life_fuelPrices * 0.1]];
+ctrlsettext [20323,format ["Cost: %1$",life_fuelPrices * 0.1]];
 //Loop through
 {
 	_className = typeof (_x select 0);

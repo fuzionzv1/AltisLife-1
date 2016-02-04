@@ -39,5 +39,5 @@ round(_fueltank * _fuel)
 	sliderSetPosition[_x ,(floor(_fuel * _fueltank))];
 } foreach [20901];
 
-ctrlsettext [20323,format ["Total : %1$",life_fuelPrices * ((SliderPosition 20901) -(floor(_fuel * _fueltank))) ]];
+ctrlsettext [20323,format ["Total: %1$",life_fuelPrices * ((SliderPosition 20901) -(floor(_fuel * _fueltank))) ]];
 true;
