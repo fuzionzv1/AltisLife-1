@@ -100,7 +100,8 @@ class WeaponShops
             { "SmokeShellPurple", "", 100, 50 },
             { "SmokeShellBlue", "", 100, 50 },
             { "SmokeShellOrange", "", 100, 50 },
-            { "SmokeShell", "", 100, 50 }
+            { "SmokeShell", "", 100, 50 },
+			{ "HandGrenade", "", 4500, 1750 }
         };
     };
 

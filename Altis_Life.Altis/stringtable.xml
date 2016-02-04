@@ -5857,6 +5857,31 @@
       <Polish>Otrzymałeś wypłatę w kwocie $%1</Polish>
     </Key>
   </Package>
+  <Package name="Fuel_Pump">
+    <Key ID="STR_Action_Pump">
+      <Original>Refuel the nearest vehicle</Original>
+      <French>Ravitaillez en essence le véhicule le plus proche</French>
+    </Key>
+    <Key ID="STR_Price_Fuel_Pump">
+      <Original>Price Per Liter: $%1</Original>
+      <French>Prix au litre: %1$</French>
+    </Key>
+    <Key ID="STR_Fuel_Tank_Vehicle">
+      <Original>Current fuel Amount:</Original>
+    </Key>
+    <Key ID="STR_Select_Vehicle_Pump">
+      <Original>Select a vehicle</Original>
+      <French>Selectionne un vehicule!</French>
+    </Key>
+    <Key ID="STR_Distance_Vehicle_Pump">
+      <Original>The vehicle is too far away, or you are inside it!</Original>
+      <French>Le vehicule est trop loin ou tu es dedans!</French>
+    </Key>
+    <Key ID="STR_Vehicle_Ready_Pump">
+      <Original>The vehicle is full!</Original>
+      <French>Le véhicule est plein!</French>
+    </Key>
+  </Package>
   <Package name="Player_Actions">
     <Key ID="STR_pAct_DropFishingNet">
       <Original>Drop Fishing Net</Original>
