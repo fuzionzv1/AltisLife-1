@@ -953,7 +953,7 @@ class VirtualItems {
     class rooster {
         variable = "rooster";
         displayName = "STR_Item_Rooster";
-        weight = 115;
+        weight = 1;
         buyPrice = 85;
         sellPrice = 85;
         illegal = false;
