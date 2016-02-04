@@ -244,8 +244,6 @@ class Life_Client_Core
 		class addVehicle2Chain {};
 		class colorVehicle {};
 		class deviceMine {};
-		class FuelStatOpen {};
- 		class FuelLBchange {};
 		class FuelRefuelcar {};
 		class lockVehicle {};
 		class openInventory {};
@@ -335,6 +333,8 @@ class Life_Client_Core
 		class chopShopSell {};
 		class clothingFilter {};
 		class clothingMenu {};
+		class FuelStatOpen {};
+ 		class FuelLBchange {};
 		class vehicleShopBuy {};
 		class vehicleShopLBChange {};
 		class vehicleShopMenu {};

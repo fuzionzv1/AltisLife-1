@@ -122,10 +122,10 @@ class Life_FuelStat
 			sizeEx = 0.04;
 			colorBackground[] = {0.1,0.1,0.1,0.9};
 			onLBSelChanged = "_this call life_fnc_fuelLBChange";
-
-			//Position & height
-			x = 0.11; y = 0.302;
-			w = 0.303; h = 0.49;
+			x = 0.11;
+			y = 0.302;
+			w = 0.303;
+			h = 0.49;
 		};
 
 		class fuelTank : life_RscXSliderH
