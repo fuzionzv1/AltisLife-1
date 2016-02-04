@@ -244,6 +244,9 @@ class Life_Client_Core
 		class addVehicle2Chain {};
 		class colorVehicle {};
 		class deviceMine {};
+		class FuelStatOpen {};
+ 		class FuelLBchange {};
+		class FuelRefuelcar {};
 		class lockVehicle {};
 		class openInventory {};
 		class vehicleOwners {};
