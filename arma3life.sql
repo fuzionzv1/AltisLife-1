@@ -39,6 +39,11 @@ BEGIN
   DELETE FROM `gangs` WHERE `active` = 0;
 END$$
 
+CREATE DEFINER=`altislife`@`localhost` PROCEDURE `deleteOldContainers`()
+BEGIN
+  DELETE FROM `containers` WHERE `owned` = 0;
+END$$
+
 DELIMITER ;
 
 -- --------------------------------------------------------
@@ -114,8 +119,6 @@ CREATE TABLE IF NOT EXISTS `houses` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `pid` varchar(32) NOT NULL,
   `pos` varchar(64) DEFAULT NULL,
-  `inventory` text,
-  `containers` text,
   `owned` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`,`pid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
@@ -138,6 +141,28 @@ CREATE TABLE IF NOT EXISTS `gangs` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_UNIQUE` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `containers`
+-- Needed for extDB latest update on git
+--
+
+CREATE TABLE IF NOT EXISTS `containers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` varchar(32) NOT NULL,
+	`classname` varchar(32) NOT NULL,
+  `pos` varchar(64) DEFAULT NULL,
+	`inventory` varchar(500) NOT NULL,
+  `gear` text NOT NULL,
+	`dir` varchar(64) DEFAULT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT '0',
+	`owned` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`id`,`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+-- --------------------------------------------------------
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

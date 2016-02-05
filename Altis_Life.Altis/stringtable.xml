@@ -216,6 +216,10 @@
       <Portuguese>Vender</Portuguese>
       <Polish>Sprzedaj</Polish>
     </Key>
+	<Key ID="STR_Global_Delete">
+      <Original>Delete</Original>
+      <French>Supprimer</French>
+    </Key>
     <Key ID="STR_Global_Buy">
       <Original>Buy</Original>
       <German>Kaufen</German>
@@ -3234,6 +3238,14 @@
       <Portuguese>Você so pode acessar a caixa se o dono deixar ela aberta.</Portuguese>
       <Polish>Nie masz dostępu do pojemnika dopóki właściciel go nie otworzy.</Polish>
     </Key>
+	<Key ID="STR_House_Container_House_Near">
+      <Original>There are no houses near you.</Original>
+      <French>Il n'y a aucune maison près de vous.</French>
+    </Key>
+    <Key ID="STR_House_Container_House_Near_Owner">
+      <Original>You are not the owner of the house.</Original>
+      <French>Vous n'êtes pas le propriétaire de la maison.</French>
+    </Key>
     <Key ID="STR_House_Door_Unlock">
       <Original>You have unlocked the door.</Original>
       <German>Du hast die Tür aufgeschlossen.</German>
@@ -3436,6 +3448,10 @@
       <Italian>Sei sicuro di voler vendere la tua casa? La venderai per: &lt;t color='#8cff9b'&gt;€1&lt;/t&gt;</Italian>
       <Portuguese>Você tem certeza que deseja vender a casa? O valor de venda é: &lt;t color='#8cff9b'&gt;R$%1&lt;/t&gt;</Portuguese>
       <Polish>Jesteś pewny że chcesz sprzedać dom za &lt;t color='#8cff9b'&gt;$%1&lt;/t&gt;</Polish>
+    </Key>
+	<Key ID="STR_House_DeleteContainerMSG">
+      <Original>Are you sure you want to delete container? </Original>
+      <French>Etes-vous sûr de vouloir delete le container?</French>
     </Key>
   </Package>
   <Package name="Vehicle_Service">
@@ -5140,6 +5156,14 @@
       <Original>Sell Garage</Original>
       <German>Garage verkaufen</German>
       <French>Vendre le garage</French>
+      <Italian>Vendi Garage</Italian>
+      <Portuguese>Vender Garagem</Portuguese>
+      <Polish>Sprzedaj garaż</Polish>
+    </Key>
+	<Key ID="STR_pInAct_DeleteContainer">
+      <Original>Delete Container</Original>
+      <German>Garage verkaufen</German>
+      <French>Supprimer le container</French>
       <Italian>Vendi Garage</Italian>
       <Portuguese>Vender Garagem</Portuguese>
       <Polish>Sprzedaj garaż</Polish>

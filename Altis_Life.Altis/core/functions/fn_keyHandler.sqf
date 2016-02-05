@@ -130,12 +130,14 @@ switch (_code) do {
 					[vehicle player] call life_fnc_openInventory;
 				};
 			} else {
-				_list = ["landVehicle","Air","Ship","House_F"];
-				if(KINDOF_ARRAY(cursorTarget,_list) && {player distance cursorTarget < 7} && {vehicle player == player} && {alive cursorTarget} && {!life_action_inUse}) then {
-					if(cursorTarget in life_vehicles) then {
-						[cursorTarget] call life_fnc_openInventory;
-					} else {
-						if(!(cursorTarget GVAR ["locked",true])) then {
+				_containers = [getPosATL player, ["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5] call life_fnc_nearestObjects;
+ 				if (count _containers > 0) then {
+ 					_container = _containers select 0;
+ 					[_container] call life_fnc_openInventory;
+ 				} else {
+ 					_list = ["landVehicle","Air","Ship"];
+ 					if(KINDOF_ARRAY(cursorTarget,_list) && {player distance cursorTarget < 7} && {vehicle player == player} && {alive cursorTarget} && {!life_action_inUse}) then {
+						if(cursorTarget in life_vehicles) then {
 							[cursorTarget] call life_fnc_openInventory;
 						};
 					};
@@ -255,6 +257,16 @@ switch (_code) do {
 			};
 		};
 	};
+};
+
+if (life_container_active) then {
+	switch (_code) do {
+		//space key
+		case 57: {
+			[life_container_activeObj] spawn life_fnc_placedefinestorage;
+		};
+	};
+	true;
 };
 
 if (life_barrier_active) then
