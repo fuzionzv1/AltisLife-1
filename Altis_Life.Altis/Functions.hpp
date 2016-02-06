@@ -48,6 +48,8 @@ class Life_Client_Core
 	class Medical_System
 	{
 		file = "core\medical";
+		class bloodbag {};
+		class bloodbagself {};
 		class deathScreen {};
 		class medicLights {};
 		class medicLoadout {};
