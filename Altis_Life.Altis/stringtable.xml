@@ -16,6 +16,9 @@
       <Portuguese>Loja de Roupas Rebeldes</Portuguese>
       <Polish>Sklep samobójców AKBAR</Polish>
     </Key>
+	<Key ID="STR_Shops_Cop_Rebel">
+      <Original>Undercover Rebel Clothing</Original>
+    </Key>
     <Key ID="STR_Shops_C_Diving">
       <Original>Steve's Diving Shop</Original>
       <Portuguese>Loja de equipamentos para Mergulho</Portuguese>
