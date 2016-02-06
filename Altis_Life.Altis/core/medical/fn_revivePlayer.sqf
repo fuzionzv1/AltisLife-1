@@ -67,7 +67,7 @@ if((player GVAR ["restrained",false])) exitWith {life_action_inUse = false;};
 if(!isNil "_badDistance") exitWith {titleText[localize "STR_Medic_TooFar","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 
-ADD(BANK,_reviveCost);
+if(playerSide == independent) then {ADD(BANK,_reviveCost);};
 
 life_action_inUse = false;
 _target SVAR ["Revive",TRUE,TRUE];

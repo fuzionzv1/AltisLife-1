@@ -460,7 +460,6 @@ class WeaponShops
             { "ItemGPS", "", 100, -1 },
             { "Binocular", "", 150, -1 },
             { "FirstAidKit", "", 150, -1 },
-            { "Medikit", "", 250, -1 },
             { "NVGoggles", "", 120, -1 },
             { "B_FieldPack_ocamo", "", 300, -1 }
         };
