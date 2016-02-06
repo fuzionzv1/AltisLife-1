@@ -39,6 +39,7 @@ life_markers = false;
 life_swat_commander = false;
 life_swat_recon = false;
 life_swat_assault = false;
+life_is_undercover = false;
 life_fed_break = 0;
 life_dead_gear = [];
 
