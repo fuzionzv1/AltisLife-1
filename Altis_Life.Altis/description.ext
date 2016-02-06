@@ -1,5 +1,4 @@
 author = "Tonic";
-loadScreen = "textures\armalife.jpg";
 onLoadName = "Altis Life RPG v4.3.1";
 onLoadMission = "An RPG game mode developed by Tonic";
 joinUnassigned = 1;
@@ -7,6 +6,7 @@ respawn = BASE;
 respawndelay = 5;
 disabledAI = 1;
 disableChannels[]={0,1,2};
+loadScreen = "textures\armalife.jpg";
 enableDebugConsole = 2;
 respawnDialog = 0;
 saving = 0;
