@@ -52,6 +52,7 @@ class Life_Settings
 
     /* Federal Reserve settings */
     noatm_timer = 10; //Time in minutes that players won't be able to deposit his money after selling stolen gold
+    cops_online_min = 5; //minimum cops online for robbing the fed
 
     /* Spyglass settings */
     spyglass_init = false; //Enable or disable spyglass
