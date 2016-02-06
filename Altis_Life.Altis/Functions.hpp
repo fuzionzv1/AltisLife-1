@@ -311,6 +311,12 @@ class Life_Client_Core
 		class swatLoadout {};
 	};
 
+	class Undercover
+	{
+		file = "core\cop\undercover";
+		class ucLoadout {};
+	};
+
 	class Gangs
 	{
 		file = "core\gangs";
