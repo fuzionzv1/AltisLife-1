@@ -35,10 +35,10 @@ if(isNull _curTarget) exitWith
 	}
 	else
 	{
-		_animal = [position player, ["Sheep_random_F","Goat_random_F","Hen_random_F","Cock_random_F","Rabbit_F"], 3.5] call life_fnc_nearestObjects;
- 		if (count _animal > 0) then
+		_animals = [position player, ["Sheep_random_F","Goat_random_F","Hen_random_F","Cock_random_F","Rabbit_F"], 3] call life_fnc_nearestObjects;
+ 		if (count _animals > 0) then
  		{
- 			_animals = _animal select 0;
+ 			_animals = _animals select 0;
  			if (!alive _animals) then
  			{
  				[_animals] call life_fnc_gutAnimal;
@@ -74,6 +74,12 @@ if(isNull _curTarget) exitWith
 	};
 };
 
+_containers = [getPosATL player, ["Box_IND_Grenades_F","B_supplyCrate_F"], 3.5] call life_fnc_nearestObjects;
+if (count _containers > 0) exitWith {
+	_container = _containers select 0;
+	[_container] call life_fnc_containerMenu;
+};
+
 if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith
 {
 	[_curTarget] call life_fnc_houseMenu;
@@ -94,7 +100,7 @@ life_action_inUse = true;
 if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,independent]}) exitWith
 {
 	//Hotfix code by ins0
-	if(((playerSide == blufor && {(EQUAL(LIFE_SETTINGS(getNumber,"revive_cops"),1))}) || playerSide == independent) && {"Medikit" in (items player)}) then
+	if(((playerSide == west && {(EQUAL(LIFE_SETTINGS(getNumber,"revive_cops"),1))}) || playerSide == independent) && life_inv_defibrillator > 0) then
 	{
 		[_curTarget] call life_fnc_revivePlayer;
 	};

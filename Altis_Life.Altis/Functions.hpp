@@ -48,6 +48,8 @@ class Life_Client_Core
 	class Medical_System
 	{
 		file = "core\medical";
+		class bloodbag {};
+		class bloodbagself {};
 		class deathScreen {};
 		class medicLights {};
 		class medicLoadout {};
@@ -109,8 +111,10 @@ class Life_Client_Core
 	{
 		file = "core\housing";
 		class buyHouse {};
+		class containerMenu {};
 		class copBreakDoor {};
 		class copHouseOwner {};
+		class deleteContainer {};
 		class garageRefund {};
 		class getBuildingPositions {};
 		class houseMenu {};
@@ -119,6 +123,8 @@ class Life_Client_Core
 		class lightHouseAction {};
 		class lockHouse {};
 		class lockupHouse {};
+		class placeContainer {};
+		class PlayerInBuilding {};
 		class raidHouse {};
 		class sellHouse {};
 	};
@@ -305,6 +311,12 @@ class Life_Client_Core
 		class swatLoadout {};
 	};
 
+	class Undercover
+	{
+		file = "core\cop\undercover";
+		class ucLoadout {};
+	};
+
 	class Gangs
 	{
 		file = "core\gangs";
@@ -359,7 +371,11 @@ class Life_Client_Core
 		class lockpick {};
 		class pickaxeUse {};
 		class spikeStrip {};
-		class storageBox {};
+		class storageBoxBig {};
+		class storageBoxSmall {};
+		class placestorageBig {};
+		class placestorageSmall {};
+		class placedefinestorage {};
 	};
 
 	class Dialog_Controls

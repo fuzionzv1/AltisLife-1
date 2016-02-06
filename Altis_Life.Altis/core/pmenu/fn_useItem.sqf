@@ -43,8 +43,12 @@ switch (true) do {
 		[cursorTarget] spawn life_fnc_defuseKit;
 	};
 
-	case (_item in ["storagesmall","storagebig"]): {
-		[_item] call life_fnc_storageBox;
+	case (EQUAL(_item,"storagesmall")): {
+		[_item] call life_fnc_storageBoxSmall;
+	};
+
+	case (EQUAL(_item,"storagebig")): {
+		[_item] call life_fnc_storageBoxBig;
 	};
 
 	case (EQUAL(_item,"spikeStrip")): {
