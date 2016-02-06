@@ -568,82 +568,17 @@ class Mission
 				};
 				class Item30
 				{
-					position[]={8565.9102,98.084366,25170.672};
-					azimut=-794.64697;
-					id=30;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					text="swat_1";
-					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Swat Commander";
-				};
-				class Item31
-				{
-					position[]={8567.2715,97.86364,25171.525};
-					azimut=-794.64697;
-					id=31;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					text="swat_2";
-					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Swat Recon";
-				};
-				class Item32
-				{
-					position[]={8568.3955,97.6838,25172.344};
-					azimut=-794.64697;
-					id=32;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					text="swat_3";
-					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Swat Assault";
-				};
-				class Item33
-				{
-					position[]={8569.6367,97.443733,25173.311};
-					azimut=-794.64697;
-					id=33;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					text="swat_4";
-					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Swat Assault";
-				};
-				class Item34
-				{
-					position[]={8571.46,96.871574,25174.398};
-					azimut=-794.64697;
-					id=34;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					text="swat_5";
-					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Swat Assault";
-				};
-				class Item35
-				{
 					position[]={8560.916,98.748756,25174.432};
 					azimut=-666.00122;
 					id=35;
 					side="WEST";
 					vehicle="B_medic_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="undercover_3";
 					description="WhiteListed - Undercover";
 				};
-				class Item36
+				class Item31
 				{
 					position[]={8563.291,98.455505,25172.277};
 					azimut=-666.00122;
@@ -656,7 +591,7 @@ class Mission
 					init="removeBackpack this; removeAllWeapons this;";
 					description="WhiteListed - Undercover";
 				};
-				class Item37
+				class Item32
 				{
 					position[]={8562.001,98.612846,25173.35};
 					azimut=-666.00122;
@@ -668,6 +603,71 @@ class Mission
 					text="undercover_2";
 					init="removeBackpack this; removeAllWeapons this;";
 					description="WhiteListed - Undercover";
+				};
+				class Item33
+				{
+					position[]={8565.9102,98.084366,25170.672};
+					azimut=-794.64697;
+					id=30;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="swat_1";
+					init="removeBackpack this; removeAllWeapons this;";
+					description="WhiteListed - Swat Commander";
+				};
+				class Item34
+				{
+					position[]={8567.2715,97.86364,25171.525};
+					azimut=-794.64697;
+					id=31;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="swat_2";
+					init="removeBackpack this; removeAllWeapons this;";
+					description="WhiteListed - Swat Recon";
+				};
+				class Item35
+				{
+					position[]={8568.3955,97.6838,25172.344};
+					azimut=-794.64697;
+					id=32;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="swat_3";
+					init="removeBackpack this; removeAllWeapons this;";
+					description="WhiteListed - Swat Assault";
+				};
+				class Item36
+				{
+					position[]={8569.6367,97.443733,25173.311};
+					azimut=-794.64697;
+					id=33;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="swat_4";
+					init="removeBackpack this; removeAllWeapons this;";
+					description="WhiteListed - Swat Assault";
+				};
+				class Item37
+				{
+					position[]={8571.46,96.871574,25174.398};
+					azimut=-794.64697;
+					id=34;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="swat_5";
+					init="removeBackpack this; removeAllWeapons this;";
+					description="WhiteListed - Swat Assault";
 				};
 			};
 		};
