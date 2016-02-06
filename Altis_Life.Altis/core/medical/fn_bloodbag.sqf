@@ -17,8 +17,6 @@ _distance = ((boundingBox _curTarget select 1) select 0) + 2;
 if(player distance _curTarget > _distance) exitWith {}; //Too far
 if(player != vehicle player) exitWith {hint "You must exit your vehicle to give a bloodbag"};
 if(_curTarget != vehicle _curTarget) exitWith {hint "You cannot perform this operation while in a vehicle";};
-//More error checks/
-if(isNull _curTarget) exitWith {}; //if unit is null, than NO
 if((damage _curTarget) < 0.05) exitWith {hint"Don't waste a bloodbag on someone missing so little health...";};
 if((_curTarget getVariable ["bloodBagged",FALSE])) exitWith {hint"Someone is already bloodbagging this person";};
 if(player == _curTarget) exitWith {};
@@ -41,7 +39,7 @@ while {true} do
 {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then
 	{
-		/* NEEDS REMOTE EXEC [[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP; */
+		[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};

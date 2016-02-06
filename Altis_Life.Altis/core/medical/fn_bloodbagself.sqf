@@ -23,7 +23,7 @@ life_action_inUse = true;
 
 if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then
 {
-	/* NEEDS REMOTE EXEC [[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP; */
+	[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 	player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
 	player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 };
