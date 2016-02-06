@@ -1,4 +1,5 @@
 /*
+	File: fn_PlayerInBuilding.sqf
 	Author: NiiRoZz
 	Description:
 	Search if player are in house
@@ -13,8 +14,8 @@
 	Example
 	//--- Find if unit are in house
 	[_unit,_house] call life_fnc_PlayerInBuilding
-
 */
+
 private["_unit","_building","_type","_relPos","_boundingBox","_min","_max","_myX","_myY","_myZ","_inside"];
 _unit = _this select 0;
 _building = _this select 1;
