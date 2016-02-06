@@ -36,7 +36,7 @@ _Btn7 = CONTROL(37400,Btn7);
 {_x ctrlShow false;} foreach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7];
 
 life_pInact_curTarget = _curTarget;
-if((_curTarget isKindOf "House_F" OR _curTarget isKindOf "Land_i_Shed_Ind_F") && playerSide == west) exitWith {
+if((_curTarget isKindOf "House_F") && playerSide == west) exitWith {
 	if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget) then {
 
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
@@ -84,7 +84,7 @@ if(!(_curTarget in life_vehicles) OR isNil {_curTarget GVAR "house_owner"}) then
 		_Btn1 ctrlEnable false;
 	};
 } else {
-	if((typeOf _curTarget) in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F"]) then {
+	if((typeOf _curTarget) in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F","Land_i_Shed_Ind_F"]) then {
 		_Btn1 ctrlSetText localize "STR_pInAct_SellGarage";
 		_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_sellHouse; closeDialog 0;";
 		_Btn1 ctrlShow true;
