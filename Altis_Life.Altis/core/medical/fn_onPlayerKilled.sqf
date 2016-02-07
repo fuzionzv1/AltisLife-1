@@ -37,7 +37,8 @@ life_deathCamera camCommit 0;
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; //Block the ESC menu
 
 //Create a thread for something?
-_unit spawn {
+_unit spawn
+{
 	private["_maxTime","_RespawnBtn","_Timer"];
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
@@ -54,44 +55,45 @@ _unit spawn {
 [] spawn life_fnc_deathScreen;
 
 //Create a thread to follow with some what precision view of the corpse.
-[_unit] spawn {
+[_unit] spawn
+{
 	private["_unit"];
 	_unit = _this select 0;
 	waitUntil {if(speed _unit == 0) exitWith {true}; life_deathCamera camSetTarget _unit; life_deathCamera camSetRelPos [0,3.5,4.5]; life_deathCamera camCommit 0;};
 };
 
 //Make the killer wanted
-if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _killer}) then {
-	if(vehicle _killer isKindOf "LandVehicle") then {
+if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _killer}) then
+{
+	if(vehicle _killer isKindOf "LandVehicle") then
+	{
 		[getPlayerUID _killer,_killer GVAR ["realname",name _killer],"187V"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
 		//Get rid of this if you don't want automatic vehicle license removal.
-		if(!local _killer) then {
-			[2] remoteExecCall ["life_fnc_removeLicenses",_killer];
-		};
-	} else {
+		if(!local _killer) then { [2] remoteExecCall ["life_fnc_removeLicenses",_killer]; };
+	}
+	else
+	{
 		[getPlayerUID _killer,_killer GVAR ["realname",name _killer],"187"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
 
-		if(!local _killer) then {
-			[3] remoteExecCall ["life_fnc_removeLicenses",_killer];
-		};
+		if(!local _killer) then { [3] remoteExecCall ["life_fnc_removeLicenses",_killer]; };
 	};
 };
 
 life_dead_gear = [player] call life_fnc_fetchDeadGear;
 
 //Killed by cop stuff...
-if(side _killer == west && playerSide != west) then {
+if(side _killer == west && playerSide != west) then
+{
 	life_copRecieve = _killer;
 	//Did I rob the federal reserve?
-	if(!life_use_atm && {CASH > 0}) then {
+	if(!life_use_atm && {CASH > 0}) then
+	{
 		[format[localize "STR_Cop_RobberDead",[CASH] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		CASH = 0;
 	};
 };
 
-if(!isNull _killer && {_killer != _unit}) then {
-	life_removeWanted = true;
-};
+if(!isNull _killer && {_killer != _unit}) then { life_removeWanted = true; };
 
 _handle = [_unit] spawn life_fnc_dropItems;
 waitUntil {scriptDone _handle};
