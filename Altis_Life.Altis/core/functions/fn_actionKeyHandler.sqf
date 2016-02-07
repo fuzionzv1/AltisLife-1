@@ -74,10 +74,12 @@ if(isNull _curTarget) exitWith
 	};
 };
 
-_containers = [getPosATL player, ["Box_IND_Grenades_F","B_supplyCrate_F"], 3.5] call life_fnc_nearestObjects;
-if (count _containers > 0) exitWith {
-	_container = _containers select 0;
-	[_container] call life_fnc_containerMenu;
+_CrateModelNames = M_CONFIG(getArray,"CfgInteractionModels","Crate","models");
+_crate = _CrateModelNames call life_fnc_getLookAt;
+if (!isNull _crate) then{
+	if (alive _crate) then {
+		[_crate] call life_fnc_containerMenu;
+	};
 };
 
 if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith
