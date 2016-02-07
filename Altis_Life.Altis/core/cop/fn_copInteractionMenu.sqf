@@ -35,6 +35,11 @@ _Btn7 = _display displayCtrl Btn7;
 _Btn9 = _display displayCtrl Btn9;
 life_pInact_curTarget = _curTarget;
 
+if((_curTarget getVariable["Escorting",false])) then
+{
+	{ _x ctrlShow false; } forEach [_Btn2,_Btn3,_Btn5,_Btn6,_Btn7,_Btn9];
+};
+
 //Set Unrestrain Button
 if(_curTarget getVariable["restrained",false]) then
 {
