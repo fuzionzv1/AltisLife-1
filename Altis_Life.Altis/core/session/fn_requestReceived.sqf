@@ -57,7 +57,8 @@ switch(playerSide) do
 		life_hunger = SEL(SEL(_this,10),0);
 		life_thirst = SEL(SEL(_this,10),1);
 		life_is_swat = SEL(_this,11);
-		player setDamage SEL(_this,12);
+		if(SEL(_this,12) == 100) then { life_is_alive = false; };
+		if(life_is_alive) then { player setDamage SEL(_this,12); };
 	};
 
 	case civilian:
@@ -68,7 +69,8 @@ switch(playerSide) do
 		life_thirst = SEL(SEL(_this,9),1);
 		CONST(life_coplevel, 0);
 		CONST(life_medicLevel, 0);
-		player setDamage SEL(_this,10);
+		if(SEL(_this,10) == 100) then { life_is_alive = false; };
+		if(life_is_alive) then { player setDamage SEL(_this,10); };
 		life_houses = SEL(_this,11);
 		{
 			_house = nearestBuilding (call compile format["%1", SEL(_x,0)]);
@@ -89,7 +91,8 @@ switch(playerSide) do
 		CONST(life_coplevel,0);
 		life_hunger = SEL(SEL(_this,9),0);
 		life_thirst = SEL(SEL(_this,9),1);
-		player setDamage SEL(_this,10);
+		if(SEL(_this,10) == 100) then { life_is_alive = false; };
+		if(life_is_alive) then { player setDamage SEL(_this,10); };
 	};
 };
 
