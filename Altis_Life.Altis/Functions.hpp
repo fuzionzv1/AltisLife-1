@@ -177,6 +177,7 @@ class Life_Client_Core
 		class fetchCfgDetails {};
 		class fetchDeadGear {};
 		class fetchVehInfo {};
+		class getLookAt {};
 		class giveDiff {};
 		class handleDamage {};
 		class handleInv {};
@@ -278,6 +279,7 @@ class Life_Client_Core
 		file = "core\cop";
 		class airhorn {};
 		class bountyReceive {};
+		class containerInvSearch {};
 		class copEnter {};
 		class copInteractionMenu {};
 		class copLights {};
