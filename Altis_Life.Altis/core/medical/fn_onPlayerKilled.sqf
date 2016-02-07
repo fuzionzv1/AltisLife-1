@@ -7,6 +7,7 @@
 	When the player dies collect various information about that player
 	and pull up the death dialog / camera functionality.
 */
+private["_containers"];
 params [
 	["_unit",objNull,[objNull]],
 	["_killer",objNull,[objNull]]
@@ -80,6 +81,10 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 };
 
 life_dead_gear = [player] call life_fnc_fetchDeadGear;
+
+//Comment this code out if you want them to keep the weapon on the ground.
+_containers = nearestObjects[getPosATL player,["WeaponHolderSimulated"],5]; //Fetch list of containers (Simulated = weapons)
+{deleteVehicle _x;} foreach _containers; //Delete the containers.
 
 //Killed by cop stuff...
 if(side _killer == west && playerSide != west) then
