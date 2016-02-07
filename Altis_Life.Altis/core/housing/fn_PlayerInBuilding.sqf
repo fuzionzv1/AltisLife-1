@@ -1,8 +1,9 @@
 /*
 	File: fn_PlayerInBuilding.sqf
+
 	Author: NiiRoZz
 	Description:
-	Search if player are in house
+	Search if player are in building near player
 
 	Parameter(s):
 	0: OBJECT - Unit

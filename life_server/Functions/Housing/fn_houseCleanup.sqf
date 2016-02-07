@@ -1,8 +1,9 @@
 /*
-	Author: Bryan "Tonic" Boardwine
+	File: fn_houseCleanup.sqf
+	Author: NiiRoZz
 
 	Description:
-	Cleans up containers inside the house.
+	Cleans up containers inside in house of player.
 */
 private["_query","_containers"];
 _query = format["SELECT pid, pos FROM containers WHERE pid='%1' AND owned='1'",_this];
