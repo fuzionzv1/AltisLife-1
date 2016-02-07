@@ -85,7 +85,7 @@ switch (_side) do
 		_new = [(_queryResult select 10)] call DB_fnc_mresToArray;
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 		_queryResult set[10,_new];
-		_queryResult set[12,([_queryResult select 12,1] call DB_fnc_bool)];
+		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];
 	};
 
 	case civilian:
