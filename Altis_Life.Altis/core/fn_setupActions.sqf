@@ -19,7 +19,7 @@ switch (playerSide) do
 	case west:
 	{
 		//Restrain Player
-		life_actions = life_actions + [player addAction["<t color='#FF8000'>Restrain Person</t>",life_fnc_restrain,cursorTarget,2,true,true,"",'if (isPlayer cursorTarget) then { (alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["restrained",false]) && speed cursorTarget < 2) };']];
+		life_actions = life_actions + [player addAction["<t color='#FF8000'>Restrain Person</t>",life_fnc_restrainAction,cursorTarget,2,true,true,"",'if (isPlayer cursorTarget) then { (alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["restrained",false]) && speed cursorTarget < 2) };']];
 
 		//Seize Ground Objects
 		life_actions = life_actions + [player addAction[localize "STR_pAct_SeizeObj",life_fnc_seizeObj,cursorTarget,1.5,true,true,"",'((count(nearestObjects [player,["WeaponHolder"],3])>0) || (count(nearestObjects [player,["GroundWeaponHolder"],3])>0) || (count(nearestObjects [player,["WeaponHolderSimulated"],3])>0))']];

@@ -34,11 +34,11 @@ if(BANK > _reviveCost) then
 //Bring me back to life.
 player setDir _dir;
 player setPosASL (visiblePositionASL life_corpse);
-life_corpse SVAR ["Revive",nil,TRUE];
-life_corpse SVAR ["name",nil,TRUE];
+life_corpse SVAR ["Revive",nil,true];
+life_corpse SVAR ["name",nil,true];
 [life_corpse] remoteExecCall ["life_fnc_corpse",RANY];
 deleteVehicle life_corpse;
 
-player SVAR ["Revive",nil,TRUE];
-player SVAR ["name",nil,TRUE];
-player SVAR ["Reviving",nil,TRUE];
+player SVAR ["Revive",nil,true];
+player SVAR ["name",nil,true];
+player SVAR ["Reviving",nil,true];
