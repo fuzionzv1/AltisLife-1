@@ -14,6 +14,7 @@ _bank = [_this,4,5000,[0]] call BIS_fnc_param;
 _licenses = [_this,5,[],[[]]] call BIS_fnc_param;
 _gear = [_this,6,[],[[]]] call BIS_fnc_param;
 _stats = [_this,7,[100,100],[[]]] call BIS_fnc_param;
+_damage = [_this,8,[],[]] call BIS_fnc_param;
 
 //Get to those error checks.
 if((_uid == "") OR (_name == "")) exitWith {};
@@ -35,7 +36,7 @@ _licenses = [_licenses] call DB_fnc_mresArray;
 
 switch (_side) do {
 	case west: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', cop_gear='%4', cop_licenses='%5', cop_stats='%6' WHERE playerid='%7'",_name,_cash,_bank,_gear,_licenses,_stats,_uid];};
-	case civilian: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', civ_licenses='%4', civ_gear='%5', arrested='%6', civ_stats='%7' WHERE playerid='%8'",_name,_cash,_bank,_licenses,_gear,[_this select 8] call DB_fnc_bool,_stats,_uid];};
+	case civilian: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', civ_licenses='%4', civ_gear='%5', arrested='%6', civ_stats='%7', civ_damage='%8' WHERE playerid='%9'",_name,_cash,_bank,_licenses,_gear,[_this select 9] call DB_fnc_bool,_stats,_damage,_uid];};
 	case independent: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', med_licenses='%4', med_gear='%5', med_stats='%6' WHERE playerid='%7'",_name,_cash,_bank,_licenses,_gear,_stats,_uid];};
 };
 

@@ -76,6 +76,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `adminlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `donatorlvl` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `blacklist` tinyint(1) NOT NULL DEFAULT '0',
+  `civ_position` text,
   `civ_damage` double NOT NULL DEFAULT '0',
   `cop_damage` double NOT NULL DEFAULT '0',
   `med_damage` double NOT NULL DEFAULT '0',
