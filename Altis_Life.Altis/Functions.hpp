@@ -83,6 +83,7 @@ class Life_Client_Core
 		class impoundAction {};
 		class mkDowning {};
 		class packupSpikes {};
+		class pickaxeUse {};
 		class pickupItem {};
 		class pickupMoney {};
 		class postBail {};
@@ -91,6 +92,7 @@ class Life_Client_Core
 		class pushVehicle {};
 		class putInCar {};
 		class repairTruck {};
+		class removeContainer {};
 		class restrainAction {};
 		class robAction {};
 		class robBank {};
@@ -114,7 +116,6 @@ class Life_Client_Core
 		class containerMenu {};
 		class copBreakDoor {};
 		class copHouseOwner {};
-		class deleteContainer {};
 		class garageRefund {};
 		class getBuildingPositions {};
 		class houseMenu {};
@@ -305,6 +306,7 @@ class Life_Client_Core
 		class ticketPay {};
 		class ticketPrompt {};
 		class vehInvSearch {};
+		class wantedGrab {};
 	};
 
 	class Swat
@@ -371,7 +373,6 @@ class Life_Client_Core
 		class flashbang {};
 		class jerryRefuel {};
 		class lockpick {};
-		class pickaxeUse {};
 		class spikeStrip {};
 		class storageBoxBig {};
 		class storageBoxSmall {};

@@ -61,11 +61,10 @@ class CfgFunctions {
 			class wantedFetch {};
 			class wantedPerson {};
 			class wantedBounty {};
-			class wantedTicket {};
-			class wantedPardon {};
 			class wantedRemove {};
 			class wantedAdd {};
-			class wantedPunish {};
+			class wantedCrimes {};
+			class wantedProfUpdate {};
 		};
 		
 		class Jail_Sys {
