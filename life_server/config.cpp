@@ -99,6 +99,7 @@ class CfgFunctions {
 			class cleanupRequest {};
 			class setObjVar {};
 			class keyManagement {};
+			class onMpKilled {};
 		};
 		
 		class Housing {
