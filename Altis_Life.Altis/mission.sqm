@@ -568,6 +568,42 @@ class Mission
 				};
 				class Item30
 				{
+					position[]={8573.2559,96.279236,25178.229};
+					id=35;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="undercover_1";
+					init="removeBackpack this; removeAllWeapons this;";
+					description="WhiteListed - Undercover";
+				};
+				class Item31
+				{
+					position[]={8576.3896,96.217354,25177.604};
+					id=36;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="undercover_2";
+					init="removeBackpack this; removeAllWeapons this;";
+					description="WhiteListed - Undercover";
+				};
+				class Item32
+				{
+					position[]={8575.0391,96.083015,25180.029};
+					id=37;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="undercover_3";
+					init="removeBackpack this; removeAllWeapons this;";
+					description="WhiteListed - Undercover";
+				};
+				class Item33
+				{
 					position[]={8564.127,98.320824,25170.053};
 					azimut=-794.64697;
 					id=30;
@@ -579,7 +615,7 @@ class Mission
 					init="removeBackpack this; removeAllWeapons this;";
 					description="WhiteListed - Swat Commander";
 				};
-				class Item31
+				class Item34
 				{
 					position[]={8567.2715,97.86364,25171.525};
 					azimut=-794.64697;
@@ -592,7 +628,7 @@ class Mission
 					init="removeBackpack this; removeAllWeapons this;";
 					description="WhiteListed - Swat Recon";
 				};
-				class Item32
+				class Item35
 				{
 					position[]={8569.9463,97.40947,25172.654};
 					azimut=-794.64697;
@@ -605,7 +641,7 @@ class Mission
 					init="removeBackpack this; removeAllWeapons this;";
 					description="WhiteListed - Swat Assault";
 				};
-				class Item33
+				class Item36
 				{
 					position[]={8572.1182,96.714653,25174.125};
 					azimut=-794.64697;
@@ -618,7 +654,7 @@ class Mission
 					init="removeBackpack this; removeAllWeapons this;";
 					description="WhiteListed - Swat Assault";
 				};
-				class Item34
+				class Item37
 				{
 					position[]={8573.9414,96.171097,25175.213};
 					azimut=-794.64697;
@@ -630,42 +666,6 @@ class Mission
 					text="swat_5";
 					init="removeBackpack this; removeAllWeapons this;";
 					description="WhiteListed - Swat Assault";
-				};
-				class Item35
-				{
-					position[]={8573.2559,96.279236,25178.229};
-					id=35;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					text="undercover_1";
-					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Undercover";
-				};
-				class Item36
-				{
-					position[]={8576.3896,96.217354,25177.604};
-					id=36;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					text="undercover_2";
-					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Undercover";
-				};
-				class Item37
-				{
-					position[]={8575.0391,96.083015,25180.029};
-					id=37;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					text="undercover_3";
-					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Undercover";
 				};
 			};
 		};
