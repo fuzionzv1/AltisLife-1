@@ -29,8 +29,6 @@ if(BANK > _reviveCost) then
 	BANK = 0;
 };
 
-[] call life_fnc_playerSkins;
-
 //Bring me back to life.
 player setDir _dir;
 player setPosASL (visiblePositionASL life_corpse);
@@ -42,3 +40,5 @@ deleteVehicle life_corpse;
 player SVAR ["Revive",nil,true];
 player SVAR ["name",nil,true];
 player SVAR ["Reviving",nil,true];
+
+[] call life_fnc_playerSkins;
