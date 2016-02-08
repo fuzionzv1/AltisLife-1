@@ -16,7 +16,7 @@
 #define Btn8 37457
 #define Title 37401
 
-private["_container","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
+private["_container","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
 disableSerialization;
 _container = param [0,ObjNull,[ObjNull]];
 if(isNull _container) exitWith {}; //Bad target
@@ -32,16 +32,15 @@ _Btn4 = CONTROL(37400,Btn4);
 _Btn5 = CONTROL(37400,Btn5);
 _Btn6 = CONTROL(37400,Btn6);
 _Btn7 = CONTROL(37400,Btn7);
-_Btn8 = CONTROL(37400,Btn8);
-{_x ctrlShow false;} foreach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
+{_x ctrlShow false;} foreach [_Btn1,_Btn2,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7];
 
 life_pInact_container = _container;
 if(playerSide == west) then {
-_Btn1 ctrlSetText localize "STR_vInAct_SearchContainer";
-_Btn1 buttonSetAction "[life_pInact_container] spawn life_fnc_containerInvSearch; closeDialog 0;";
-_Btn1 ctrlShow true;
+	_Btn1 ctrlSetText localize "STR_vInAct_SearchContainer";
+	_Btn1 buttonSetAction "[life_pInact_container] spawn life_fnc_containerInvSearch; closeDialog 0;";
+	_Btn1 ctrlShow true;
 } else {
-	_Btn1 ctrlSetText localize "STR_pInAct_DeleteContainer";
-	_Btn1 buttonSetAction "[life_pInact_container] spawn life_fnc_deleteContainer; closeDialog 0;";
+	_Btn1 ctrlSetText localize "STR_pInAct_RemoveContainer";
+	_Btn1 buttonSetAction "[life_pInact_container] spawn life_fnc_removeContainer; closeDialog 0;";
 	_Btn1 ctrlShow true;
 };

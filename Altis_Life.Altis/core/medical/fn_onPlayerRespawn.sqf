@@ -16,6 +16,7 @@ _containers = nearestObjects[getPosATL _corpse,["WeaponHolderSimulated"],5]; //F
 {deleteVehicle _x;} foreach _containers; //Delete the containers.
 
 //Set some vars on our new body.
+_unit SVAR ["Revive",false,true];
 _unit SVAR ["restrained",false,true];
 _unit SVAR ["Escorting",false,true];
 _unit SVAR ["transporting",false,true]; //Again why the fuck am I setting this? Can anyone tell me?
@@ -27,5 +28,6 @@ _unit addRating 1e12; //Set our rating to a high value, this is for a ARMA engin
 player playMoveNow "amovppnemstpsraswrfldnon";
 
 [] call life_fnc_setupActions;
+[] call life_fnc_playerSkins;
 [_unit,life_sidechat,playerSide] remoteExecCall ["TON_fnc_managesc",RSERV];
 if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};
