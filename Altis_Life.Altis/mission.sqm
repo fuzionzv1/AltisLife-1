@@ -3990,7 +3990,7 @@ class Mission
 					side="LOGIC";
 					vehicle="Logic";
 					skill=0.60000002;
-					init="Car1=position this nearestObject 1093075; Car1 setDamage 1;";
+					init="Car1=position this nearestObject 1093075; Car1 hideObject true;";
 				};
 			};
 		};
