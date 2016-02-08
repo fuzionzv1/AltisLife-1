@@ -42,3 +42,11 @@ player SVAR ["name",nil,true];
 player SVAR ["Reviving",nil,true];
 
 [] call life_fnc_playerSkins;
+if(!life_swat_commander && !life_swat_recon && !life_swat_assault) then
+{
+	[] call SOCK_fnc_updateRequest;
+}
+else
+{
+	[6] call SOCK_fnc_updatePartial;
+};

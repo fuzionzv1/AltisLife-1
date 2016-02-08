@@ -69,4 +69,3 @@ if(life_removeWanted) then {
 };
 
 [] call life_fnc_playerSkins;
-[] call SOCK_fnc_updateRequest;

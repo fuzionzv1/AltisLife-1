@@ -168,3 +168,11 @@ player assignItem "ItemGPS";
 
 [] call life_fnc_playerSkins;
 [] call life_fnc_saveGear;
+if(!life_swat_commander && !life_swat_recon && !life_swat_assault) then
+{
+	[] call SOCK_fnc_updateRequest;
+}
+else
+{
+	[6] call SOCK_fnc_updatePartial;
+};
