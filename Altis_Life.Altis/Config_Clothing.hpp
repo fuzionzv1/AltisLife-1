@@ -286,12 +286,10 @@ class Clothing
             { "H_Bandanna_camo", "", 40, { "", "", -1 } },
             { "H_Bandanna_mcamo", "", 40, { "", "", -1 } },
             { "H_Hat_camo", "", 40, { "", "", -1 } },
-            { "H_Shemag_khk", "", 80, { "", "", -1 } },
-            { "H_Shemag_tan", "", 80, { "", "", -1 } },
             { "H_Shemag_olive", "", 80, { "", "", -1 } },
             { "H_Shemag_olive_hs", "", 80, { "", "", -1 } },
             { "H_ShemagOpen_khk", "", 80, { "", "", -1 } },
-            { "H_ShemagOpen_tan", "", 80, { "", "", -1 } },
+            { "H_ShemagOpen_tan", "", 80, { "", "", -1 } }
         };
 
         goggles[] =
@@ -405,8 +403,6 @@ class Clothing
             { "H_Bandanna_camo", "", 40, { "", "", -1 } },
             { "H_Bandanna_mcamo", "", 40, { "", "", -1 } },
             { "H_Hat_camo", "", 40, { "", "", -1 } },
-            { "H_Shemag_khk", "", 80, { "", "", -1 } },
-            { "H_Shemag_tan", "", 80, { "", "", -1 } },
             { "H_Shemag_olive", "", 80, { "", "", -1 } },
             { "H_Shemag_olive_hs", "", 80, { "", "", -1 } },
             { "H_ShemagOpen_khk", "", 80, { "", "", -1 } },
