@@ -162,6 +162,7 @@ class Life_Client_Core
 		class wantedInfo {};
 		class wantedList {};
 		class wantedMenu {};
+		class wantedAddP {};
 	};
 
 	class Functions
@@ -178,7 +179,6 @@ class Life_Client_Core
 		class fetchCfgDetails {};
 		class fetchDeadGear {};
 		class fetchVehInfo {};
-		class getLookAt {};
 		class giveDiff {};
 		class handleDamage {};
 		class handleInv {};

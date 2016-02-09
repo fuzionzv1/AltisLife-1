@@ -1707,8 +1707,7 @@
       <German>Fahndungsliste</German>
       <French>Interpol</French>
       <Italian>Lista Ricercati</Italian>
-      <Portuguese>Procurados</Portuguese>
-      <Polish>Listy gończe</Polish>
+      <Portuguese>Lista de Procurados</Portuguese>
     </Key>
     <Key ID="STR_Wanted_Pardon">
       <Original>Pardon</Original>
@@ -1716,7 +1715,34 @@
       <French>Excuser</French>
       <Italian>Perdona</Italian>
       <Portuguese>Perdão</Portuguese>
-      <Polish>Usuń z listy</Polish>
+    </Key>
+    <Key ID="STR_Wanted_Add">
+      <Original>Add</Original>
+      <Portuguese>Adicionar</Portuguese>
+    </Key>
+    <Key ID="STR_Wanted_People">
+      <Original>Wanted People</Original>
+      <Portuguese>Pessoas Procuradas</Portuguese>
+    </Key>
+    <Key ID="STR_Wanted_Citizens">
+      <Original>Citizens</Original>
+      <Portuguese>Cidadãos</Portuguese>
+    </Key>
+    <Key ID="STR_Wanted_Crimes">
+      <Original>Crimes</Original>
+      <Portuguese>Crimes</Portuguese>
+    </Key>
+    <Key ID="STR_Wanted_AddP">
+      <Original>%1 has been added to the wanted list.</Original>
+      <Portuguese>%1 foi adicionado a lista de procurados.</Portuguese>
+    </Key>
+    <Key ID="STR_Wanted_Count">
+      <Original>%1 count(s) of %2</Original>
+      <Portuguese>%1 contagem(s) de %2</Portuguese>
+    </Key>
+    <Key ID="STR_Wanted_Bounty">
+      <Original>Current Bounty Price: $%1</Original>
+      <Portuguese>Atual recompensa: R$%1</Portuguese>
     </Key>
   </Package>
   <Package name="Animals">

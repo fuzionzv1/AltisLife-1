@@ -142,8 +142,8 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="Altis Life RPG";
-		overviewText="Altis Life RPG 4.0";
+		briefingName="Altis Life 4.3r4";
+		overviewText="Developed by Tonic";
 		resistanceEast=1;
 		timeOfChanges=1860;
 		startWind=0.29999998;

@@ -3,8 +3,7 @@
 	Author: NiiRoZz
 
 	Description:
-	PLace container were player select with preview
-
+	Place container were player select with preview
 */
 private["_container"];
 if (!life_container_active) exitWith {};

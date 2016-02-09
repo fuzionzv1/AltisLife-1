@@ -6,7 +6,8 @@
 	Assistance by: Paronity
 	Stress Tests by: Midgetgrimm
 
-	Description: Displays wanted list information sent from the server.
+	Description:
+	Displays wanted list information sent from the server.
 */
 private["_ret","_list","_result","_queryResult","_units","_inStatement"];
 _ret = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
@@ -17,23 +18,25 @@ _list = [];
 _units = [];
 {if((side _x) == civilian) then {_units pushBack (getPlayerUID _x)};} foreach playableUnits;
 
+
 if(count _units == 0) exitWith {[_list] remoteExec ["life_fnc_wantedList",_ret];};
 
 {
-	if(_inStatement == "") then
-	{
+	if (count _units > 1) then {
+		if(_inStatement == "") then {
+			_inStatement = "'" + _x + "'";
+		} else {
+			_inStatement = _inStatement + ", '" + _x + "'";
+		};
+	} else {
 		_inStatement = _x;
-	}
-	else
-	{
-		_inStatement = _inStatement + "','" + _x;
 	};
 } forEach _units;
 
-_query = format["SELECT wantedID, wantedName FROM wanted WHERE active='1' AND wantedID in (%1)",_inStatement];
-diag_log format["Query: %1",_query];
-
+_query = format["SELECT wantedID, wantedName FROM wanted WHERE active='1' AND wantedID in (%1)", _inStatement];
 _queryResult = [_query,2,true] call DB_fnc_asyncCall;
+
+diag_log format["Wanted Query: %1",_query];
 
 {
 	_list pushBack (_x);
