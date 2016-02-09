@@ -26,7 +26,7 @@ if(count _units == 0) exitWith {[_list] remoteExec ["life_fnc_wantedList",_ret];
 		if(_inStatement == "") then {
 			_inStatement = "'" + _x + "'";
 		} else {
-			_inStatement = _inStatement + "," + _x;
+			_inStatement = _inStatement + "," + "'" + _x + "'";
 		};
 	} else {
 		_inStatement = _x;
