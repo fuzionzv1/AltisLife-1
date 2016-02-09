@@ -81,7 +81,7 @@ if(_shop GVAR ["rip",false]) then
 	[] spawn
 	{
 		life_use_atm = false;
-		uiSleep (30 + random(180));
+		uiSleep (LIFE_SETTINGS(getNumber,"noatm_timer"));
 		life_use_atm = true;
 	};
 	[_shop] spawn
