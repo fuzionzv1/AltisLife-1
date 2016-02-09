@@ -50,9 +50,11 @@ class Life_Settings
     lieutenant_add = 9000;
     captain_add = 11000;
 
-    /* Federal Reserve settings */
-    noatm_timer = 10; //Time in minutes that players won't be able to deposit his money after selling stolen gold
+    /* Robbery settings */
+    noatm_timer = 10; //Time in minutes that players won't be able to deposit his money after selling robbery money or gold bars
     cops_online_min = 5; //minimum cops online for robbing the fed
+    bank_cops = 3; //minimum cops online for robbing a community bank
+    station_cops = 3; //minimum cops online for robbing a gas station
 
     /* Spyglass settings */
     spyglass_init = false; //Enable or disable spyglass
@@ -63,6 +65,7 @@ class Life_Settings
     /* Job-related stuff */
     delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
 
+    /* Wanted List Configuration */
     crimes[] =
     {
         {"STR_Crime_187V","650","187V"},
