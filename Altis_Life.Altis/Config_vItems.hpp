@@ -185,7 +185,8 @@ class VirtualShops {
 *        edible = Item Edible (-1 = Disabled)
 *        icon = Item Icon
 */
-class VirtualItems {
+class VirtualItems
+{
     //Virtual Items
     class repairKit {
         variable = "repairKit";
@@ -218,6 +219,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_moonshine.paa";
+         = "moonshine";
     };
 
     class bankbond {
