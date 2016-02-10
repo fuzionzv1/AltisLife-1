@@ -604,12 +604,14 @@
       <Polish>Nie masz wystarczająco dużo środków na końcie, do przelewu $%1 będziesz potrzebował jeszcze $%2 na opłatę</Polish>
     </Key>
 	<Key ID="STR_ATM_NotEnoughFundsG">
-      <Original>You don't have that much in your Gang!</Original>
-      <French>Vous n'avez pas autant dans votre Gang</French>
+      <Original>You don't have that much in your gang!</Original>
+      <French>Vous n'avez pas autant dans votre gang</French>
+      <Portuguese>Você não tem todo esse dinhero na sua gangue!</Portuguese>
     </Key>
 	<Key ID="STR_ATM_WithdrawSuccessG">
-      <Original>You have withdrawn $%1 from your Gang</Original>
+      <Original>You have withdrawn $%1 from your gang</Original>
       <French>Vous avez retiré $%1 de votre gang</French>
+      <Portuguese>Você sacou R$%1 da sua gangue</Portuguese>
     </Key>
     <Key ID="STR_ATM_SentMoneySuccess">
       <Original>You have transfered $%1 to %2.\n\nA tax fee of $%3 was taken for the wire transfer.</Original>
@@ -651,7 +653,15 @@
       <Portuguese>Você não tem todo esse dinheiro.</Portuguese>
       <Polish>Nie masz przy sobie tyle pieniędzy</Polish>
     </Key>
-    <Key ID="STR_ATM_DepositGang">
+	<Key ID="STR_ATM_DepositSuccess">
+      <Original>You have deposited $%1 into your bank account</Original>
+      <German>Du hast $%1 auf dein Bankkonto überwiesen</German>
+      <French>Vous avez déposé $%1 dans votre compte bancaire</French>
+      <Italian>Hai despositato €%1 nel tuo conto bancario</Italian>
+      <Portuguese>Você depositou R$%1 na sua conta bancária</Portuguese>
+      <Polish>Zdeponowałeś na koncie bankowym $%1</Polish>
+    </Key>
+    <Key ID="STR_ATM_DepositSuccessG">
       <Original>You have deposited $%1 into your gangs bank account</Original>
       <German>Du hast $%1 auf dein Gang Konto überwiesen</German>
       <French>Vous avez déposé $%1 sur le compte bancaire de votre gang.</French>
@@ -1557,12 +1567,12 @@
       <Polish>Tagi OFF</Polish>
     </Key>
     <Key ID="STR_SM_SC">
-      <Original>Sidechat Settings</Original>
-      <German>Sidechat Einstellungen</German>
-      <French>Sidechat Paramètres</French>
-      <Italian>Impostazioni chat fazione</Italian>
-      <Portuguese>Configurações de Sidechat</Portuguese>
-      <Polish>Ustawienia czatu</Polish>
+      <Original>Sidechat Switch</Original>
+      <Portuguese>Habilitar Sidechat</Portuguese>
+    </Key>
+	<Key ID="STR_SM_RNObj">
+      <Original>Reveal Nearest Objects</Original>
+      <Portuguese>Mostrar Objetos Próximos</Portuguese>
     </Key>
     <Key ID="STR_SM_SCOFF">
       <Original>Sidechat OFF</Original>
@@ -5050,8 +5060,12 @@
       <German>Zeigt automatisch nächstgelegene Objekte innerhalb von 15m an, deaktiviere es, wenn du Leistungprobleme hast.</German>
       <French>Révèle automatiquement les objets les plus proches au sein de 15m, désactiver ce paramètre si vous rencontrez des problèmes de performance.</French>
       <Italian>Rivela automaticamente gli oggettivi vicini entro 15m, disattiva quest'impostazione se riscontri dei problemi di perfomance di sistema.</Italian>
-      <Portuguese>Revela objetos à 15m, desligue essa opção se está tendo problemas de performance.</Portuguese>
+      <Portuguese>Revela objetos à 15m, desabilite essa opção se está tendo problemas de performance.</Portuguese>
       <Polish>Automatycznie wykrywa najbliższe obiekty w promieniu 15m, wyłącz tę opcję jeśli masz problemy z wydajnością</Polish>
+    </Key>
+	<Key ID="STR_GUI_SideSwitch">
+      <Original>Switch side-channel mode, turn this off if you don't want to talk with players from your side.</Original>
+      <Portuguese>Habilita/Desabilita o side-channel, desabilite caso você não queira conversar com os jogadores da sua facção.</Portuguese>
     </Key>
     <Key ID="STR_GUI_PlayTags">
       <Original>Controls whether or not players will have name tags above their head.</Original>
@@ -5279,7 +5293,7 @@
       <German>Auf Gang-Konto einzahlen</German>
       <French>Déposer pour le gang</French>
       <Italian>Deposita alla Gang</Italian>
-      <Portuguese>Depositar: Gangue</Portuguese>
+      <Portuguese>Depositar para Gangue</Portuguese>
       <Polish>Wpłać na konto Gangu</Polish>
     </Key>
 	<Key ID="STR_pInAct_Seize">
