@@ -148,6 +148,7 @@ class CarShops
         vehicles[] =
         {
             { "C_Heli_Light_01_civil_F", 52500, { "pilot" }, { "", "", -1 } },
+			{ "I_Plane_Fighter_03_AA_F", 1525500, { "pilot" }, { "", "", -1 } },
         };
     };
 
@@ -220,6 +221,16 @@ class LifeCfgVehicles
         garageSell[] = { 0, 0, 0, 0 };
         insurance = 2500;
         chopShop = 1200;
+        textures[] = {};
+    };
+	
+	class I_Heli_Transport_02_F
+    {
+        vItemSpace = 650;
+        storageFee[] = { 55000, 0, 22000, 0 };
+        garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 75000;
         textures[] = {};
     };
 
@@ -818,28 +829,6 @@ class LifeCfgVehicles
             } },
             { "Desert Digi", "rebel", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
-            } }
-        };
-    };
-
-    class I_Heli_Transport_02_F
-    {
-        vItemSpace = 120;
-        storageFee[] = { 75000, 0, 0, 0 };
-        garageSell[] = { 125000, 0, 0, 0 };
-        insurance = 2500;
-        chopShop = 5000;
-        textures[] =
-        {
-            { "Ion", "civ", {
-                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_ion_co.paa",
-                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_ion_co.paa",
-                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_ion_co.paa"
-            } },
-            { "Dahoman", "civ", {
-                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_dahoman_co.paa",
-                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_dahoman_co.paa",
-                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
             } }
         };
     };

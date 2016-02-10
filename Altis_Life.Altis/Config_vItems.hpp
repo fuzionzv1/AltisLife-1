@@ -185,8 +185,7 @@ class VirtualShops {
 *        edible = Item Edible (-1 = Disabled)
 *        icon = Item Icon
 */
-class VirtualItems
-{
+class VirtualItems {
     //Virtual Items
     class repairKit {
         variable = "repairKit";
@@ -214,12 +213,11 @@ class VirtualItems
         variable = "moonshine";
         displayName = "STR_Item_Moonshine";
         weight = 2;
-        buyPrice = 1100;
-        sellPrice = 950;
+        buyPrice = 1500;
+        sellPrice = 1350;
         illegal = true;
         edible = -1;
         icon = "icons\ico_moonshine.paa";
-         = "moonshine";
     };
 
     class bankbond {
@@ -237,8 +235,8 @@ class VirtualItems
         variable = "moonshineQual";
         displayName = "STR_Item_MoonshineQual";
         weight = 2;
-        buyPrice = 450;
-        sellPrice = 250;
+        buyPrice = 1100;
+        sellPrice = 950;
         illegal = true;
         edible = -1;
         icon = "icons\ico_moonshine.paa";
@@ -645,7 +643,7 @@ class VirtualItems
     class cocaine_unprocessed {
         variable = "cocaineUnprocessed";
         displayName = "STR_Item_CocaineU";
-        weight = 6;
+        weight = 12;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -656,7 +654,7 @@ class VirtualItems
     class cocaine_processed {
         variable = "cocaineProcessed";
         displayName = "STR_Item_CocaineP";
-        weight = 4;
+        weight = 8;
         buyPrice = 750;
         sellPrice = 600;
         illegal = true;
