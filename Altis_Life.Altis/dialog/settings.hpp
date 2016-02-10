@@ -193,7 +193,6 @@ class SettingsMenu
 			idc = 2972;
 			tooltip = "$STR_GUI_PlayerReveal";
 			onCheckedChanged = "['objects',_this select 1] call life_fnc_s_onCheckedChange;";
-			idc = 2972;
 			y = 0.53;
 		};
 
