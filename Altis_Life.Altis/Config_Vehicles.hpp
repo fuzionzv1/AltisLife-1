@@ -392,6 +392,16 @@ class LifeCfgVehicles
         textures[] = { };
     };
 
+    class B_SDV_01_F
+    {
+        vItemSpace = 85;
+        storageFee[] = { 4500, 2500, 0, 0 };
+        garageSell[] = { 6800, 3500, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+
     class C_Boat_Civil_01_F
     {
         vItemSpace = 85;
@@ -487,9 +497,6 @@ class LifeCfgVehicles
             } },
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
-            } },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
             } }
         };
     };
@@ -560,9 +567,6 @@ class LifeCfgVehicles
             } },
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
-            } },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
             } }
         };
     };
@@ -606,7 +610,7 @@ class LifeCfgVehicles
         chopShop = 2500;
         textures[] =
         {
-            { "Brown", "cop", {
+            { "Police", "cop", {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
             } },
             { "Digi Desert", "reb", {
@@ -684,7 +688,7 @@ class LifeCfgVehicles
             { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
             } },
-            { "Black", "cop", {
+            { "Police", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
             } },
             { "Silver", "civ", {
@@ -692,9 +696,6 @@ class LifeCfgVehicles
             } },
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-            } },
-            { "Cop", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
             } }
         };
     };
@@ -742,12 +743,7 @@ class LifeCfgVehicles
         garageSell[] = { 0, 10000, 0, 0 };
         insurance = 2500;
         chopShop = 50000;
-        textures[] =
-        {
-            { "Regular", "cop", {
-                "\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa"
-            } }
-        };
+        textures[] = { };
     };
 
     class C_Heli_Light_01_civil_F
@@ -810,7 +806,7 @@ class LifeCfgVehicles
         chopShop = 5000;
         textures[] =
         {
-            { "Black", "cop", {
+            { "Police", "cop", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
             } },
             { "White / Blue", "rebel", {
@@ -821,9 +817,6 @@ class LifeCfgVehicles
             } },
             { "Desert Digi", "rebel", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
-            } },
-            { "EMS White", "rebel", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
             } }
         };
     };
