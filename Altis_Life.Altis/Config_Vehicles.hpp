@@ -88,7 +88,7 @@ class CarShops
         {
             { "B_Quadbike_01_F", 600, { "" }, { "", "", -1 } },
             { "B_G_Offroad_01_F", 3400, { "rebel" }, { "", "", -1 } },
-            { "O_MRAP_02_F", 75000, { "" }, { "rebel", "", -1 } },
+            { "O_MRAP_02_F", 75000, { "rebel" }, { "", "", -1 } },
             { "O_G_Offroad_01_armed_F", 120000, { "rebel" }, { "", "", -1 } },
             { "C_Hatchback_01_F", 6500, { "rebel" }, { "", "", -1 } },
             { "C_Hatchback_01_sport_F", 6500, { "rebel" }, { "", "", -1 } },
@@ -108,8 +108,8 @@ class CarShops
             { "C_Hatchback_01_F", 3000, { "" }, { "life_coplevel", "SCALAR", 2 } },
             { "C_Hatchback_01_sport_F", 12000, { "" }, { "life_coplevel", "SCALAR", 2 } },
             { "C_SUV_01_F", 15000, { "" }, { "life_coplevel", "SCALAR", 2 } },
-            { "O_Heli_Light_02_unarmed_F", 100000, { "life_coplevel", "SCALAR", 2 } },
-            { "I_Heli_light_03_unarmed_F", 85000, { "life_coplevel", "SCALAR", 2 } },
+            { "O_Heli_Light_02_unarmed_F", 100000, { "" }, { "life_coplevel", "SCALAR", 2 } },
+            { "I_Heli_light_03_unarmed_F", 85000, { "" }, { "life_coplevel", "SCALAR", 2 } },
             { "B_Heli_Light_01_F", 65000, { "" }, { "life_coplevel", "SCALAR", 2 } }
         };
     };
