@@ -137,7 +137,8 @@ class CarShops
         {
             { "O_Heli_Light_02_unarmed_F", 100000, { "rebel" }, { "", "", -1 } },
             { "I_Heli_light_03_unarmed_F", 85000, { "rebel" }, { "", "", -1 } },
-            { "B_Heli_Light_01_F", 65000, { "rebel" }, { "", "", -1 } }
+            { "B_Heli_Light_01_F", 65000, { "rebel" }, { "", "", -1 } },
+			{ "I_Heli_Transport_02_F", 165000, { "rebel" }, { "", "", -1 } }
         };
     };
 
