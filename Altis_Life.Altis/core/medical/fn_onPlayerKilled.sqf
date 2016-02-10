@@ -14,6 +14,12 @@ params [
 ];
 
 disableSerialization;
+if((vehicle _unit) != _unit) then
+{
+	UnAssignVehicle _unit;
+	_unit action ["getOut", vehicle _unit];
+	_unit setPosATL [(getPosATL _unit select 0) + 3, (getPosATL _unit select 1) + 1, 0];
+};
 
 //Set some vars
 _unit SVAR ["Revive",true,true]; //Set the corpse to a revivable state.
