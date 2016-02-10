@@ -133,10 +133,10 @@ class Life_atm_management
 
 		class GangWithdrawal : Life_RscButtonMenu
 		{
-			idc = -1;
+			idc = 2706;
 			text = "$STR_pInAct_WithdrawalFromGang";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "";
+			onButtonClick = "[] call life_fnc_gangWithdraw";
 			x = 0.365;
 			y = 0.81;
 			w = 0.275;
