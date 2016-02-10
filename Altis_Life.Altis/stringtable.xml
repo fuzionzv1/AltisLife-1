@@ -603,6 +603,14 @@
       <Portuguese>Você não tem dinheiro suficiente na suca conta bancária. Para trasferir R$%1 você irá pagar R$%2 de taxa</Portuguese>
       <Polish>Nie masz wystarczająco dużo środków na końcie, do przelewu $%1 będziesz potrzebował jeszcze $%2 na opłatę</Polish>
     </Key>
+	<Key ID="STR_ATM_NotEnoughFundsG">
+      <Original>You don't have that much in your Gang!</Original>
+      <French>Vous n'avez pas autant dans votre Gang</French>
+    </Key>
+	<Key ID="STR_ATM_WithdrawSuccessG">
+      <Original>You have withdrawn $%1 from your Gang</Original>
+      <French>Vous avez retiré $%1 de votre gang</French>
+    </Key>
     <Key ID="STR_ATM_SentMoneySuccess">
       <Original>You have transfered $%1 to %2.\n\nA tax fee of $%3 was taken for the wire transfer.</Original>
       <German>Du hast $%1 an %2 überwiesen.\n\nEine Gebühr von $%3 wurde verrechnet.</German>
