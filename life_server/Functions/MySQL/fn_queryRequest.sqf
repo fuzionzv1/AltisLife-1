@@ -22,7 +22,7 @@ _ownerID = owner _ownerID;
 _query = switch(_side) do
 {
 	case west: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist, cop_stats, swatlevel, cop_damage FROM players WHERE playerid='%1'",_uid];};
-	case civilian: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_stats, civ_damage FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_stats, civ_damage, civ_position, civ_direction FROM players WHERE playerid='%1'",_uid];};
 	case independent: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, med_stats, med_damage FROM players WHERE playerid='%1'",_uid];};
 };
 
@@ -92,6 +92,8 @@ switch (_side) do
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 		_queryResult set[9,_new];
 		_queryResult set[10,_queryResult select 10];
+		_queryResult set[11,_queryResult select 11];
+		_queryResult set[12,_queryResult select 12];
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
 		_queryResult pushBack (missionNamespace getVariable[format["houses_%1",_uid],[]]);
