@@ -148,7 +148,7 @@ class CarShops
         vehicles[] =
         {
             { "C_Heli_Light_01_civil_F", 52500, { "pilot" }, { "", "", -1 } },
-			{ "I_Plane_Fighter_03_AA_F", 1525500, { "pilot" }, { "", "", -1 } },
+			{ "I_Plane_Fighter_03_AA_F", 1525500, { "pilot" }, { "", "", -1 } }
         };
     };
 
@@ -223,7 +223,17 @@ class LifeCfgVehicles
         chopShop = 1200;
         textures[] = {};
     };
-	
+
+    class I_Plane_Fighter_03_AA_F
+    {
+        vItemSpace = 5;
+        storageFee[] = { 55000, 0, 22000, 0 };
+        garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 75000;
+        textures[] = {};
+    };
+
 	class I_Heli_Transport_02_F
     {
         vItemSpace = 650;
