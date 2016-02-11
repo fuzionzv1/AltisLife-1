@@ -244,6 +244,7 @@ switch (_code) do {
 						} else {
 							[_veh,0] remoteExecCall ["life_fnc_lockVehicle",_veh];
 						};
+						[_veh,"unlock"] remoteExec ["life_fnc_say3D",RANY];
 						systemChat localize "STR_MISC_VehUnlock";
 					} else {
 						if(local _veh) then {
@@ -251,6 +252,7 @@ switch (_code) do {
 						} else {
 							[_veh,2] remoteExecCall ["life_fnc_lockVehicle",_veh];
 						};
+						[_veh,"lock"] remoteExec ["life_fnc_say3D",RANY];
 						systemChat localize "STR_MISC_VehLock";
 					};
 				};
