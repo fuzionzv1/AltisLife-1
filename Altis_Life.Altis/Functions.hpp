@@ -369,6 +369,7 @@ class Life_Client_Core
 		file = "core\items";
 		class blastingCharge {};
 		class boltcutter {};
+		class debitCard {};
 		class defuseKit {};
 		class flashbang {};
 		class jerryRefuel {};
