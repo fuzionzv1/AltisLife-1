@@ -109,6 +109,7 @@ class CfgRemoteExec {
 
         /* Functions for everyone */
         F(life_fnc_broadcast,ANYONE)
+        F(life_fnc_say3D,ANYONE)
         F(life_fnc_animSync,ANYONE)
         F(life_fnc_demoChargeTimer,ANYONE)
         F(life_fnc_corpse,ANYONE)

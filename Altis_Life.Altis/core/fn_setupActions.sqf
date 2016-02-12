@@ -11,9 +11,14 @@ switch (playerSide) do
 		//Drop fishing net
 		life_actions = [player addAction[localize "STR_pAct_DropFishingNet",life_fnc_dropFishingNet,"",1.5,true,true,"",'
 		(surfaceisWater (getPos vehicle player)) && (vehicle player isKindOf "Ship") && life_carryWeight < life_maxWeight && speed (vehicle player) < 2 && speed (vehicle player) > -1 && !life_net_dropped ']];
+
 		//Rob person
 		life_actions = life_actions + [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",1.5,true,true,"",'
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable["robbed",FALSE]) ']];
+
+		//Rob person
+		life_actions = life_actions + [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",1.5,true,true,"",'
+		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && cursorTarget getVariable ["playerSurrender",false] && !(cursorTarget getVariable["Escorting",FALSE]) ']];
 	};
 
 	case west:
@@ -46,6 +51,7 @@ switch (playerSide) do
 	};
 };
 
+//Ball Punching
 life_actions = life_actions + [player addAction["Punch Balls",life_fnc_punchBallsAction,"",1.5,true,true,"",'!isNull cursorTarget && player distance cursorTarget < 5 && isPlayer cursorTarget && animationState cursorTarget in ["Incapacitated","amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"]']];
 
 //Bloodbag Self
