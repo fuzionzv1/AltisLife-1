@@ -112,7 +112,7 @@ class Life_atm_management
 			idc = -1;
 			text = "$STR_ATM_DebitCard";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "";
+			onButtonClick = "[0,1] call life_fnc_debitCard";
 			x = 0.432;
 			y = 0.68;
 			w = (6 / 40);

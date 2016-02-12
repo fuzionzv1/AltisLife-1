@@ -17,9 +17,13 @@ class Life_Settings
     revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
     revive_fee = 1500; //Revive fee that players have to pay and medics / EMS are rewarded
 
-    /* House related settings */
-    enable_ATMS = false; // Allow usage at any ATM.
+    /* House & ATM related settings */
+    enable_ATMS = false; //Allow usage at any ATM.
+    debit_cost = 15; //Cost to purchase debit card.
     house_limit = 5; //Maximum amount of houses a player can own.
+
+    /* Fuel Settings */
+    fuel_cost = 50; //Cost of fuel per liter.
 
     /* Gang related settings */
     gang_price = 75000; //Price for creating a gang, remember they are persistent so keep it reasonable to avoid millions of gangs.

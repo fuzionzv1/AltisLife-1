@@ -210,7 +210,18 @@ class VirtualShops
 
 class VirtualItems
 {
-    //Virtual Items
+    class debitcard
+    {
+        variable = "debitcard";
+        displayName = "STR_Item_debitCard";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "";
+    };
+
     class repairKit
     {
         variable = "repairKit";

@@ -5,7 +5,7 @@
 	Description:
 	Open dialog Pump.
 */
-private["_shop","_sideCheck","_spawnPoints","_shopFlag","_disableBuy"];
+private["_shop","_sideCheck","_spawnPoints","_shopFlag","_disableBuy","_fuelCost"];
 
 disableSerialization;
 //Long boring series of checks
@@ -18,14 +18,15 @@ if (count _fuelstations == 0 ) exitwith {life_action_inUse = false;};
 _vehicleList = nearestObjects [player, ["Car","air"], 10];
 if (count _vehicleList < 1) exitwith {hint localize "STR_NOTF_VehicleNear";life_action_inUse = false;};
 if(!createDialog "Life_FuelStat") exitWith {};
+_fuelCost = LIFE_SETTINGS(getNumber,"fuel_cost");
 [] spawn {waituntil {!dialog}; life_action_inUse =false;};
 ctrlSetText [20301,"Fuel Station"];
 if (isnil "life_fuelPrices") then {
-	life_fuelPrices = 80;
+	life_fuelPrices = _fuelCost;
 };
 
 //Fetch the shop config.
-vehicleFuelList =[];
+vehicleFuelList = [];
 {
 	_fuel = fuel _x;
 	vehicleFuelList pushBack [_x,_fuel];
