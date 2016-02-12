@@ -3828,6 +3828,9 @@
       <Portuguese>Carne de Cabra Crua</Portuguese>
       <Polish>Surowa Koza</Polish>
     </Key>
+	<Key ID="STR_Item_Campfire">
+	  <Original>Campfire</Original>
+	</Key>
     <Key ID="STR_Item_Goat">
       <Original>Grilled Goat</Original>
       <German>Gegrilltes Ziegenfleisch</German>

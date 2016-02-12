@@ -30,7 +30,10 @@ class Clothing
             { "U_IG_Guerilla2_3", "The Outback Rangler", 85, { "", "", -1 } },
             { "U_C_HunterBody_grn", "The Hunters Look", 85, { "", "", -1 } },
             { "U_C_WorkerCoveralls", "Mechanic Coveralls", 90, { "", "", -1 } },
-            { "U_OrestesBody", "Surfing On Land", 75, { "", "", -1 } },
+            { "U_B_Protagonist_VR", "Easy Kill Blue", 150, { "", "", -1 } },
+			{ "U_O_Protagonist_VR", "Easy Kill Red", 150, { "", "", -1 } },
+			{ "U_I_Protagonist_VR", "Easy Kill Green", 150, { "", "", -1 } },
+			{ "U_OrestesBody", "Surfing On Land", 75, { "", "", -1 } },
             { "U_NikosAgedBody", "Casual Wears", 50, { "", "", -1 } }
         };
 
@@ -80,7 +83,8 @@ class Clothing
         vests[] =
         {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
-            { "V_BandollierB_khk", "", 1000, { "", "", -1 } }
+            { "V_BandollierB_khk", "", 1000, { "", "", -1 } },
+			{ "V_TacVest_blk", "", 3000, { "", "", -1 } }
         };
 
         backpacks[] =
