@@ -1823,7 +1823,7 @@
   </Package>
   <Package name="Notifications">
     <Key ID="STR_NOTF_NE_1">
-      <Original>You do not have $%1 for a %2</Original>
+      <Original>You do not have $%1 in your bank for a %2</Original>
       <German>Du hast keine $%1 für einen %2</German>
       <French>Tu n'as pas %1$ pour cet élément : %2</French>
       <Italian>Non hai €%1 per $2</Italian>
@@ -3828,6 +3828,9 @@
       <Portuguese>Carne de Cabra Crua</Portuguese>
       <Polish>Surowa Koza</Polish>
     </Key>
+	<Key ID="STR_Item_Campfire">
+	  <Original>Campfire</Original>
+	</Key>
     <Key ID="STR_Item_Goat">
       <Original>Grilled Goat</Original>
       <German>Gegrilltes Ziegenfleisch</German>

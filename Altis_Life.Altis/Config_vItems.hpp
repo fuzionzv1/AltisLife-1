@@ -150,7 +150,7 @@ class VirtualShops
         side = "";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = {"waterBottle", "apple", "tbacon", "redgull","repairKit"};
+        items[] = {"waterBottle", "apple", "tbacon", "redgull","repairKit","campfire"};
     };
 
     class moonshineQual
@@ -1107,5 +1107,17 @@ class VirtualItems
         illegal = false;
         edible = 100;
         icon = "icons\ico_cookedMeat.paa";
+    };
+	
+	 class campfire
+    {
+        variable = "campfire";
+        displayName = "STR_Item_Campfire";
+        weight = 2;
+        buyPrice = 600;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_campfire.paa";
     };
 };
