@@ -85,6 +85,10 @@ switch (true) do {
 		[] spawn life_fnc_pickAxeUse;
 	};
 
+	case (EQUAL(_item,"campfire")): {
+		"Land_Campfire_F" createVehicle position player;
+	};
+	
 	default {
 		hint localize "STR_ISTR_NotUsable";
 	};
