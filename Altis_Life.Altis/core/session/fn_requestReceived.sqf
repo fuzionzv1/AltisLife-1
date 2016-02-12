@@ -63,21 +63,26 @@ switch(playerSide) do
 
 	case civilian:
 	{
-		private["_health"];
 		life_is_arrested = SEL(_this,7);
 		life_hunger = SEL(SEL(_this,9),0);
 		life_thirst = SEL(SEL(_this,9),1);
 		CONST(life_coplevel, 0);
 		CONST(life_medicLevel, 0);
-		if(SEL(_this,10) == 100) then { life_is_alive = false; };
-		if(life_is_alive) then { player setDamage SEL(_this,10); };
-		life_houses = SEL(_this,11);
+		if(SEL(_this,10) == 100) then { life_civ_position = [0,0,0]; life_civ_direction = 0; life_is_alive = false; };
+		if(life_is_alive) then
+		{
+			player setDamage SEL(_this,10);
+			life_civ_position = SEL(_this,11);
+			life_civ_direction = SEL(_this,12);
+		};
+
+		life_houses = SEL(_this,13);
 		{
 			_house = nearestBuilding (call compile format["%1", SEL(_x,0)]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 
-		life_gangData = SEL(_this,12);
+		life_gangData = SEL(_this,14);
 		if(!(EQUAL(count life_gangData,0))) then
 		{
 			[] spawn life_fnc_initGang;

@@ -3,7 +3,7 @@
 	File: fn_updateRequest.sqf
 	Author: Tonic
 */
-private["_packet","_array","_flag","_value"];
+private["_packet","_array","_flag","_value","_playerPos","_playerDir"];
 _packet = [getPlayerUID player,(profileName),playerSide,CASH,BANK];
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
@@ -26,9 +26,15 @@ _packet pushBack _array;
 _value = damage player;
 _packet pushBack _value;
 
-switch (playerSide) do {
-	case civilian: {
+switch (playerSide) do
+{
+	case civilian:
+	{
+		_playerPos = getPos player;
+		_playerDir = getDir player;
 		_packet pushBack life_is_arrested;
+		_packet pushBack _playerPos;
+		_packet pushBack _playerDir;
 	};
 };
 
