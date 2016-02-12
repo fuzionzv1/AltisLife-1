@@ -68,7 +68,7 @@ switch(playerSide) do
 		life_thirst = SEL(SEL(_this,9),1);
 		CONST(life_coplevel, 0);
 		CONST(life_medicLevel, 0);
-		if(SEL(_this,10) == 100) then { life_civ_position = [0,0,0]; life_civ_direction = 0; life_is_alive = false; };
+		if(SEL(_this,10) == 1) then { life_civ_position = [0,0,0]; life_civ_direction = 0; life_is_alive = false; };
 		if(life_is_alive) then
 		{
 			player setDamage SEL(_this,10);
