@@ -41,7 +41,7 @@ class WeaponShops
             { "hgun_Pistol_heavy_02_F", "", 3500, 2000 },
             { "hgun_ACPC2_F", "", 2750, 1900 },
             { "hgun_PDW2000_F", "", 4500, 2250 },
-            { "arifle_SDAR_F", "", 4750, 2400 },
+            { "arifle_SDAR_F", "SDAR - Illegal", 4750, 2400 },
             { "optic_ACO_grn_smg", "", 200, 100 },
             { "16Rnd_9x21_Mag", "", 25, 11 },
             { "9Rnd_45ACP_Mag", "", 30, 15 },
