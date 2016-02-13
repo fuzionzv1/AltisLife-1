@@ -68,7 +68,7 @@ if (FETCH_CONST(life_coplevel) == 2) then
 /* Corporal Loadout */
 if (FETCH_CONST(life_coplevel) == 3) then
 {
-	player addUniform "U_Rangemaster";
+	player addUniform "U_Competitor";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
 	player addWeapon "NVGoggles_OPFOR";
@@ -89,7 +89,7 @@ if (FETCH_CONST(life_coplevel) == 3) then
 /* Sergeant Loadout */
 if (FETCH_CONST(life_coplevel) == 4) then
 {
-	player addUniform "U_Rangemaster";
+	player addUniform "U_B_CombatUniform_mcam_worn";
 	player addVest "V_TacVest_blk_POLICE";
 	player addHeadgear "H_Cap_police";
 	player addWeapon "NVGoggles_OPFOR";

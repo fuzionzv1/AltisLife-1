@@ -33,8 +33,24 @@ switch(playerSide) do {
 		};
 	};
 	case west: {
-		if(uniform player == "U_Rangemaster") then {
-			player setObjectTextureGlobal [0, "textures\cop_uniform.jpg"];
+		if (uniform player == "U_Competitor" && (FETCH_CONST(life_coplevel) == 1)) then {
+			    player setObjectTextureGlobal [0, "textures\uniform_cadet.paa"];
+		    };
+		    if (uniform player == "U_Competitor" && (FETCH_CONST(life_coplevel) == 2)) then {
+			     player setObjectTextureGlobal [0, "textures\uniform_const.paa"];
+			};
+			if (uniform player == "U_Competitor" && (FETCH_CONST(life_coplevel) == 3)) then {
+			    player setObjectTextureGlobal [0, "textures\uniform_corp.paa"];
+			};
+			if (uniform player == "U_Competitor" && (FETCH_CONST(life_coplevel) == 4)) then {
+			    player setObjectTextureGlobal [0, "textures\police_combatu_sgt.paa"];
+			};
+			if (uniform player == "U_Competitor" && (FETCH_CONST(life_coplevel) == 5)) then {
+			    player setObjectTextureGlobal [0, "textures\police_combatu_lt.paa"];
+			};
+			if (uniform player == "U_Competitor" && (FETCH_CONST(life_coplevel) == 6)) then {
+			    player setObjectTextureGlobal [0, "textures\police_combatu_captain.paa"];
+			};
 		};
 	};
 	case independent: {
