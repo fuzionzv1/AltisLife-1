@@ -151,7 +151,7 @@ class Clothing
         {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Competitor", "Cop Uniform", 25, { "life_coplevel", "SCALAR", 1 } },
-            { "U_B_CombatUniform_mcam_worn", "Cop Uniform", 25, { "life_coplevel", "SCALAR", 5 } }
+            { "U_B_CombatUniform_mcam", "Cop Uniform", 25, { "life_coplevel", "SCALAR", 5 } }
         };
 
         headgear[] =
