@@ -150,8 +150,7 @@ class Clothing
         uniforms[] =
         {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
-            { "U_Competitor", "Cop Uniform", 25, { "life_coplevel", "SCALAR", 2 } },
+            { "U_Competitor", "Cop Uniform", 25, { "life_coplevel", "SCALAR", 1 } },
             { "U_B_CombatUniform_mcam_worn", "Cop Uniform", 25, { "life_coplevel", "SCALAR", 5 } }
         };
 
