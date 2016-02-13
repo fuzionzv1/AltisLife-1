@@ -42,11 +42,11 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 			grpPlayer setVariable["gang_bank",_funds,true];
 			[1,grpPlayer] remoteExecCall ["TON_fnc_updateGang",RSERV];
 		} else {
-			if([(_price * _amount),0] call life_fnc_debitCard) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint localize "STR_NOTF_NotEnoughMoney";};
+			if(!([(_price * _amount),0] call life_fnc_debitCard)) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint localize "STR_NOTF_NotEnoughMoney";};
 			hint format[localize "STR_Shop_Virt_BoughtItem",_amount,(localize _name),[(_price * _amount)] call life_fnc_numberText];
 		};
 	} else {
-		if([(_price * _amount),0]) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; [false,_type,_amount] call life_fnc_handleInv;};
+		if(!([(_price * _amount),0] call life_fnc_debitCard)) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; [false,_type,_amount] call life_fnc_handleInv;};
 		hint format[localize "STR_Shop_Virt_BoughtItem",_amount,(localize _name),[(_price * _amount)] call life_fnc_numberText];
 	};
 	[] call life_fnc_virt_update;
