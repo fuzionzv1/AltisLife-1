@@ -158,7 +158,6 @@ class CarShops
             { "B_Heli_Light_01_F", 25000, { "" }, { "life_coplevel", "SCALAR", 2 } },
             { "I_Heli_light_03_unarmed_F", 40000, { "" }, { "life_coplevel", "SCALAR", 3 } },
             { "O_Heli_Light_02_unarmed_F", 75000, { "" }, { "life_coplevel", "SCALAR", 4 } },
-            { "I_Heli_Transport_02_F", 85000, { "" }, { "life_coplevel", "SCALAR", 5 } },
             { "B_Heli_Transport_03_unarmed_F", 85000, { "" }, { "life_coplevel", "SCALAR", 5 } },
             { "B_Heli_Transport_01_F", 90000, { "" }, { "life_coplevel", "SCALAR", 6 } }
         };
@@ -320,7 +319,13 @@ class LifeCfgVehicles
         garageSell[] = { 0, 85000, 0, 0 };
         insurance = 16000;
         chopShop = 45000;
-        textures[] = {};
+        textures[] =
+        {
+            { "Police", "cop", {
+                "textures\Police_Huron_1.paa",
+                "textures\Police_Huron_2.paa"
+            } }
+        };
     };
 
     class B_Heli_Light_01_F
@@ -360,7 +365,13 @@ class LifeCfgVehicles
         garageSell[] = { 0, 85000, 0, 0 };
         insurance = 16000;
         chopShop = 65000;
-        textures[] = {};
+        textures[] =
+        {
+            { "Police", "cop", {
+                "textures\Police_ghosthawk_1.paa",
+                "textures\Poliec_ghosthawk_2.paa"
+            } }
+        };
     };
 
     class B_Boat_Transport_01_F
@@ -865,7 +876,7 @@ class LifeCfgVehicles
         textures[] =
         {
             { "Police", "cop", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
+                "textures\Police_orca.paa"
             } },
             { "White / Blue", "rebel", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
